@@ -1,4 +1,6 @@
-file1 = input()
+import sys
+
+file1 = sys.argv[1]
 
 fp = open(file1, 'r')
 
@@ -13,7 +15,7 @@ for i in range(0, len(line)):
         end = line[i].find('<noscript', start+1)
         line[i] = line[i][:start] + line[i][end:]
         break
-   
+
 fp = open(file1, 'w')
 for i in range(0, len(line)):
     fp.write(line[i])
