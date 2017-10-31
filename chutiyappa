@@ -3,7 +3,6 @@ bus.php
 car_rentals.php
 casual_dining.php
 coffee_shop.php
-commom1.php
 departures.php
 eat.php
 electronics.php
@@ -11,12 +10,9 @@ flight_information.php
 food_court.php
 home.php
 inter_terminal_transfers.php
-LICENSE
 metro.php
 parking.php
 quick_service_restaurants.php
-README.md
-remove.py
 shop.php
 shops_and_restaurants.php
 taxi.php
