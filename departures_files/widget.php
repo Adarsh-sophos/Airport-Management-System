@@ -196,64 +196,8 @@
     </style>
 
 
-     <script>
-        var settings = {"title":null,"csvUrl":null,"origVersion":null,"viewType":"table","data":{"csvString":"Flight,Arriving From,Scheduled,Status,Terminal,Details\n1,2,3,4,2,2\n2,3,4,5,2,2\n5,4,3,2,2,2\n3,5,6,3,2,2\n2,2,2,2,2,2\n","type":"csvString"},"tableParams":{"alignment":"center","showGradient":true,"radius":8,"filter":false,"sortable":false,"filterText":"Search"},"pieChartParams":{},"columnChartParams":{},"lineChartParams":{},"areaChartParams":null};
-        var endpoint = 'desktop';
-        settings = jQuery.extend({}, settings);
-        var version = '4-00.402382271599199454-1509364428217';
-        var pageManager;
-//        google.load("visualization", "1", {packages:["corechart"]});
-    function fixErrorVal(value){
-        if(value.indexOf('"')>=0 || value.indexOf(',')>=0){
-            value = value.replace(/"/g,'""');
-            value = '"'+value+'"';
-        }
-        return value;
-    }
-        $(document).ready(function() {
-            pageManager = new PageManager();
-            pageManager.init(settings,endpoint,
-                {
-                    loaderErrorTitle:fixErrorVal('We are having problems loading your table information.'),
-                    loaderErrorBody:fixErrorVal('Make sure to follow the instructions in the Settings Panel'),
-                    loaderErrorTitleEmpty:fixErrorVal('Hey, your table is empty.'),
-                    loaderErrorBodyEmpty:fixErrorVal('You\'ll need to add some information'),
-                    loaderErrorTitleCsv:fixErrorVal('Oops! The URL you entered does not point to a google spreadsheet or a CSV file.'),
-                    loaderErrorBodyCsv:fixErrorVal('Please check the link and try again'),
-                    loaderErrorTitleViewer:fixErrorVal('This table is empty.'),
-                    loaderErrorBodyViewer:fixErrorVal('Nothing to see here'),
-                    loaderErrorTitle400:fixErrorVal('Oops! The URL you entered doesn\'t work.'),
-                    loaderErrorBody400:fixErrorVal('Please check the link and try again'),
-                    loaderErrorTitle403:fixErrorVal('Humm, it seems your Google spreadsheet is set to private.'),
-                    loaderErrorBody403:fixErrorVal('To make it public: Open App Settings > Go to Data Source and follow the instructions'),
-                    loaderErrorTitle404:fixErrorVal('Oops! The URL you entered doesn\'t exist.'),
-                    loaderErrorBody404:fixErrorVal('Please check the link and try again'),
-                    loaderErrorTitle500:fixErrorVal('Ouch! Something broke.'),
-                    loaderErrorBody500:fixErrorVal('The server sending the table information reported a problem'),
-                    loaderErrorTitle503:fixErrorVal('Ouch! Something broke.'),
-                    loaderErrorBody503:fixErrorVal('The server sending the table information is temporarily offline, try again in a few minutes'),
-                 },
-                    '_WiVc3A0kL9VjXmIW0dP9SXHEaU1oGR_4r2JfTVs-yc.eyJpbnN0YW5jZUlkIjoiOTFmNTBmN2MtMzA0OC00OTJkLWFjOGMtZTVhNTdhMzliZDcxIiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJzaWduRGF0ZSI6IjIwMTctMTAtMzBUMTI6NDI6MjEuNjAwWiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiNDcuOS4xMzQuNDcvNDQzMjIiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiZWVmMmE1ZGEtNWU0My00NWI3LWE2YjMtMjk4MjNjOGE2MDhmIiwiYmlUb2tlbiI6IjA3NzU1ZjFjLTI3ODMtMDBmYy0zZWI5LTJlNTE1YjQzZWVjNCIsInNpdGVPd25lcklkIjoiOWZiNWNhMzItNTNkYy00MzI3LThmNjgtMjJmMzE3NmFhMDQ4In0','comp-j9b2hdkn', version
-            );
-        });
-
-     </script>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-46327988-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-    <script type="text/javascript">
-        console.log("v 3-09");
-    </script>
+     
+   
 <style wix-style="">.Title{ font:normal normal normal 32px/1.25em brandon-grot-w01-light,sans-serif; } .Menu{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } .Page-title{ font:normal normal normal 40px/1.25em brandon-grot-w01-light,sans-serif; } .Heading-XL{ font:normal normal normal 88px/1.14em brandon-grot-w01-light,sans-serif; } .Heading-L{ font:normal normal normal 72px/1.18em brandon-grot-w01-light,sans-serif; } .Heading-M{ font:normal normal normal 56px/1.25em brandon-grot-w01-light,sans-serif; } .Heading-S{ font:normal normal normal 48px/1.25em brandon-grot-w01-light,sans-serif; } .Body-L{ font:normal normal normal 24px/1.46em brandon-grot-w01-light,sans-serif; } .Body-M{ font:normal normal normal 20px/1.5em brandon-grot-w01-light,sans-serif; } .Body-S{ font:normal normal normal 16px/1.55em brandon-grot-w01-light,sans-serif; } .Body-XS{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } }</style><link type="text/css" rel="stylesheet" href="languages.css"><style></style></head>
 
 <body>
@@ -269,7 +213,9 @@
 </table>
 </div>
 <div id="tableWrapper" style="overflow: auto; max-height: 631px;"><table id="theTable" class="footable table outerBorder footable-loaded isInnerColor" style="width: 100%; margin: 0px;">
-<thead><tr><th id="thCol0" data-type="numeric">Flight</th><th id="thCol1" data-type="numeric">Arriving From</th><th id="thCol2" data-type="numeric">Scheduled</th><th id="thCol3" data-type="numeric">Status</th><th id="thCol4" data-type="numeric">Terminal</th><th id="thCol5" data-type="numeric">Details</th></tr></thead><tbody><tr class="footableOdd"><td>1</td><td>2</td><td>3</td><td>4</td><td>2</td><td>2</td></tr><tr class="footableEven"><td>2</td><td>3</td><td>4</td><td>5</td><td>2</td><td>2</td></tr><tr class="footableOdd"><td>5</td><td>4</td><td>3</td><td>2</td><td>2</td><td>2</td></tr><tr class="footableEven"><td>3</td><td>5</td><td>6</td><td>3</td><td>2</td><td>2</td></tr><tr class="footableOdd"><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr></tbody></table></div>
+<thead><tr><th id="thCol0" data-type="numeric">Flight Number</th><th id="thCol0">Airlines</th><th id="thCol1" data-type="numeric">Departed To</th><th id="thCol2" data-type="numeric">Scheduled</th><th id="thCol3" data-type="numeric">Status</th><th id="thCol4" data-type="numeric">Terminal</th><th id="thCol5" data-type="numeric">Details</th></tr></thead><tbody>
+    <?php require("departures_table.php") ?>
+</tbody></table></div>
 <table id="pagerFilter" class="footable footer outerBorder" style="width: 100%; margin: 0px;">
     <tfoot id="noPager"><tr><td colspan="100%" style="height:26px;"></td></tr></tfoot>
 </table>
