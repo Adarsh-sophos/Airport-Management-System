@@ -22,6 +22,9 @@
 <link rel="preload" href="car_rentals_files/zepto.js" as="script">
 <link rel="preload" href="car_rentals_files/react-with-addons.js" as="script">
 
+<link rel="stylesheet" href="car_rentals_files/wix_cached_view_data_002/shim.css">
+<link href="car_rentals_files/wix_cached_view_data_002/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="car_rentals_files/wix_cached_view_data_002/font-awesome.css" rel="stylesheet">
 
 <link rel="preconnect" href="https://static.wixstatic.com/" crossorigin="">
 <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
@@ -256,7 +259,7 @@
 .style-j9cooabf2_subMenu .style-j9cooabf2_label {font:normal normal normal 16px/1.4em nimbus-sans-tw01con,sans-serif;}
 .style-j9cooabf2_subMenu .style-j9cooabf2_itemContentWrapper {border:solid 0px rgba(0, 26, 51, 1);background-color:rgba(0, 46, 93, 1);border-radius:0;    }
 .style-j9cooabf2_itemContentWrapper {display:block;border:solid 0px rgba(0, 26, 51, 1);  border-radius:0;  transition: background-color 0.4s ease 0s;  cursor:pointer;padding-left:15px;padding-right:15px;background-color:rgba(0, 46, 93, 1);}
-.style-j9cooabf2_item {width:100%;background-color:transparent;margin:0;position:relative;list-style:none;}
+.style-j9cooabf2_item {width:100%;background-color:transparent;margin:0;position:relative;list-style:none;color:white;}
 .style-j9cooabf2_item:last-child .style-j9cooabf2_separator {display:none;}
 .style-j9cooabf2_item.style-j9cooabf2_selected > .style-j9cooabf2_itemContentWrapper,.style-j9cooabf2_item.style-j9cooabf2_selectedContainer > .style-j9cooabf2_itemContentWrapper {background-color:rgba(0, 26, 51, 1);transition: background-color 0.4s ease 0s;}
 .style-j9cooabf2_item.style-j9cooabf2_selected > .style-j9cooabf2_itemContentWrapper > .style-j9cooabf2_label,.style-j9cooabf2_item.style-j9cooabf2_selectedContainer > .style-j9cooabf2_itemContentWrapper > .style-j9cooabf2_label {color:#FFFFFF;}
@@ -441,17 +444,416 @@ taking a taxi. We're the official Heathrow parking provider, so no one
 offers our airport parking cheaper than us. Save money* by booking
 online.</span></p>
 
-<p class="font_8" style="text-align:justify;"><span style="font-weight:bold;">* Compared to the normal drive-up rate; minimum stay normally required.</span></p></div><div style="left: 141px; width: 339px; position: absolute; top: 48px;" class="txtNew" id="comp-j9cpssnj" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cpssnj"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Car Rental at Malaviya</span></span></span></span></h2></div><div style="min-height: 522px; min-width: 433px; left: 713px; width: 433px; position: absolute; top: 110px; height: 522px;" class="tpaw0" id="comp-j9cpssnl" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cpssnl"><iframe scrolling="no" allowtransparency="true" allowfullscreen="" name="comp-j9cpssnl" style="display:block;width:100%;height:100%;overflow:hidden;position:absolute;" title="Form Builder Plus+" aria-label="Form Builder Plus+" id="comp-j9cpssnliframe" class="tpaw0iframe" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cpssnl.$https=2//www=1powr=1io/plugins/form-builder/wix_cached_view?cacheKiller=01509367437876&amp;compId=0comp-j9cpssnl&amp;deviceType=0desktop&amp;height=0518&amp;instance=09ZTmxKcbjCPRGPVK4JgeEaMwIMyqOB_HqMPxFGOkgnQ=1eyJpbnN0YW5jZUlkIjoiMGVkZDhhMWYtZDZiMC00ZTk0LWJlMTYtMTExMjI4MTdkYzkyIiwiYXBwRGVmSWQiOiIxMzNjOGU5NS05MTJhLTg4MjYtZmEyNi01YTAwYTliY2Y1NzQiLCJzaWduRGF0ZSI6IjIwMTctMTAtMzBUMTI6NDI6MjEuNjAwWiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiNDcuOS4xMzQuNDcvNDQzMjIiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiZWVmMmE1ZGEtNWU0My00NWI3LWE2YjMtMjk4MjNjOGE2MDhmIiwic2l0ZU93bmVySWQiOiI5ZmI1Y2EzMi01M2RjLTQzMjctOGY2OC0yMmYzMTc2YWEwNDgifQ&amp;locale=0en&amp;pageId=0iptmg&amp;viewMode=0site&amp;vsi=050465323-b2ce-47e7-a808-52b09d69ecb4&amp;width=0433" src="car_rentals_files/wix_cached_view_002.html" frameborder="0"></iframe><div id="comp-j9cpssnloverlay" class="tpaw0overlay" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cpssnl.$overlay"></div></div><div style="left: 141px; width: 460px; position: absolute; top: 363px;" class="txtNew" id="comp-j9cq1n86" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq1n86"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Car Rental Operators at Malaviya</span></span></span></span></h2></div><div style="left: 417px; position: absolute; top: 541px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f5" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5"><div style="width: 226px; height: 86px;" id="comp-j9cq31f5link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link"><div id="comp-j9cq31f5img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f5imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link.0.$preloader"></div><img id="comp-j9cq31f5imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_6be414f0587947828bccb25aa75bd579mv2.png"></div></div></div><div style="left: 141px; position: absolute; top: 541px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f6" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6"><div style="width: 226px; height: 86px;" id="comp-j9cq31f6link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link"><div id="comp-j9cq31f6img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f6imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link.0.$preloader"></div><img id="comp-j9cq31f6imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_364d3ff33f8d4377ab5bad90dabcabe9mv2.png"></div></div></div><div style="left: 417px; position: absolute; top: 418px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f61" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61"><div style="width: 226px; height: 86px;" id="comp-j9cq31f61link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link"><div id="comp-j9cq31f61img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f61imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link.0.$preloader"></div><img id="comp-j9cq31f61imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_82b713845c8843fb84ecb2269a5162a1mv2.png"></div></div></div><div style="left: 141px; position: absolute; top: 418px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f62" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62"><div style="width: 226px; height: 86px;" id="comp-j9cq31f62link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link"><div id="comp-j9cq31f62img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f62imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link.0.$preloader"></div><img id="comp-j9cq31f62imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_d807e2addb0449278fcf343598aea2a0mv2.png"></div></div></div></div></div></div></div></div></div></div></div><noscript data-reactid=".0.$popupRoot"></noscript><div class="siteAspectsContainer" data-reactid=".0.$siteAspectsContainer"><div data-reactid=".0.$siteAspectsContainer.$aspectPortal"></div><div data-reactid=".0.$siteAspectsContainer.$externalScriptContainer"></div><noscript data-reactid=".0.$siteAspectsContainer.$ecomCheckoutAspectContrainer"></noscript></div><noscript data-reactid=".0.6"></noscript><noscript data-reactid=".0.7"></noscript><noscript data-reactid=".0.8"></noscript></div></div>
+<p class="font_8" style="text-align:justify;"><span style="font-weight:bold;">* Compared to the normal drive-up rate; minimum stay normally required.</span></p></div><div style="left: 141px; width: 339px; position: absolute; top: 48px;" class="txtNew" id="comp-j9cpssnj" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cpssnj"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Car Rental at Malaviya</span></span></span></span></h2></div>
+
+<div style="min-height: 522px; min-width: 433px; left: 713px; width: 433px; position: absolute; top: 110px; height: 522px;" class="tpaw0" id="comp-j9cpssnl" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cpssnl">
+
+
+    <script src="car_rentals_files/wix_cached_view_data_002/wix.js"></script>
+<script src="car_rentals_files/wix_cached_view_data_002/application-62e3ab679e2b35a70447fc60183b7fe1df1fd3b874c0021aa.js"></script>
+<script src="car_rentals_files/wix_cached_view_data_002/formBuilder-202b639f5790acffd59906c47ae4f7dec826ae101a727b4fb.js"></script>
+<link rel="stylesheet" media="screen" href="car_rentals_files/wix_cached_view_data_002/formBuilder-facd8ea03cfc22297eab3376bee8c84406894e3ca505684a.css">
+
+<div id="dynamicStyle">
+    <style>
+        .formBuilder{
+    border-color: rgb(109, 115, 119);
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+
+        background: rgb(255, 255, 255);
+
+}
+
+        .formBuilder{
+  max-width: 100%;
+}
+        /*being more specific so appview doesn't inherit powr styles*/
+        .formBuilder h1,.formBuilder h2,.formBuilder h3,.formBuilder h4,.formBuilder h5,.formBuilder h6,.formBuilder p {
+          color: rgb(109, 115, 119);
+          font-family: Open Sans;
+          font-size: 12px;
+        }
+        .formBuilder{
+            font-family: Open Sans;
+            color: rgb(109, 115, 119);
+            border-width: 2px;
+
+        }
+        .formBuilder .progress-bar {
+           background-color: rgb(109, 115, 119);
+        }
+        .formBuilder .timePicker {
+            color: rgb(109, 115, 119);
+        }
+        .ui-widget-content {
+            color: rgb(109, 115, 119);
+
+
+                    background: rgb(255, 255, 255);
+
+
+        }
+        .ui-widget-header, .ui-widget-header a {
+
+                color: rgb(154, 159, 165);
+
+        }
+        .ui-datepicker-next:hover,.ui-datepicker-prev:hover {
+
+                color: rgb(154, 159, 165);
+
+        }
+        .formBuilder .uploadBtn {
+            background: rgb(109, 115, 119);
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-family: Open Sans;
+        }
+        .formBuilder h3, .formBuilder label, .formBuilder legend, .formBuilder .submitButton, .formBackButton, .formBuilder input, .formBuilder textarea, .formBuilder .resultsButton{
+            font-size: 12px !important;
+        }
+        .formBuilder .submitButton, .formBackButton, .formBuilder .resultsButton{
+            font-family: Open Sans;
+            background-color: rgb(109, 115, 119);
+            color: rgb(255, 255, 255);
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+        .formBuilder .jqplot-title {
+            color: rgb(109, 115, 119);
+        }
+        .formBuilder .madeWithPowr {
+            border: 1px solid rgb(109, 115, 119);
+        }
+        .formBuilder .powrMark a{
+            color: rgb(109, 115, 119);
+        }
+        .formBuilder textarea, .formBuilder input[type="text"], .formBuilder input[type="number"], .formBuilder input[type="email"], .formBuilder input[type="tel"], .formBuilder input[type="url"]{
+            font-size: 12px;
+            font-family: Open Sans;
+            border-radius:3px;
+        }
+        .formBuilder input[type="text"]:focus, .formBuilder input[type="number"]:focus, .formBuilder input[type="email"]:focus, .formBuilder input[type="tel"]:focus, .formBuilder input[type="url"]:focus, .formBuilder select:focus, .formBuilder textarea:focus {
+          border: solid 1px rgb(109, 115, 119);
+        }
+        .formBuilder hr{
+            border-color: rgb(109, 115, 119);
+        }
+
+
+        .formBuilder textarea::-webkit-input-placeholder {
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea[placeholder]{
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder [placeholder]{
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder *[placeholder] {
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input::-webkit-input-placeholder {
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input[placeholder] {
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder [placeholder]{
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder *[placeholder] {
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea{
+            background-color:rgb(255, 255, 255);
+            color:rgb(109, 115, 119) !important;
+            border-radius:3px;
+        }
+        .formBuilder input[type="text"], .formBuilder input[type="number"], .formBuilder input[type="email"], .formBuilder input[type="tel"], .formBuilder input[type="url"] {
+            background-color:rgb(255, 255, 255);
+            color:rgb(109, 115, 119) !important;
+        }
+        .formBuilder select {
+            background-color:rgb(255, 255, 255);
+            color:rgb(109, 115, 119);
+            border: 1px solid #DDD;
+            font-size:12px!important;
+            font-family: Open Sans;
+            border-radius:3px;
+        }
+        .formBuilder input[type="file"] {
+            font-size: 12px;
+            font-family: Open Sans;
+            color: rgb(109, 115, 119);
+        }
+
+        .formBuilder .header h2 {
+            text-align: center;
+            font-family: Open Sans;
+            color: rgb(154, 159, 165);
+            font-size: 28px;
+        }
+        .formBuilder .header h3 {
+            font-family: Open Sans;
+        }
+        .formBuilder .radioOption, .formBuilder .checkOption, .formBuilder .checkbox label{
+          font-size: 12px;
+          font-family: Open Sans;
+        }
+        .formBuilder input, .formBuilder .radioOption, .formBuilder .checkOption, .formBuilder textarea {
+            font-size: 12px !important;
+        }
+    </style>
+</div>
+
+
+<!--No Edit Me-->
+
+<div id="appView" class="">
+  <div class="formBuilder formElementsModule inlineLabels enter_ani_none none">
+    <div class="header clearfix">
+      <h2 class="fitText formTitle" style="font-size: 28px;">Book Car Rental Now</h2>
+      <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
+      <form class="realForm">
+  <input class="honeypot hid" type="text">
+  <div class="dynamicElements visible" style="display: block;">
+
+    <div id="0" class="formElement form-group fadeMe select clearfix col-sm-12" style="">
+        <label class="fitText" style="font-size: 12px;">Terminal</label>
+        <select aria-describedby="0_errors" value="" name="Terminal" data-export-field="">
+
+          <option value="" selected="selected"> - Terminal - </option>
+
+
+
+            <option value="1" data-price="0">
+
+            1
+
+          </option>
+
+
+            <option value="2" data-price="0">
+
+            2
+
+          </option>
+
+      </select>
+    </div>
+
+
+
+    <div aria-describedby="1_errors" id="1" class="formElement form-group fadeMe datePickerParent col-xs-6 half " style="">
+      <fieldset>
+
+        <legend class="fitText" style="font-size: 12px;">*Pick-up Date</legend>
+
+        <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
+
+            <div class="form-group datePickerContainer">
+
+                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Pick-up Date" aria-label="Enter Date" id="dp1509367459101" value="10-30-2017" type="text">
+
+              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
+              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
+            </div>
+
+
+          <div class="form-group timePickerContainer">
+            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Pick-up Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+
+
+    <div aria-describedby="2_errors" id="2" class="formElement form-group fadeMe datePickerParent col-xs-6 half twentyFour" style="">
+      <fieldset>
+
+        <legend class="fitText" style="font-size: 12px;">*Pick-up Time</legend>
+
+        <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
+
+
+            <div class="form-group datePickerContainer">
+              <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+
+
+
+              <div class="timePicker">
+                  <div class="hourPicker">
+                      <button type="button" class="upHour" unselectable="on" pwr="" pwr-handler="incrementHourClick" pwr-mod-attr="incrementHour"><i class="fa fa-caret-up"></i></button>
+                      <input class="hour ignoreThis" value="18" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="hourInput" pwr-handler="hourInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Hour" type="text">
+                      <button type="button" class="downHour" unselectable="on" pwr="" pwr-mod-attr="decrementHour" pwr-handler="decrementHourClick"><i class="fa fa-caret-down"></i></button>
+                  </div>
+                  <div class="colon">:</div>
+                  <div class="minutePicker">
+                      <button type="button" class="upMinute" unselectable="on" pwr="" pwr-mod-attr="incrementMinute" pwr-handler="incrementMinuteClick"><i class="fa fa-caret-up"></i></button>
+                      <input class="minute ignoreThis" value="14" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="minuteInput" pwr-handler="minuteInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Minute" type="text">
+                      <button type="button" class="downMinute" unselectable="on" pwr="" pwr-mod-attr="decrementMinute" pwr-handler="decrementMinuteClick"><i class="fa fa-caret-down"></i></button>
+                  </div>
+                    <div class="ampmPicker" style="display:none;">
+                        <button type="button" class="upAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-up"></i></button>
+                        <input class="ampm ignoreThis" value="PM" pwr="" pwr-mod-attr="amPmInput" pwr-handler="amPmInputKeyBlur" pwr-handler-event="blur" data-istwentyfour="true" aria-label="Select AM/PM" type="text">
+                        <button type="button" class="downAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-down"></i></button>
+                    </div>
+                <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" value="" class="ignoreThis" type="hidden">
+                <input pwr="" pwr-mod-attr="dateTimeFormatHidden" value="" class="ignoreThis" type="hidden">
+              </div>
+
+            </div>
+
+          <div class="form-group timePickerContainer">
+            <input class="form-control datetime hiddenRequired" data-form-type="time" data-use-local-time="false" data-is-twenty-four="true" name="Pick-up Time" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+<div class="elementWrapper">
+
+    <div aria-describedby="3_errors" id="3" class="formElement form-group fadeMe datePickerParent col-xs-6 half " style="">
+      <fieldset>
+
+        <legend class="fitText" style="font-size: 12px;">*Return Date</legend>
+
+        <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
+
+            <div class="form-group datePickerContainer">
+
+                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Return Date" aria-label="Enter Date" id="dp1509367459102" value="10-30-2017" type="text">
+
+              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
+              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
+            </div>
+
+
+          <div class="form-group timePickerContainer">
+            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Return Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+</div>
+
+    <div aria-describedby="4_errors" id="4" class="formElement form-group fadeMe datePickerParent col-xs-6 half twentyFour" style="">
+      <fieldset>
+
+        <legend class="fitText" style="font-size: 12px;">*Return Time</legend>
+
+        <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
+
+
+            <div class="form-group datePickerContainer">
+              <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+
+
+
+              <div class="timePicker">
+                  <div class="hourPicker">
+                      <button type="button" class="upHour" unselectable="on" pwr="" pwr-handler="incrementHourClick" pwr-mod-attr="incrementHour"><i class="fa fa-caret-up"></i></button>
+                      <input class="hour ignoreThis" value="18" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="hourInput" pwr-handler="hourInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Hour" type="text">
+                      <button type="button" class="downHour" unselectable="on" pwr="" pwr-mod-attr="decrementHour" pwr-handler="decrementHourClick"><i class="fa fa-caret-down"></i></button>
+                  </div>
+                  <div class="colon">:</div>
+                  <div class="minutePicker">
+                      <button type="button" class="upMinute" unselectable="on" pwr="" pwr-mod-attr="incrementMinute" pwr-handler="incrementMinuteClick"><i class="fa fa-caret-up"></i></button>
+                      <input class="minute ignoreThis" value="14" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="minuteInput" pwr-handler="minuteInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Minute" type="text">
+                      <button type="button" class="downMinute" unselectable="on" pwr="" pwr-mod-attr="decrementMinute" pwr-handler="decrementMinuteClick"><i class="fa fa-caret-down"></i></button>
+                  </div>
+                    <div class="ampmPicker" style="display:none;">
+                        <button type="button" class="upAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-up"></i></button>
+                        <input class="ampm ignoreThis" value="PM" pwr="" pwr-mod-attr="amPmInput" pwr-handler="amPmInputKeyBlur" pwr-handler-event="blur" data-istwentyfour="true" aria-label="Select AM/PM" type="text">
+                        <button type="button" class="downAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-down"></i></button>
+                    </div>
+                <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" value="" class="ignoreThis" type="hidden">
+                <input pwr="" pwr-mod-attr="dateTimeFormatHidden" value="" class="ignoreThis" type="hidden">
+              </div>
+
+            </div>
+
+          <div class="form-group timePickerContainer">
+            <input class="form-control datetime hiddenRequired" data-form-type="time" data-use-local-time="false" data-is-twenty-four="true" name="Return Time" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+</div>
 
 
 
 
-<!-- No Footer -->
+  <div class="form-group clearfix col-sm-12 buttonContainer">
+
+    <div role="alert" class="errors hid" id="validationErrors"><i class="fa fa-warning"></i> Please fill in required fields.</div>
+    <div role="alert" class="errors hid" id="braintreeErrors"><i class="fa fa-warning"></i>Braintree doesn't recognize these keys.</div>
+    <div role="alert" class="errors hid" id="alreadySubmittedErrors"><i class="fa fa-warning"></i> You've already submitted a response</div>
+    <div role="alert" class="errors hid" id="uploadErrors"><i class="fa fa-warning"></i> Please wait for your uploads to finish.</div>
+    <div role="alert" class="errors hid" id="noBusinessErrors"><i class="fa fa-warning"></i> Payments have not been connected for this form. Please contact the webmaster.</div>
+    <div class="hid" id="spamDetection"><i class="fa fa-warning"></i> Whoa! This form has detected unusual activity, which might be spam. Please contact <a href="https://www.powr.io/plugins/form-builder/%E2%80%9Chttp://www.powr.io/feedback/new%E2%80%9D">support</a> for help if you continue to see this message.</div>
+    <div role="alert" class="success hid fitText" style="font-size: 16px;">
+      Received. Thank you!
+      <div role="alert" class="triggerPayment hid" style="font-size: 16px;"><i class="fa fa-credit-card"></i> Continue to Payment</div>
+      <div class="madeWithPowr powrMark" style="font-size: 16px;">
+        This form was created with POWr.
+        <a href="https://www.powr.io/plugins/form-builder/standalone?from=form" target="_blank"><u>Create Your own</u></a>
+      </div>
+    </div>
+
+    <div class="buttonAndSummaryWrapper">
+
+      <button class="btn fitText fullBtn submitButton ani_cta_none" id="submitButton" style="font-size: 12px;">Search</button>
+    </div>
+    <div class="hide">
+      <input id="hiddenSubmitButton" type="submit">
+    </div>
+  </div>
+</form>
+
+  </div>
+  <div class="alternates usefulContentLink hid"></div>
+
+</div></div>
 
 
 
-
-
-
+    <div id="comp-j9cpssnloverlay" class="tpaw0overlay" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cpssnl.$overlay"></div></div><div style="left: 141px; width: 460px; position: absolute; top: 363px;" class="txtNew" id="comp-j9cq1n86" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq1n86"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Car Rental Operators at Malaviya</span></span></span></span></h2></div><div style="left: 417px; position: absolute; top: 541px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f5" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5"><div style="width: 226px; height: 86px;" id="comp-j9cq31f5link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link"><div id="comp-j9cq31f5img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f5imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link.0.$preloader"></div><img id="comp-j9cq31f5imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f5.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_6be414f0587947828bccb25aa75bd579mv2.png"></div></div></div><div style="left: 141px; position: absolute; top: 541px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f6" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6"><div style="width: 226px; height: 86px;" id="comp-j9cq31f6link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link"><div id="comp-j9cq31f6img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f6imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link.0.$preloader"></div><img id="comp-j9cq31f6imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f6.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_364d3ff33f8d4377ab5bad90dabcabe9mv2.png"></div></div></div><div style="left: 417px; position: absolute; top: 418px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f61" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61"><div style="width: 226px; height: 86px;" id="comp-j9cq31f61link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link"><div id="comp-j9cq31f61img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f61imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link.0.$preloader"></div><img id="comp-j9cq31f61imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f61.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_82b713845c8843fb84ecb2269a5162a1mv2.png"></div></div></div><div style="left: 141px; position: absolute; top: 418px; width: 226px; height: 86px;" data-exact-height="86" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9cq31f62" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62"><div style="width: 226px; height: 86px;" id="comp-j9cq31f62link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link"><div id="comp-j9cq31f62img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link.0" style="position: relative; width: 226px; height: 86px;"><div class="wp2imgpreloader" id="comp-j9cq31f62imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link.0.$preloader"></div><img id="comp-j9cq31f62imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$iptmg_DESKTOP.$inlineContent.$comp-j9cq31f62.$link.0.$image" style="width: 226px; height: 86px; object-fit: cover;" src="car_rentals_files/9fb5ca_d807e2addb0449278fcf343598aea2a0mv2.png"></div></div></div></div></div></div></div></div></div></div></div><noscript data-reactid=".0.$popupRoot"></noscript><div class="siteAspectsContainer" data-reactid=".0.$siteAspectsContainer"><div data-reactid=".0.$siteAspectsContainer.$aspectPortal"></div><div data-reactid=".0.$siteAspectsContainer.$externalScriptContainer"></div><noscript data-reactid=".0.$siteAspectsContainer.$ecomCheckoutAspectContrainer"></noscript></div><noscript data-reactid=".0.6"></noscript><noscript data-reactid=".0.7"></noscript><noscript data-reactid=".0.8"></noscript></div></div>
 
 </body></html>

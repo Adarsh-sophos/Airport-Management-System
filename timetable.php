@@ -21,6 +21,9 @@
 <script defer="defer" src="timetable_files/require.js"></script>
 <script defer="defer" src="timetable_files/main-r.js"></script>
 
+<link rel="stylesheet" href="timetable_files/wix_cached_view_data/shim.css">
+<link href="timetable_files/wix_cached_view_data/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="timetable_files/wix_cached_view_data/font-awesome.css" rel="stylesheet">
 
 <link rel="preload" href="timetable_files/lodash.js" as="script">
 <link rel="preload" href="timetable_files/zepto.js" as="script">
@@ -386,34 +389,348 @@
 
 <div style="left: -180px; width: 285px; position: absolute; top: 731px; height: 421px; ">
 
-    <form action="/timetable.php" method="POST">
+    <link rel="stylesheet" media="screen" href="timetable_files/wix_cached_view_data/formBuilder-facd8ea03cfc22297eab3376bee8c84406894e3ca505684a.css">
 
-      <legend>Check Flight</legend>
-</br>
-      <div class="form-group">
-          <label class="control-label" for="radios">Flight Type</label>
-          <label class="radio-inline"><input type="radio" name="optradio">International</label>
-          <label class="radio-inline"><input type="radio" name="optradio">Domestic</label>
-      </div>
+<div id="dynamicStyle">
+    <style>
+        .formBuilder{
+    border-color: rgb(109, 115, 119);
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
 
-      <div class="form-group">
-          <label class="control-label" for="radios">To or From</label>
-          <label class="radio-inline"><input type="radio" name="to">Arrival</label>
-          <label class="radio-inline"><input type="radio" name="to">Deaprture</label>
-      </div>
+        background: rgb(255, 255, 255);
 
-      <div class="form-group">
-          <label for="sel1">Choose Location:</label>
-          <select class="form-control" id="sel1">
-            <option>Abu Dhabi</option>
-            <option>Bangkok</option>
-          </select>
-      </div>
-</br>
-      <button type="submit" class="btn btn-default">Search</button>
-    </form>
+}
 
-    <div id="comp-j9b6toquoverlay" class="tpaw0overlay" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$jxe2t_DESKTOP.$inlineContent.$comp-j9b6toqu.$overlay"></div>
+        .formBuilder{
+  max-width: 100%;
+}
+        /*being more specific so appview doesn't inherit powr styles*/
+        .formBuilder h1,.formBuilder h2,.formBuilder h3,.formBuilder h4,.formBuilder h5,.formBuilder h6,.formBuilder p {
+          color: rgb(109, 115, 119);
+          font-family: Open Sans;
+          font-size: 12px;
+        }
+        .formBuilder{
+            font-family: Open Sans;
+            color: rgb(109, 115, 119);
+            border-width: 2px;
+
+        }
+        .formBuilder .progress-bar {
+           background-color: rgb(109, 115, 119);
+        }
+        .formBuilder .timePicker {
+            color: rgb(109, 115, 119);
+        }
+        .ui-widget-content {
+            color: rgb(109, 115, 119);
+
+
+                    background: rgb(255, 255, 255);
+
+
+        }
+        .ui-widget-header, .ui-widget-header a {
+
+                color: rgb(154, 159, 165);
+
+        }
+        .ui-datepicker-next:hover,.ui-datepicker-prev:hover {
+
+                color: rgb(154, 159, 165);
+
+        }
+        .formBuilder .uploadBtn {
+            background: rgb(109, 115, 119);
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-family: Open Sans;
+        }
+        .formBuilder h3, .formBuilder label, .formBuilder legend, .formBuilder .submitButton, .formBackButton, .formBuilder input, .formBuilder textarea, .formBuilder .resultsButton{
+            font-size: 12px !important;
+        }
+        .formBuilder .submitButton, .formBackButton, .formBuilder .resultsButton{
+            font-family: Open Sans;
+            background-color: rgb(109, 115, 119);
+            color: rgb(255, 255, 255);
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+        .formBuilder .jqplot-title {
+            color: rgb(109, 115, 119);
+        }
+        .formBuilder .madeWithPowr {
+            border: 1px solid rgb(109, 115, 119);
+        }
+        .formBuilder .powrMark a{
+            color: rgb(109, 115, 119);
+        }
+        .formBuilder textarea, .formBuilder input[type="text"], .formBuilder input[type="number"], .formBuilder input[type="email"], .formBuilder input[type="tel"], .formBuilder input[type="url"]{
+            font-size: 12px;
+            font-family: Open Sans;
+            border-radius:3px;
+        }
+        .formBuilder input[type="text"]:focus, .formBuilder input[type="number"]:focus, .formBuilder input[type="email"]:focus, .formBuilder input[type="tel"]:focus, .formBuilder input[type="url"]:focus, .formBuilder select:focus, .formBuilder textarea:focus {
+          border: solid 1px rgb(109, 115, 119);
+        }
+        .formBuilder hr{
+            border-color: rgb(109, 115, 119);
+        }
+
+
+        .formBuilder textarea::-webkit-input-placeholder {
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea[placeholder]{
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder [placeholder]{
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder *[placeholder] {
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input::-webkit-input-placeholder {
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:rgba(109, 115, 119, 0.5);
+
+        }
+        .formBuilder input[placeholder] {
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder [placeholder]{
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder *[placeholder] {
+            color:rgba(109, 115, 119, 0.5);
+        }
+        .formBuilder textarea{
+            background-color:rgb(255, 255, 255);
+            color:rgb(109, 115, 119) !important;
+            border-radius:3px;
+        }
+        .formBuilder input[type="text"], .formBuilder input[type="number"], .formBuilder input[type="email"], .formBuilder input[type="tel"], .formBuilder input[type="url"] {
+            background-color:rgb(255, 255, 255);
+            color:rgb(109, 115, 119) !important;
+        }
+        .formBuilder select {
+            background-color:rgb(255, 255, 255);
+            color:rgb(109, 115, 119);
+            border: 1px solid #DDD;
+            font-size:12px!important;
+            font-family: Open Sans;
+            border-radius:3px;
+        }
+        .formBuilder input[type="file"] {
+            font-size: 12px;
+            font-family: Open Sans;
+            color: rgb(109, 115, 119);
+        }
+
+        .formBuilder .header h2 {
+            text-align: center;
+            font-family: Open Sans;
+            color: rgb(154, 159, 165);
+            font-size: 28px;
+        }
+        .formBuilder .header h3 {
+            font-family: Open Sans;
+        }
+        .formBuilder .radioOption, .formBuilder .checkOption, .formBuilder .checkbox label{
+          font-size: 12px;
+          font-family: Open Sans;
+        }
+        .formBuilder input, .formBuilder .radioOption, .formBuilder .checkOption, .formBuilder textarea {
+            font-size: 12px !important;
+        }
+    </style>
+</div>
+
+
+<!--No Edit Me-->
+
+<div id="appView" class="">
+  <div class="formBuilder formElementsModule inlineLabels enter_ani_none none">
+    <div class="header clearfix">
+      <h2 class="fitText formTitle" style="font-size: 28px;">Check Flight</h2>
+      <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
+      <form class="realForm">
+  <input class="honeypot hid" type="text">
+  <div class="dynamicElements visible" style="display: block;">
+
+    <div aria-describedby="0_errors" id="0" class="formElement form-group fadeMe radio col-sm-12" style="">
+      <fieldset>
+
+          <legend class="fitText" style="font-size: 12px;">*Flight Type</legend>
+          <div>
+
+
+            <label class="radioOption fitText horizontal" style="font-size: 12px;">
+
+                <input name="Flight Type" value="International" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+
+              International
+
+            </label>
+
+            <label class="radioOption fitText horizontal" style="font-size: 12px;">
+
+                <input name="Flight Type" value="Domestic" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+
+              Domestic
+
+            </label>
+
+        </div>
+      </fieldset>
+    </div>
+
+
+
+    <div aria-describedby="1_errors" id="1" class="formElement form-group fadeMe radio col-sm-12" style="">
+      <fieldset>
+
+          <legend class="fitText" style="font-size: 12px;">*To or From</legend>
+          <div>
+
+
+            <label class="radioOption fitText horizontal" style="font-size: 12px;">
+
+                <input name="To or From" value="Arrival" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+
+              Arrival
+
+            </label>
+
+            <label class="radioOption fitText horizontal" style="font-size: 12px;">
+
+                <input name="To or From" value="Deaprture" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+
+              Deaprture
+
+            </label>
+
+        </div>
+      </fieldset>
+    </div>
+
+
+
+    <div id="2" class="formElement form-group fadeMe select clearfix col-sm-12" style="">
+        <label class="fitText" style="font-size: 12px;">Choose Location</label>
+        <select aria-describedby="2_errors" value="" name="Choose Location" data-export-field="">
+
+          <option value="" selected="selected"> - Choose Location - </option>
+
+
+
+            <option value="Abu Dhabi" data-price="0">
+
+            Abu Dhabi
+
+          </option>
+
+
+            <option value="Amritsar" data-price="0">
+
+            Amritsar
+
+          </option>
+
+
+            <option value="Bangkok" data-price="0">
+
+            Bangkok
+
+          </option>
+
+
+            <option value="Bengaluru" data-price="0">
+
+            Bengaluru
+
+          </option>
+
+      </select>
+    </div>
+
+
+
+    <div aria-describedby="3_errors" id="3" class="formElement form-group fadeMe datePickerParent col-sm-12 " style="">
+      <fieldset>
+
+        <legend class="fitText" style="font-size: 12px;">Departure On</legend>
+
+        <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
+
+            <div class="form-group datePickerContainer">
+
+                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Departure On" aria-label="Enter Date" id="dp1509368296520" value="10-30-2017" type="text">
+
+              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
+              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
+            </div>
+
+
+          <div class="form-group timePickerContainer">
+            <input class="form-control datetime " data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Departure On" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:28:19+05:30" data-format="MM-DD-YYYY" type="hidden">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+</div>
+
+
+
+
+    <div class="buttonAndSummaryWrapper">
+
+      <button class="btn fitText fullBtn submitButton ani_cta_none" id="submitButton" style="font-size: 12px;">Search Flights</button>
+    </div>
+    <div class="hide">
+      <input id="hiddenSubmitButton" type="submit">
+    </div>
+  </div>
+</form>
+
+    </div>
+
+
+
+  </div>
+  <div class="alternates usefulContentLink hid"></div>
+
 </div>
 
 <div style="left: 154px; width: 304px; position: absolute; top: 460px;" class="txtNew" id="comp-j9cclyx63" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$h6ze9_DESKTOP.$inlineContent.$comp-j9cclyx63"><h6 class="font_6" style="font-size:35px;"><span style="font-weight:bold;"><span style="font-size:35px;">Flight Timetable</span></span></h6></div></div></div></div></div></div></div></div></div><noscript data-reactid=".0.$popupRoot"></noscript><div class="siteAspectsContainer" data-reactid=".0.$siteAspectsContainer"><div data-reactid=".0.$siteAspectsContainer.$aspectPortal"></div><div data-reactid=".0.$siteAspectsContainer.$externalScriptContainer"></div><noscript data-reactid=".0.$siteAspectsContainer.$ecomCheckoutAspectContrainer"></noscript></div><noscript data-reactid=".0.6"></noscript><noscript data-reactid=".0.7"></noscript><noscript data-reactid=".0.8"></noscript></div></div>
