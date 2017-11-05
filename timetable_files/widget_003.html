@@ -196,64 +196,8 @@
     </style>
 
 
-     <script>
-        var settings = {"title":null,"csvUrl":null,"origVersion":null,"viewType":"table","data":{"csvString":"Airline,Flight,Location,Time,Today\n1,2,3,4,2\n2,3,4,5,2\n5,4,3,2,2\n3,5,6,3,2\n","type":"csvString"},"tableParams":{"filter":false,"filterText":"Search"},"pieChartParams":{},"columnChartParams":{},"lineChartParams":{},"areaChartParams":null};
-        var endpoint = 'desktop';
-        settings = jQuery.extend({}, settings);
-        var version = '4-00.402382271599199454-1509361234660';
-        var pageManager;
-//        google.load("visualization", "1", {packages:["corechart"]});
-    function fixErrorVal(value){
-        if(value.indexOf('"')>=0 || value.indexOf(',')>=0){
-            value = value.replace(/"/g,'""');
-            value = '"'+value+'"';
-        }
-        return value;
-    }
-        $(document).ready(function() {
-            pageManager = new PageManager();
-            pageManager.init(settings,endpoint,
-                {
-                    loaderErrorTitle:fixErrorVal('We are having problems loading your table information.'),
-                    loaderErrorBody:fixErrorVal('Make sure to follow the instructions in the Settings Panel'),
-                    loaderErrorTitleEmpty:fixErrorVal('Hey, your table is empty.'),
-                    loaderErrorBodyEmpty:fixErrorVal('You\'ll need to add some information'),
-                    loaderErrorTitleCsv:fixErrorVal('Oops! The URL you entered does not point to a google spreadsheet or a CSV file.'),
-                    loaderErrorBodyCsv:fixErrorVal('Please check the link and try again'),
-                    loaderErrorTitleViewer:fixErrorVal('This table is empty.'),
-                    loaderErrorBodyViewer:fixErrorVal('Nothing to see here'),
-                    loaderErrorTitle400:fixErrorVal('Oops! The URL you entered doesn\'t work.'),
-                    loaderErrorBody400:fixErrorVal('Please check the link and try again'),
-                    loaderErrorTitle403:fixErrorVal('Humm, it seems your Google spreadsheet is set to private.'),
-                    loaderErrorBody403:fixErrorVal('To make it public: Open App Settings > Go to Data Source and follow the instructions'),
-                    loaderErrorTitle404:fixErrorVal('Oops! The URL you entered doesn\'t exist.'),
-                    loaderErrorBody404:fixErrorVal('Please check the link and try again'),
-                    loaderErrorTitle500:fixErrorVal('Ouch! Something broke.'),
-                    loaderErrorBody500:fixErrorVal('The server sending the table information reported a problem'),
-                    loaderErrorTitle503:fixErrorVal('Ouch! Something broke.'),
-                    loaderErrorBody503:fixErrorVal('The server sending the table information is temporarily offline, try again in a few minutes'),
-                 },
-                    'OmJyWCnk8wIa9GBzDoB4Rc94xXtctorS5JUC1QEtAMQ.eyJpbnN0YW5jZUlkIjoiOTFmNTBmN2MtMzA0OC00OTJkLWFjOGMtZTVhNTdhMzliZDcxIiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJzaWduRGF0ZSI6IjIwMTctMTAtMzBUMTI6Mzc6MjYuMjY1WiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiNDcuOS4xMzQuNDcvNjAxMDIiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiZWVmMmE1ZGEtNWU0My00NWI3LWE2YjMtMjk4MjNjOGE2MDhmIiwiYmlUb2tlbiI6IjA3NzU1ZjFjLTI3ODMtMDBmYy0zZWI5LTJlNTE1YjQzZWVjNCIsInNpdGVPd25lcklkIjoiOWZiNWNhMzItNTNkYy00MzI3LThmNjgtMjJmMzE3NmFhMDQ4In0','comp-j9cclywg', version
-            );
-        });
-
-     </script>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-46327988-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-    <script type="text/javascript">
-        console.log("v 3-09");
-    </script>
+     
+    
 <style wix-style="">.Title{ font:normal normal normal 32px/1.25em brandon-grot-w01-light,sans-serif; } .Menu{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } .Page-title{ font:normal normal normal 40px/1.25em brandon-grot-w01-light,sans-serif; } .Heading-XL{ font:normal normal normal 88px/1.14em brandon-grot-w01-light,sans-serif; } .Heading-L{ font:normal normal normal 72px/1.18em brandon-grot-w01-light,sans-serif; } .Heading-M{ font:normal normal normal 56px/1.25em brandon-grot-w01-light,sans-serif; } .Heading-S{ font:normal normal normal 48px/1.25em brandon-grot-w01-light,sans-serif; } .Body-L{ font:normal normal normal 24px/1.46em brandon-grot-w01-light,sans-serif; } .Body-M{ font:normal normal normal 20px/1.5em brandon-grot-w01-light,sans-serif; } .Body-S{ font:normal normal normal 16px/1.55em brandon-grot-w01-light,sans-serif; } .Body-XS{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } }</style><link type="text/css" rel="stylesheet" href="languages.css"><style></style></head>
 
 <body>
