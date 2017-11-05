@@ -68,7 +68,22 @@
     // BEAT MESSAGE END
 </script>
 
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#choice1').show();
+        $('#choice2').hide();
+        $('input[name="Flight_Type"]').change(function () {
+            if ($('input[name="Flight_Type"]:checked').val() == 'International') {
+                $('#choice1').show();
+                $('#choice2').hide();
+            }
+            if ($('input[name="Flight_Type"]:checked').val() == 'Domestic') {
+                $('#choice1').hide();
+                $('#choice2').show();
+            }
+        });
+    });
+</script>
 
     <!-- META DATA -->
 <script type="text/javascript">
@@ -597,15 +612,15 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="Flight Type" value="International" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
-
+                <input name="Flight_Type" id="radio1" value="International" checked="checked" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+ 
               International
 
             </label>
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="Flight Type" value="Domestic" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+                <input name="Flight_Type" id="radio1" value="Domestic" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
 
               Domestic
 
@@ -626,7 +641,7 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="To or From" value="Arrival" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+                <input name="To or From" value="Arrival" checked="checked" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
 
               Arrival
 
@@ -634,9 +649,9 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="To or From" value="Deaprture" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
+                <input name="To or From" value="Departure" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
 
-              Deaprture
+              Departure
 
             </label>
 
@@ -646,39 +661,43 @@
 
 
 
-    <div id="2" class="formElement form-group fadeMe select clearfix col-sm-12" style="">
+    <div id="choice1" class="formElement form-group fadeMe select clearfix col-sm-12" style="">
         <label class="fitText" style="font-size: 12px;">Choose Location</label>
-        <select aria-describedby="2_errors" value="" name="Choose Location" data-export-field="">
+        <select aria-describedby="2_errors" value="" name="loc_inter" data-export-field="">
 
           <option value="" selected="selected"> - Choose Location - </option>
-
-
-
-            <option value="Abu Dhabi" data-price="0">
-
+            <option value="1" data-price="0">
             Abu Dhabi
-
           </option>
-
-
-            <option value="Amritsar" data-price="0">
-
+            <option value="2" data-price="0">
             Amritsar
-
           </option>
-
-
-            <option value="Bangkok" data-price="0">
-
+            <option value="3" data-price="0">
             Bangkok
-
+          </option>
+            <option value="4" data-price="0">
+            Singapore
           </option>
 
+      </select>
+    </div>
+    
+    <div id="choice2" class="formElement form-group fadeMe select clearfix col-sm-12" style="">
+        <label class="fitText" style="font-size: 12px;">Choose Location</label>
+        <select aria-describedby="2_errors" value="" name="int_domest" data-export-field="">
 
-            <option value="Bengaluru" data-price="0">
-
-            Bengaluru
-
+          <option value="" selected="selected"> - Choose Location - </option>
+            <option value="1" data-price="0">
+            Bhopal
+          </option>
+            <option value="2" data-price="0">
+            Kolkata
+          </option>
+            <option value="3" data-price="0">
+            Mumbai
+          </option>
+            <option value="4" data-price="0">
+            Pune
           </option>
 
       </select>
@@ -686,29 +705,7 @@
 
 
 
-    <div aria-describedby="3_errors" id="3" class="formElement form-group fadeMe datePickerParent col-sm-12 " style="">
-      <fieldset>
-
-        <legend class="fitText" style="font-size: 12px;">Departure On</legend>
-
-        <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
-
-            <div class="form-group datePickerContainer">
-
-                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Departure On" aria-label="Enter Date" id="dp1509368296520" value="10-30-2017" type="text">
-
-              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
-              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
-            </div>
-
-
-          <div class="form-group timePickerContainer">
-            <input class="form-control datetime " data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Departure On" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:28:19+05:30" data-format="MM-DD-YYYY" type="hidden">
-          </div>
-        </div>
-      </fieldset>
-    </div>
-
+    
 </div>
 
 

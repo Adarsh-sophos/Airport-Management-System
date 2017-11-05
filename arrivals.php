@@ -1,3 +1,13 @@
+<?php 
+session_start();
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+    $_SESSION["flight"]=$_POST["flight"];
+    $_SESSION["From"]=$_POST["From"];
+    $_SESSION["Terminal"]=$_POST["Terminal"];
+
+}
+?>
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -640,13 +650,13 @@
     <div class="header clearfix">
       <h2 class="fitText formTitle" style="font-size: 28px;">Search Your Flight</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm" action="/arrivals.php">
+      <form class="realForm" action="/arrivals.php" method="POST">
   <input class="honeypot hid" placeholder="" type="text">
   <div class="dynamicElements visible" style="display: block;">
 
     <div id="0" class="formElement form-group fadeMe text clearfix col-sm-12" style="">
       <label class="fitText" style="font-size: 12px;">Airlines / Flight No</label>
-      <input aria-describedby="0_errors" class="form-control" name="Airlines / Flight No" placeholder="" data-export-field="" title="Airlines / Flight No" type="text">
+      <input aria-describedby="0_errors" class="form-control" name="flight" placeholder="" data-export-field="" title="Airlines / Flight No" type="text">
     </div>
 
 
@@ -659,30 +669,30 @@
 
 
 
-            <option value="Abu Dhabi" data-price="0">
+            <option value="1" data-price="0">
 
-            Abu Dhabi
-
-          </option>
-
-
-            <option value="Amritsar" data-price="0">
-
-            Amritsar
+            Barcelona
 
           </option>
 
 
-            <option value="Bangkok" data-price="0">
+            <option value="2" data-price="0">
 
-            Bangkok
+            Goa
 
           </option>
 
 
-            <option value="Bengaluru" data-price="0">
+            <option value="3" data-price="0">
 
-            Bengaluru
+            New Delhi
+
+          </option>
+
+
+            <option value="4" data-price="0">
+
+            Dubai
 
           </option>
 
@@ -709,6 +719,24 @@
             <option value="2" data-price="0">
 
             2
+
+          </option>
+          
+          <option value="3" data-price="0">
+
+            3
+
+          </option>
+          
+          <option value="4" data-price="0">
+
+            4
+
+          </option>
+          
+          <option value="5" data-price="0">
+
+            5
 
           </option>
 

@@ -9,10 +9,29 @@ $conn = mysqli_connect("localhost", $username, $password, $db);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql="SELECT * from departures";
+$sql="SELECT * from departures where airline is not null";
+
+$places=["Paris","Chicago","Manchester","Madrid"];
+$terminals=[1,2,3,4,5];
+extract($_SESSION);
+$flight=trim($flight);
+if($flight!="" and preg_match("/.*\d.*/",$flight))
+$sql=$sql." and flight_number=\"".$flight."\"";
+else if($flight!="")
+$sql=$sql." and airline=\"".$flight."\"";
+if(isset($To) and $To!="")
+$sql=$sql." and departing_to=\"".$places[(int)$To-1]."\" or departing_to=\" ".$places[(int)$To-1]."\"";
+if(isset($Terminal) and $Terminal!="")
+$sql=$sql." and terminal=".$terminals[(int)$Terminal-1];
+print($sql);
+
 
 if ($result=mysqli_query($conn,$sql))
   {
+    if(mysqli_num_rows($result)==0)
+    {
+      print("<th><h1>No Results Found</h1></th>");
+    }
   // Fetch one and one row
   $i=0;
   while ($row=mysqli_fetch_row($result))
