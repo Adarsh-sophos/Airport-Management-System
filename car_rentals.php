@@ -647,7 +647,7 @@ online.</span></p>
     <div class="header clearfix">
       <h2 class="fitText formTitle" style="font-size: 28px;">Book Car Rental Now</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm">
+      <form class="realForm" method="POST" action="car_rentals_op.php">
   <input class="honeypot hid" type="text">
   <div class="dynamicElements visible" style="display: block;">
 
@@ -669,6 +669,21 @@ online.</span></p>
             <option value="2" data-price="0">
 
             2
+
+          </option>
+          <option value="3" data-price="0">
+
+            3
+
+          </option>
+          <option value="4" data-price="0">
+
+            4
+
+          </option>
+          <option value="5" data-price="0">
+
+            5
 
           </option>
 

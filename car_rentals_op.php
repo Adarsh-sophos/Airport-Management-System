@@ -1,3 +1,13 @@
+<?php 
+session_start();
+$_SESSION["pickup_date"]=$_POST["pickup_date"];
+$_SESSION["pickup_time_hour"]=$_POST["pickup_time_hour"];
+$_SESSION["pickup_time_minute"]=$_POST["pickup_time_minute"];
+$_SESSION["return_date"]=$_POST["return_date"];
+$_SESSION["return_time_hour"]=$_POST["return_time_minute"];
+$_SESSION["return_time_minute"]=$_POST["return_time_minute"];
+extract($_POST)?>
+
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -42,6 +52,7 @@
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
 <meta id="wixMobileViewport" name="viewport" content="width=980, user-scalable=yes">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
@@ -64,7 +75,14 @@
     // BEAT MESSAGE END
 </script>
 
-    
+    <script>
+$(document).ready(function(){
+  
+    $("#rental_form").submit(function(){
+        alert("Car rented successfully.Details have been send to your provided email address.");
+    });
+});
+</script>
 
     <!-- META DATA -->
 <script type="text/javascript">
@@ -1194,10 +1212,9 @@ a.wixAppsLink img {
 
 
     <div style="left: 128px; width: 339px; position: absolute; top: 41px;" class="txtNew" id="comp-j9nzotx9" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotx9"><h2 class="font_2" style="font-size:30px;"><span style="font-size:30px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Car Rentals</span></span></span></span></h2></div><div style="left: 122px; width: 654px; position: absolute; top: 111px; height: 244px;" class="style-j9nzotxd1" id="comp-j9nzotxd" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd"><div id="comp-j9nzotxdbg" class="style-j9nzotxd1bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$bg"></div><div id="comp-j9nzotxdinlineContent" class="style-j9nzotxd1inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent"><div style="left: 50px; width: 306px; position: absolute; top: 18px;" class="txtNew" id="comp-j9nzotxd2" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9nzotxd2"><h2 class="font_2" style="font-size:28px;"><span style="font-size:28px;"><span class="color_15"><span style="font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;">Search Details</span></span></span></h2></div><div style="left: 75px; width: 256px; position: absolute; top: 112px;" class="txtNew" id="comp-j9nzotxh1" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9nzotxh1"><p class="font_8" style="font-size:22px;"><span class="color_26"><span style="font-size:22px;">Malaviya-Airport </span></span></p>
-
-<p class="font_8" style="font-size:22px;"><span class="color_26"><span style="font-size:22px;">Terminal 2</span></span></p>
-
-<p class="font_8"><span class="color_26">8 Nov 2017&nbsp; &nbsp; &nbsp; &nbsp;10:00</span></p></div><div data-strokewidth="0" tabindex="0" role="image" style="left: 19px; width: 19px; position: absolute; top: 49px; height: 84px;" class="style-j9o05y4q" id="comp-j9o02wb5" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o02wb5"><style type="text/css">.style-j9o05y4q svg {width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;fill:#002E5D;fill-opacity:1;stroke:rgba(237, 21, 102, 1);stroke-width:0px;}
+<p class="font_8" style="font-size:22px;"><span class="color_26"><span style="font-size:22px;">Terminal <?php print($Terminal); ?></span></span></p>
+<?php //print_r($_POST); ?>
+<p class="font_8"><span class="color_26"><?php print($pickup_date);?>&nbsp; &nbsp; &nbsp; &nbsp;<?php print($pickup_time_hour.":".$pickup_time_minute);?></span></p></div><div data-strokewidth="0" tabindex="0" role="image" style="left: 19px; width: 19px; position: absolute; top: 49px; height: 84px;" class="style-j9o05y4q" id="comp-j9o02wb5" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o02wb5"><style type="text/css">.style-j9o05y4q svg {width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;fill:#002E5D;fill-opacity:1;stroke:rgba(237, 21, 102, 1);stroke-width:0px;}
 .style-j9o05y4q svg * {vector-effect:non-scaling-stroke;}
 .style-j9o05y4q a {display:block;height:100%;}</style><svg xmlns="http://www.w3.org/2000/svg" viewBox="38.92578125 16.62109375 123.8515625 165.13671875" role="img" style="stroke-width: 0px; width: 19px; height: 84px;" preserveAspectRatio="xMidYMid meet">
     <g>
@@ -1206,21 +1223,26 @@ a.wixAppsLink img {
 </svg>
 </div><div style="left: 53px; width: 246px; position: absolute; top: 73px;" class="txtNew" id="comp-j9o077tw" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o077tw"><h2 class="font_2" style="font-size:26px;"><span style="color:#002E5D;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Pick-up</span></span></span></span></span></h2></div><div style="left: 399px; width: 254px; position: absolute; top: 117px;" class="txtNew" id="comp-j9o094jo" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o094jo"><p class="font_8" style="font-size:22px;"><span class="color_26"><span style="font-size:22px;">Malaviya-Airport </span></span></p>
 
-<p class="font_8" style="font-size:22px;"><span class="color_26"><span style="font-size:22px;">Terminal 2</span></span></p>
+<p class="font_8" style="font-size:22px;"><span class="color_26"><span style="font-size:22px;">Terminal <?php print($Terminal); ?></span></span></p>
 
-<p class="font_8"><span class="color_26">10 Nov 2017&nbsp; &nbsp; &nbsp; &nbsp;11:00</span></p></div><div style="left: 371px; width: 246px; position: absolute; top: 78px;" class="txtNew" id="comp-j9o09atz" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o09atz"><h2 class="font_2" style="font-size:26px;"><span style="color:#002E5D;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Drop-off</span></span></span></span></span></h2></div><div data-strokewidth="0" tabindex="0" role="image" style="left: 339px; width: 19px; position: absolute; top: 56px; height: 84px;" class="style-j9o05y4q" id="comp-j9o09j0t" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o09j0t"><style type="text/css">.style-j9o05y4q svg {width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;fill:#002E5D;fill-opacity:1;stroke:rgba(237, 21, 102, 1);stroke-width:0px;}
+<p class="font_8"><span class="color_26"><?php print($return_date);?>&nbsp; &nbsp; &nbsp; &nbsp;<?php print($return_time_hour.":".$return_time_minute);?></span></p></div><div style="left: 371px; width: 246px; position: absolute; top: 78px;" class="txtNew" id="comp-j9o09atz" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o09atz"><h2 class="font_2" style="font-size:26px;"><span style="color:#002E5D;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Drop-off</span></span></span></span></span></h2></div><div data-strokewidth="0" tabindex="0" role="image" style="left: 339px; width: 19px; position: absolute; top: 56px; height: 84px;" class="style-j9o05y4q" id="comp-j9o09j0t" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxd.$inlineContent.$comp-j9o09j0t"><style type="text/css">.style-j9o05y4q svg {width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;fill:#002E5D;fill-opacity:1;stroke:rgba(237, 21, 102, 1);stroke-width:0px;}
 .style-j9o05y4q svg * {vector-effect:non-scaling-stroke;}
 .style-j9o05y4q a {display:block;height:100%;}</style><svg xmlns="http://www.w3.org/2000/svg" viewBox="38.92578125 16.62109375 123.8515625 165.13671875" role="img" style="stroke-width: 0px; width: 19px; height: 84px;" preserveAspectRatio="xMidYMid meet">
     <g>
         <path d="M100.785 16.62c-34.193.036-61.897 27.791-61.861 61.989.036 34.204 62.035 103.148 62.035 103.148s61.855-69.074 61.819-103.278c-.036-34.199-27.796-61.895-61.993-61.859zm.093 87.724c-17.098.018-30.972-13.83-30.99-30.929-.018-17.098 13.831-30.968 30.925-30.986 17.103-.018 30.976 13.823 30.994 30.921.018 17.099-13.827 30.976-30.929 30.994z"></path>
     </g>
 </svg>
-</div></div></div><div style="left: 859px; width: 266px; position: absolute; top: 110px; height: 685px;" class="style-j9nyrel4" id="comp-j9nzotxh4" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4"><div id="comp-j9nzotxh4bg" class="style-j9nyrel4bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$bg"></div><div id="comp-j9nzotxh4inlineContent" class="style-j9nyrel4inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent"><div style="left: 46px; width: 182px; position: absolute; top: 317px;" class="txtNew" id="comp-j9nzotxm" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9nzotxm"><h2 class="font_2" style="font-size:32px; text-align:center;"><span class="color_12"><span style="font-size:32px;"><span style="font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;">2457 Rs.</span></span></span></h2></div><div style="left: 60px; width: 226px; position: absolute; top: 223px;" class="txtNew" id="comp-j9o1pxum" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pxum"><h3 class="font_3" style="font-size:20px;"><span style="font-weight:bold;"><span style="font-size:20px;">Hyundai i10 or similar</span></span></h3></div><div style="left: 30px; position: absolute; top: 74px; width: 214px; height: 142px;" data-exact-height="142" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="style-j9o1ubz1" id="comp-j9o1pcv7" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7"><div style="width: 214px; height: 142px;" id="comp-j9o1pcv7link" class="style-j9o1ubz1link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link"><div id="comp-j9o1pcv7img" data-style="" class="style-j9o1ubz1img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link.0" style="position: relative; width: 214px; height: 142px;"><div class="style-j9o1ubz1imgpreloader" id="comp-j9o1pcv7imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link.0.$preloader"></div><img id="comp-j9o1pcv7imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link.0.$image" style="width: 214px; height: 142px; object-fit: cover;" src="car_rentals_op_files/9fb5ca_5383e51a11a64370833b56b19b77709cmv2.jpg"></div></div></div><div style="left: 60px; width: 246px; position: absolute; top: 278px;" class="txtNew" id="comp-j9o0hg8g" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o0hg8g"><h2 class="font_2" style="font-size:26px;"><span style="color:#002E5D;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Car hire fee</span></span></span></span></span></h2></div><div style="left: 23px; width: 227px; position: absolute; top: 398px;" class="txtNew" id="comp-j9o23mno" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o23mno"><p class="font_8" style="font-size:14px;"><span class="color_20"><span style="font-family:open sans,sans-serif;">Fuel policy : Full to Full</span></span></p>
+<?php
+$cars=["i10","audi","bmw","mercedes","jaguar"];
+$x=rand(0,4);
+$src="src=\"car_rentals_op_files/".$cars[$x].".jpg\">";
+print($src);
+?>
+</div></div></div><div style="left: 859px; width: 266px; position: absolute; top: 110px; height: 685px;" class="style-j9nyrel4" id="comp-j9nzotxh4" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4"><div id="comp-j9nzotxh4bg" class="style-j9nyrel4bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$bg"></div><div id="comp-j9nzotxh4inlineContent" class="style-j9nyrel4inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent"><div style="left: 46px; width: 182px; position: absolute; top: 317px;" class="txtNew" id="comp-j9nzotxm" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9nzotxm"><h2 class="font_2" style="font-size:32px; text-align:center;"><span class="color_12"><span style="font-size:32px;"><span style="font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;"><?php $_SESSION["rent"]=rand(1000,5000);print($_SESSION["rent"]);?> Rs.</span></span></span></h2></div><div style="left: 60px; width: 226px; position: absolute; top: 223px;" class="txtNew" id="comp-j9o1pxum" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pxum"><h3 class="font_3" style="font-size:20px;"><span style="font-weight:bold;"><span style="font-size:20px;"><?php print($cars[$x]);?> or similar</span></span></h3></div><div style="left: 30px; position: absolute; top: 74px; width: 214px; height: 142px;" data-exact-height="142" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="style-j9o1ubz1" id="comp-j9o1pcv7" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7"><div style="width: 214px; height: 142px;" id="comp-j9o1pcv7link" class="style-j9o1ubz1link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link"><div id="comp-j9o1pcv7img" data-style="" class="style-j9o1ubz1img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link.0" style="position: relative; width: 214px; height: 142px;"><div class="style-j9o1ubz1imgpreloader" id="comp-j9o1pcv7imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link.0.$preloader"></div><img id="comp-j9o1pcv7imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o1pcv7.$link.0.$image" style="width: 214px; height: 142px; object-fit: cover;" src="car_rentals_op_files/i10.jpg"></div></div></div><div style="left: 60px; width: 246px; position: absolute; top: 278px;" class="txtNew" id="comp-j9o0hg8g" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o0hg8g"><h2 class="font_2" style="font-size:26px;"><span style="color:#002E5D;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Car hire fee</span></span></span></span></span></h2></div><div style="left: 23px; width: 227px; position: absolute; top: 398px;" class="txtNew" id="comp-j9o23mno" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fxc5e_DESKTOP.$inlineContent.$comp-j9nzotxh4.$inlineContent.$comp-j9o23mno"><p class="font_8" style="font-size:14px;"><span class="color_20"><span style="font-family:open sans,sans-serif;">Fuel policy : Full to Full</span></span></p>
 
 <p class="font_8" style="font-size:14px; text-align:justify;"><span class="color_33"><span style="font-family:open sans,sans-serif;">This
  is the best fuel option. Your car comes with a full tank of fuel. 
 Simply return the car with a full tank to avoid any re-fuelling charges.</span></span></p>
-
 <p class="font_8" style="font-size:14px;"><span class="color_33"><span style="font-family:open sans,sans-serif;"><span class="wixGuard">​</span></span></span></p>
 
 <p class="font_8" style="font-size:14px;"><span class="color_20"><span style="font-family:open sans,sans-serif;">Pick-up location : Meet &amp; Greet</span></span></p>
@@ -1441,34 +1463,34 @@ Simply return the car with a full tank to avoid any re-fuelling charges.</span><
       <h2 class="fitText formTitle" style="font-size: 28px;">Enter Details</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
       
-      <form class="realForm" action="car_rentals_op.php" action="POST">
+      <form class="realForm" id="rental_form" method="POST" action="car_rentals_store.php" >
   <input class="honeypot hid" placeholder="" type="text">
   <div class="dynamicElements visible" style="display: block;">
   
     <div id="0" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">*Name</label>
-      <input aria-describedby="0_errors" class="form-control" name="Name" placeholder="" required="" data-export-field="" title="Name" type="text">
+      <input aria-describedby="0_errors" class="form-control" name="name" placeholder="" required="" data-export-field="" title="Name" type="text">
     </div>
   
 
   
     <div id="1" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">*Email Address</label>
-      <input aria-describedby="1_errors" class="form-control email" name="Email Address" placeholder="" required="" data-send-confirmation-email="false" data-subscribe="false" data-form-type="email" title="Email Address" type="email">
+      <input aria-describedby="1_errors" class="form-control email" name="email" placeholder="" required="" data-send-confirmation-email="false" data-subscribe="false" data-form-type="email" title="Email Address" type="email">
     </div>
   
 <div class="elementWrapper">
   
     <div id="2" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">*Contact Number</label>
-      <input aria-describedby="2_errors" class="form-control" name="Contact Number" placeholder="" required="" data-export-field="" data-form-type="phone" title="Contact Number" aria-label="Enter Phone" type="tel">
+      <input aria-describedby="2_errors" class="form-control" name="contact" placeholder="" required="" data-export-field="" data-form-type="phone" title="Contact Number" aria-label="Enter Phone" type="tel">
     </div>
   
 </div>
   
     <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">*Age</label>
-      <input aria-describedby="3_errors" class="form-control" name="Age" placeholder="" required="" data-export-field="" title="Age" type="text">
+      <label class="fitText" style="font-size: 12px;">*Driving License Number</label>
+      <input aria-describedby="3_errors" class="form-control" name="license" placeholder="" required="" data-export-field="" title="Age" type="text">
     </div>
   
 </div>
