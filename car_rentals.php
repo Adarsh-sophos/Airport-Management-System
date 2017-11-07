@@ -98,7 +98,7 @@
             <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lodash" src="car_rentals_files/lodash.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="wixCodeInit" src="car_rentals_files/wixCodeInit.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zepto" src="car_rentals_files/zepto.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="coreUtilsLib" src="car_rentals_files/coreUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageClientLib" src="car_rentals_files/imageClientApi.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageClientApi" src="car_rentals_files/imageClientApi_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="multilingual" src="car_rentals_files/multilingual.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="coreUtils" src="car_rentals_files/coreUtils_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core" src="car_rentals_files/core.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layout" src="car_rentals_files/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="skins" src="car_rentals_files/skins.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="react" src="car_rentals_files/react-with-addons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TweenMax" src="car_rentals_files/TweenMax.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components" src="car_rentals_files/components.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mobx" src="car_rentals_files/mobx.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mobx-react" src="car_rentals_files/index.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="remoteDOM" src="car_rentals_files/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="animations" src="car_rentals_files/animations.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tpa" src="car_rentals_files/tpa.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dataFixer" src="car_rentals_files/dataFixer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="siteUtils" src="car_rentals_files/siteUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="image" src="car_rentals_files/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="translationsUtils" src="car_rentals_files/translationsUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="hammer" src="car_rentals_files/hammer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils" src="car_rentals_files/utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="platformUtils" src="car_rentals_files/platformUtils-bundle.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="loggingUtils" src="car_rentals_files/loggingUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="swfobject" src="car_rentals_files/swfobject.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="santaProps" src="car_rentals_files/santaProps.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="displayer" src="car_rentals_files/displayer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mousetrap" src="car_rentals_files/mousetrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backgroundCommon" src="car_rentals_files/backgroundCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="DrawSVGPlugin" src="car_rentals_files/DrawSVGPlugin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="reactDOM" src="car_rentals_files/react-dom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ScrollToPlugin" src="car_rentals_files/ScrollToPlugin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="widgets" src="car_rentals_files/widgets.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="reactDOMServer" src="car_rentals_files/react-dom-server.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageCommon" src="car_rentals_files/imageCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="formCommon" src="car_rentals_files/formCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="textCommon" src="car_rentals_files/textCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="containerCommon" src="car_rentals_files/containerCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="socialCommon" src="car_rentals_files/socialCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="galleriesCommon" src="car_rentals_files/galleriesCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="buttonCommon" src="car_rentals_files/buttonCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="compDesignUtils" src="car_rentals_files/compDesignUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="audioCommon" src="car_rentals_files/audioCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="skinExports" src="car_rentals_files/skinExports.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="compUtils" src="car_rentals_files/compUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mobileLayoutUtils" src="car_rentals_files/mobileLayoutUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageZoom" src="car_rentals_files/imageZoom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pmrpc" src="car_rentals_files/pm-rpc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tweenEngine" src="car_rentals_files/tweenEngine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="render" src="car_rentals_files/render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dialogs" src="car_rentals_files/dialogs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="color" src="car_rentals_files/color.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xss" src="car_rentals_files/xss.js"></script><style type="text/css">@charset "UTF-8";
 
 
-			<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="linkBar" src="car_rentals_files/linkBar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="verticalMenu" src="car_rentals_files/verticalMenu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="menuButton" src="car_rentals_files/menuButton.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="repeater" src="car_rentals_files/repeater.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zoomedImage" src="car_rentals_files/zoomedImage.js"></script><link rel="stylesheet" href="car_rentals_files/css.css" id="font_googleFonts"><link rel="stylesheet" href="car_rentals_files/languages.css" id="font_langauges"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="comboBoxInput" src="car_rentals_files/comboBoxInput.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google-analytics.com/analytics.js" src="car_rentals_files/analytics.js"></script><meta property="og:title" content="adarsh | Car Rentals"><meta property="og:url" content="https://adarshjain583.wixsite.com/adarsh/copy-of-parking"><meta name="robots" content="index"></head>
+            <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="linkBar" src="car_rentals_files/linkBar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="verticalMenu" src="car_rentals_files/verticalMenu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="menuButton" src="car_rentals_files/menuButton.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="repeater" src="car_rentals_files/repeater.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zoomedImage" src="car_rentals_files/zoomedImage.js"></script><link rel="stylesheet" href="car_rentals_files/css.css" id="font_googleFonts"><link rel="stylesheet" href="car_rentals_files/languages.css" id="font_langauges"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="comboBoxInput" src="car_rentals_files/comboBoxInput.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google-analytics.com/analytics.js" src="car_rentals_files/analytics.js"></script><meta property="og:title" content="adarsh | Car Rentals"><meta property="og:url" content="https://adarshjain583.wixsite.com/adarsh/copy-of-parking"><meta name="robots" content="index"></head>
 <body class="" style="">
         <div id="SITE_CONTAINER" data-santa-render-status="CLIENT"><div class="noop" data-santa-version="1.2537.16" data-reactid=".0"><div data-reactid=".0.0"><style type="text/css" data-styleid="theme_fonts" data-reactid=".0.0.$fontsStyleNode">.font_0 {font: normal normal normal 32px/1.25em brandon-grot-w01-light,sans-serif ;color:#393F44;}
 .font_1 {font: normal normal normal 14px/1.43em 'Open Sans',sans-serif ;color:#393F44;}
@@ -686,16 +686,10 @@ online.</span></p>
 
             <div class="form-group datePickerContainer">
 
-                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Pick-up Date" aria-label="Enter Date" id="dp1509367459101" value="10-30-2017" type="text">
+                  <input name="pickup_date" title="Pick-up Date" aria-label="Enter Date" id="dp1509367459101" type="text">
 
-              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
-              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
             </div>
 
-
-          <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Pick-up Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
-          </div>
         </div>
       </fieldset>
     </div>
@@ -717,30 +711,20 @@ online.</span></p>
 
               <div class="timePicker">
                   <div class="hourPicker">
-                      <button type="button" class="upHour" unselectable="on" pwr="" pwr-handler="incrementHourClick" pwr-mod-attr="incrementHour"><i class="fa fa-caret-up"></i></button>
-                      <input class="hour ignoreThis" value="18" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="hourInput" pwr-handler="hourInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Hour" type="text">
-                      <button type="button" class="downHour" unselectable="on" pwr="" pwr-mod-attr="decrementHour" pwr-handler="decrementHourClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="pickup_time_hour" aria-label="Enter Hour" type="text">
                   </div>
                   <div class="colon">:</div>
                   <div class="minutePicker">
-                      <button type="button" class="upMinute" unselectable="on" pwr="" pwr-mod-attr="incrementMinute" pwr-handler="incrementMinuteClick"><i class="fa fa-caret-up"></i></button>
-                      <input class="minute ignoreThis" value="14" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="minuteInput" pwr-handler="minuteInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Minute" type="text">
-                      <button type="button" class="downMinute" unselectable="on" pwr="" pwr-mod-attr="decrementMinute" pwr-handler="decrementMinuteClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="pickup_time_minute" aria-label="Enter Minute" type="text">
                   </div>
                     <div class="ampmPicker" style="display:none;">
                         <button type="button" class="upAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-up"></i></button>
                         <input class="ampm ignoreThis" value="PM" pwr="" pwr-mod-attr="amPmInput" pwr-handler="amPmInputKeyBlur" pwr-handler-event="blur" data-istwentyfour="true" aria-label="Select AM/PM" type="text">
                         <button type="button" class="downAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-down"></i></button>
                     </div>
-                <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" value="" class="ignoreThis" type="hidden">
-                <input pwr="" pwr-mod-attr="dateTimeFormatHidden" value="" class="ignoreThis" type="hidden">
               </div>
 
-            </div>
-
-          <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="time" data-use-local-time="false" data-is-twenty-four="true" name="Pick-up Time" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
-          </div>
+            </div>     
         </div>
       </fieldset>
     </div>
@@ -756,16 +740,9 @@ online.</span></p>
 
             <div class="form-group datePickerContainer">
 
-                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Return Date" aria-label="Enter Date" id="dp1509367459102" value="10-30-2017" type="text">
+                  <input name="return_date" title="Return Date" aria-label="Enter Date" id="dp1509367459102" type="text">
 
-              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
-              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
-            </div>
-
-
-          <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Return Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
-          </div>
+            </div>      
         </div>
       </fieldset>
     </div>
@@ -787,30 +764,21 @@ online.</span></p>
 
               <div class="timePicker">
                   <div class="hourPicker">
-                      <button type="button" class="upHour" unselectable="on" pwr="" pwr-handler="incrementHourClick" pwr-mod-attr="incrementHour"><i class="fa fa-caret-up"></i></button>
-                      <input class="hour ignoreThis" value="18" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="hourInput" pwr-handler="hourInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Hour" type="text">
-                      <button type="button" class="downHour" unselectable="on" pwr="" pwr-mod-attr="decrementHour" pwr-handler="decrementHourClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="return_time_hour" aria-label="Enter Hour" type="text">
                   </div>
                   <div class="colon">:</div>
                   <div class="minutePicker">
-                      <button type="button" class="upMinute" unselectable="on" pwr="" pwr-mod-attr="incrementMinute" pwr-handler="incrementMinuteClick"><i class="fa fa-caret-up"></i></button>
-                      <input class="minute ignoreThis" value="14" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="minuteInput" pwr-handler="minuteInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Minute" type="text">
-                      <button type="button" class="downMinute" unselectable="on" pwr="" pwr-mod-attr="decrementMinute" pwr-handler="decrementMinuteClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="return_time_minute" aria-label="Enter Minute" type="text">
                   </div>
                     <div class="ampmPicker" style="display:none;">
                         <button type="button" class="upAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-up"></i></button>
                         <input class="ampm ignoreThis" value="PM" pwr="" pwr-mod-attr="amPmInput" pwr-handler="amPmInputKeyBlur" pwr-handler-event="blur" data-istwentyfour="true" aria-label="Select AM/PM" type="text">
                         <button type="button" class="downAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-down"></i></button>
                     </div>
-                <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" value="" class="ignoreThis" type="hidden">
-                <input pwr="" pwr-mod-attr="dateTimeFormatHidden" value="" class="ignoreThis" type="hidden">
               </div>
 
             </div>
 
-          <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="time" data-use-local-time="false" data-is-twenty-four="true" name="Return Time" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:22+05:30" data-format="MM-DD-YYYY" type="hidden">
-          </div>
         </div>
       </fieldset>
     </div>

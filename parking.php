@@ -13,6 +13,8 @@
     var santaBase = 'https://static.parastorage.com/services/santa/1.2537.16';
                 var clientSideRender = true;
                 </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
 <script defer="defer" src="parking_files/require.js"></script>
 <script defer="defer" src="parking_files/main-r.js"></script>
@@ -99,7 +101,7 @@
             <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lodash" src="parking_files/lodash.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="wixCodeInit" src="parking_files/wixCodeInit.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zepto" src="parking_files/zepto.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="coreUtilsLib" src="parking_files/coreUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageClientLib" src="parking_files/imageClientApi.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageClientApi" src="parking_files/imageClientApi_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="multilingual" src="parking_files/multilingual.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="coreUtils" src="parking_files/coreUtils_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core" src="parking_files/core.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layout" src="parking_files/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="skins" src="parking_files/skins.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="react" src="parking_files/react-with-addons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TweenMax" src="parking_files/TweenMax.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components" src="parking_files/components.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mobx" src="parking_files/mobx.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mobx-react" src="parking_files/index.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="remoteDOM" src="parking_files/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="animations" src="parking_files/animations.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tpa" src="parking_files/tpa.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dataFixer" src="parking_files/dataFixer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="siteUtils" src="parking_files/siteUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="image" src="parking_files/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="translationsUtils" src="parking_files/translationsUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="hammer" src="parking_files/hammer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils" src="parking_files/utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="platformUtils" src="parking_files/platformUtils-bundle.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="loggingUtils" src="parking_files/loggingUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="swfobject" src="parking_files/swfobject.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="santaProps" src="parking_files/santaProps.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="displayer" src="parking_files/displayer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mousetrap" src="parking_files/mousetrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backgroundCommon" src="parking_files/backgroundCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="DrawSVGPlugin" src="parking_files/DrawSVGPlugin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="reactDOM" src="parking_files/react-dom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ScrollToPlugin" src="parking_files/ScrollToPlugin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="widgets" src="parking_files/widgets.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="reactDOMServer" src="parking_files/react-dom-server.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageCommon" src="parking_files/imageCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="formCommon" src="parking_files/formCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="textCommon" src="parking_files/textCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="containerCommon" src="parking_files/containerCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="socialCommon" src="parking_files/socialCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="galleriesCommon" src="parking_files/galleriesCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="buttonCommon" src="parking_files/buttonCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="compDesignUtils" src="parking_files/compDesignUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="audioCommon" src="parking_files/audioCommon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="skinExports" src="parking_files/skinExports.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="compUtils" src="parking_files/compUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mobileLayoutUtils" src="parking_files/mobileLayoutUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="imageZoom" src="parking_files/imageZoom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pmrpc" src="parking_files/pm-rpc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tweenEngine" src="parking_files/tweenEngine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="render" src="parking_files/render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dialogs" src="parking_files/dialogs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="color" src="parking_files/color.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xss" src="parking_files/xss.js"></script><style type="text/css">@charset "UTF-8";
 
 
-			<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="linkBar" src="parking_files/linkBar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="verticalMenu" src="parking_files/verticalMenu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="menuButton" src="parking_files/menuButton.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="repeater" src="parking_files/repeater.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zoomedImage" src="parking_files/zoomedImage.js"></script><link rel="stylesheet" href="parking_files/css.css" id="font_googleFonts"><link rel="stylesheet" href="parking_files/languages.css" id="font_langauges"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="comboBoxInput" src="parking_files/comboBoxInput.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google-analytics.com/analytics.js" src="parking_files/analytics.js"></script><meta property="og:title" content="adarsh | Parking"><meta property="og:url" content="https://adarshjain583.wixsite.com/adarsh/copy-of-inter-terminal-transfers"><meta name="robots" content="index"></head>
+            <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="linkBar" src="parking_files/linkBar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="verticalMenu" src="parking_files/verticalMenu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="menuButton" src="parking_files/menuButton.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="repeater" src="parking_files/repeater.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zoomedImage" src="parking_files/zoomedImage.js"></script><link rel="stylesheet" href="parking_files/css.css" id="font_googleFonts"><link rel="stylesheet" href="parking_files/languages.css" id="font_langauges"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="comboBoxInput" src="parking_files/comboBoxInput.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google-analytics.com/analytics.js" src="parking_files/analytics.js"></script><meta property="og:title" content="adarsh | Parking"><meta property="og:url" content="https://adarshjain583.wixsite.com/adarsh/copy-of-inter-terminal-transfers"><meta name="robots" content="index"></head>
 <body class="" style="">
         <div id="SITE_CONTAINER" data-santa-render-status="CLIENT"><div class="noop" data-santa-version="1.2537.16" data-reactid=".0"><div data-reactid=".0.0"><style type="text/css" data-styleid="theme_fonts" data-reactid=".0.0.$fontsStyleNode">.font_0 {font: normal normal normal 32px/1.25em brandon-grot-w01-light,sans-serif ;color:#393F44;}
 .font_1 {font: normal normal normal 14px/1.43em 'Open Sans',sans-serif ;color:#393F44;}
@@ -643,7 +645,7 @@ online.</span></p>
     <div class="header clearfix">
       <h2 class="fitText formTitle" style="font-size: 28px;">Get Quote</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm">
+      <form class="realForm" method="POST" action="parking_op.php">
   <input class="honeypot hid" type="text">
   <div class="dynamicElements visible" style="display: block;">
 
@@ -667,6 +669,24 @@ online.</span></p>
             2
 
           </option>
+          
+          <option value="3" data-price="0">
+
+            3
+
+          </option>
+          
+          <option value="4" data-price="0">
+
+            4
+
+          </option>
+          
+          <option value="5" data-price="0">
+
+            5
+
+          </option>
 
       </select>
     </div>
@@ -681,16 +701,12 @@ online.</span></p>
         <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
 
             <div class="form-group datePickerContainer">
-
-                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Entry Date" aria-label="Enter Date" id="dp1509367438577" value="10-30-2017" type="text">
-
-              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
-              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
+                  <input name="entry_date" title="Entry Date" aria-label="Enter Date" id="dp1509367438577" type="text">
             </div>
 
 
           <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Entry Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:02+05:30" data-format="MM-DD-YYYY" type="hidden">
+            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Entry Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" data-format="MM-DD-YYYY" type="hidden">
           </div>
         </div>
       </fieldset>
@@ -713,29 +729,23 @@ online.</span></p>
 
               <div class="timePicker">
                   <div class="hourPicker">
-                      <button type="button" class="upHour" unselectable="on" pwr="" pwr-handler="incrementHourClick" pwr-mod-attr="incrementHour"><i class="fa fa-caret-up"></i></button>
-                      <input class="hour ignoreThis" value="18" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="hourInput" pwr-handler="hourInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Hour" type="text">
-                      <button type="button" class="downHour" unselectable="on" pwr="" pwr-mod-attr="decrementHour" pwr-handler="decrementHourClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="entry_hour" aria-label="Enter Hour" type="text">
                   </div>
                   <div class="colon">:</div>
                   <div class="minutePicker">
-                      <button type="button" class="upMinute" unselectable="on" pwr="" pwr-mod-attr="incrementMinute" pwr-handler="incrementMinuteClick"><i class="fa fa-caret-up"></i></button>
-                      <input class="minute ignoreThis" value="14" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="minuteInput" pwr-handler="minuteInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Minute" type="text">
-                      <button type="button" class="downMinute" unselectable="on" pwr="" pwr-mod-attr="decrementMinute" pwr-handler="decrementMinuteClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="entry_minute" aria-label="Enter Minute" type="text">
                   </div>
                     <div class="ampmPicker" style="display:none;">
                         <button type="button" class="upAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-up"></i></button>
                         <input class="ampm ignoreThis" value="PM" pwr="" pwr-mod-attr="amPmInput" pwr-handler="amPmInputKeyBlur" pwr-handler-event="blur" data-istwentyfour="true" aria-label="Select AM/PM" type="text">
                         <button type="button" class="downAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-down"></i></button>
                     </div>
-                <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" value="" class="ignoreThis" type="hidden">
-                <input pwr="" pwr-mod-attr="dateTimeFormatHidden" value="" class="ignoreThis" type="hidden">
               </div>
 
             </div>
 
           <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="time" data-use-local-time="false" data-is-twenty-four="true" name="Entry Time" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:02+05:30" data-format="MM-DD-YYYY" type="hidden">
+            <input class="form-control datetime hiddenRequired" data-form-type="time" data-use-local-time="false" data-is-twenty-four="true" name="Entry Time" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="" data-format="MM-DD-YYYY" type="hidden">
           </div>
         </div>
       </fieldset>
@@ -751,16 +761,12 @@ online.</span></p>
         <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
 
             <div class="form-group datePickerContainer">
-
-                  <input class="dateSelector form-control ignore user-success hasDatepicker" pwr="" pwr-mod-attr="datePickerContainer" title="Exit Date" aria-label="Enter Date" id="dp1509367438578" value="10-30-2017" type="text">
-
-              <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" class="ignoreThis" type="hidden">
-              <input pwr="" pwr-mod-attr="dateTimeFormatHidden" class="ignoreThis" type="hidden">
+                  <input name="exit_date" title="Exit Date" aria-label="Enter Date" id="dp1509367438578" type="text">
             </div>
 
 
           <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Exit Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:02+05:30" data-format="MM-DD-YYYY" type="hidden">
+            <input class="form-control datetime hiddenRequired" data-form-type="date" data-use-local-time="false" data-is-twenty-four="false" name="Exit Date" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" data-format="MM-DD-YYYY" type="hidden">
           </div>
         </div>
       </fieldset>
@@ -783,30 +789,20 @@ online.</span></p>
 
               <div class="timePicker">
                   <div class="hourPicker">
-                      <button type="button" class="upHour" unselectable="on" pwr="" pwr-handler="incrementHourClick" pwr-mod-attr="incrementHour"><i class="fa fa-caret-up"></i></button>
-                      <input class="hour ignoreThis" value="18" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="hourInput" pwr-handler="hourInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Hour" type="text">
-                      <button type="button" class="downHour" unselectable="on" pwr="" pwr-mod-attr="decrementHour" pwr-handler="decrementHourClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="exit_hour" aria-label="Enter Hour" type="text">
                   </div>
                   <div class="colon">:</div>
                   <div class="minutePicker">
-                      <button type="button" class="upMinute" unselectable="on" pwr="" pwr-mod-attr="incrementMinute" pwr-handler="incrementMinuteClick"><i class="fa fa-caret-up"></i></button>
-                      <input class="minute ignoreThis" value="14" onclick="this.setSelectionRange(0, this.value.length)" pwr="" pwr-mod-attr="minuteInput" pwr-handler="minuteInputKeyBlur" pwr-handler-event="blur" aria-label="Enter Minute" type="text">
-                      <button type="button" class="downMinute" unselectable="on" pwr="" pwr-mod-attr="decrementMinute" pwr-handler="decrementMinuteClick"><i class="fa fa-caret-down"></i></button>
+                      <input name="exit_minute" aria-label="Enter Minute" type="text">
                   </div>
                     <div class="ampmPicker" style="display:none;">
                         <button type="button" class="upAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-up"></i></button>
                         <input class="ampm ignoreThis" value="PM" pwr="" pwr-mod-attr="amPmInput" pwr-handler="amPmInputKeyBlur" pwr-handler-event="blur" data-istwentyfour="true" aria-label="Select AM/PM" type="text">
                         <button type="button" class="downAmpm" unselectable="on" pwr="" pwr-mod-attr="ampmToggle" pwr-handler="ampPmToggleClick"><i class="fa fa-caret-down"></i></button>
                     </div>
-                <input pwr="" pwr-mod-attr="dateTimeFormattedHidden" value="" class="ignoreThis" type="hidden">
-                <input pwr="" pwr-mod-attr="dateTimeFormatHidden" value="" class="ignoreThis" type="hidden">
               </div>
 
             </div>
-
-          <div class="form-group timePickerContainer">
-            <input class="form-control datetime hiddenRequired" data-form-type="time" data-use-local-time="false" data-is-twenty-four="true" name="Exit Time" data-export-field="" pwr="" pwr-mod-attr="dateTimeHidden" value="2017-10-30T18:14:02+05:30" data-format="MM-DD-YYYY" type="hidden">
-          </div>
         </div>
       </fieldset>
     </div>
