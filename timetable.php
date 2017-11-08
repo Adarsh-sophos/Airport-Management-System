@@ -638,18 +638,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="Flight_Type" id="radio1" value="International" checked="checked" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
- 
-              International
-
+                <input name="Flight_Type" id="radio1" value="International" checked="checked" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio"><pre>  International</pre>
             </label>
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="Flight_Type" id="radio1" value="Domestic" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
-
-              Domestic
-
+                <input name="Flight_Type" id="radio1" value="Domestic" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio"><pre>  Domestic</pre>
             </label>
 
         </div>
@@ -667,18 +661,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="To_or_From" value="Arrival" checked="checked" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
-
-              Arrival
-
+                <input name="To_or_From" value="Arrival" checked="checked" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio"><pre>  Arrival</pre>
             </label>
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="To_or_From" value="Departure" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio">
-
-              Departure
-
+                <input name="To_or_From" value="Departure" data-price="0" required="" data-export-field="" style="font-size: 12px;" type="radio"><pre>  Departure</pre>
             </label>
 
         </div>
