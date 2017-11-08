@@ -696,7 +696,7 @@ online.</span></p>
     <div aria-describedby="1_errors" id="1" class="formElement form-group fadeMe datePickerParent col-xs-6 half " style="">
       <fieldset>
 
-        <legend class="fitText" style="font-size: 12px;">*Entry Date</legend>
+        <legend class="fitText" style="font-size: 12px;">*Entry Date (yyyy-mm-dd)</legend>
 
         <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
 
@@ -756,7 +756,7 @@ online.</span></p>
     <div aria-describedby="3_errors" id="3" class="formElement form-group fadeMe datePickerParent col-xs-6 half " style="">
       <fieldset>
 
-        <legend class="fitText" style="font-size: 12px;">*Exit Date</legend>
+        <legend class="fitText" style="font-size: 12px;">*Exit Date (yyyy-mm-dd)</legend>
 
         <div class="form-group form-inline datetimeWrapper clearfix" pwr="" pwr-mod-attr="formatElement" data-format="MM-DD-YYYY">
 
