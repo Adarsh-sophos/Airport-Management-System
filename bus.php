@@ -30,14 +30,10 @@
 <meta http-equiv="X-Wix-Meta-Site-Id" content="96805060-17cb-49d1-9235-cbf4217a53b5">
 <meta http-equiv="X-Wix-Application-Instance-Id" content="c5e1d1c6-77ee-4b99-a958-42f76c36bf21">
 <meta http-equiv="X-Wix-Published-Version" content="119">
-
 <meta http-equiv="etag" content="c0d1fa4693671b0bbaeec0822bb4a318">
-
 <meta property="og:type" content="article">
-
 <meta property="og:site_name" content="adarsh">
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-
 <meta id="wixMobileViewport" name="viewport" content="width=980, user-scalable=yes">
 
 
