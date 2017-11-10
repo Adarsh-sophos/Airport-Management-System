@@ -23,3 +23,10 @@ timetable.php
 to_and_from_airport.php
 train.php
 transport_and_directions.php
+admin_arrivals.php
+admin_airlines.php
+admin_departures.php
+admin_employee.php
+admin_restaurants.php
+admin_shops.php
+admin_timetable.php
