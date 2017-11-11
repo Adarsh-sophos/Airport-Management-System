@@ -561,7 +561,7 @@
     <div class="header clearfix">
       <h2 class="fitText formTitle" style="font-size: 28px;">Flight Arrivals</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm">
+      <form class="realForm"   method="POST" action="add_arrivals.php">
   <input class="honeypot hid" placeholder="" type="text">
   <div class="dynamicElements visible" style="display: block;">
   
