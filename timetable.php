@@ -657,8 +657,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       </fieldset>
     </div>
 
-
-
     <div id="choice1" class="formElement form-group fadeMe select clearfix col-sm-12" style="">
         <label class="fitText" style="font-size: 12px;">Choose Location</label>
         <select aria-describedby="2_errors" value="" name="loc_inter" data-export-field="">
@@ -699,6 +697,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
           </option>
 
       </select>
+      
+      
+    </div>
     </div>
 
 

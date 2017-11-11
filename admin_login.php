@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!--
 	Author: W3layouts
 	Author URL: http://w3layouts.com
@@ -25,12 +26,19 @@
 		<div class="wrapper">
 			<h2>Log In</h2>
 			<div class="w3ls-form">
-				<form action="/" method="post">
+				<form action="login_check.php" method="post">
 					<label>Username</label>
 					<input type="text" name="name" placeholder="Username" required/>
 					<label>Password</label>
 					<input type="password" name="password" placeholder="Password" required />
 					<a href="#" class="pass">Forgot Password ?</a>
+					<?php
+					if($_SESSION["error"]==1)
+					{
+						$_SESSION["error"]=0;
+						echo("<h3 style=\"color:red;\">Invalid Username or Password </h3>");
+					}
+					?>
 					<input type="submit" value="Log In" />
 				</form>
 			</div>

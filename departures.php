@@ -5,6 +5,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $_SESSION["flight"]=$_POST["flight"];
     $_SESSION["To"]=$_POST["To"];
     $_SESSION["Terminal"]=$_POST["Terminal"];
+    $_SESSION["date"]=$_POST["date"];
 
 }
 ?>
@@ -759,7 +760,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
       </select>
     </div>
-
+    <div id="0" class="formElement form-group fadeMe text clearfix col-sm-12" style="">
+      <label class="fitText" style="font-size: 12px;">Departure Date(yyyy-mm-dd)</label>
+      <input aria-describedby="0_errors" class="form-control" name="date" placeholder="" data-export-field="" title="date" type="text">
+    </div>
 </div>
 
 

@@ -23,7 +23,9 @@ if(isset($To) and $To!="")
 $sql=$sql." and departing_to=\"".$places[(int)$To-1]."\" or departing_to=\" ".$places[(int)$To-1]."\"";
 if(isset($Terminal) and $Terminal!="")
 $sql=$sql." and terminal=".$terminals[(int)$Terminal-1];
-print($sql);
+if(isset($date) and $date!="")
+$sql=$sql." and departure_date=\"".$date."\"";
+//print($sql);
 
 
 if ($result=mysqli_query($conn,$sql))
@@ -50,16 +52,19 @@ if ($result=mysqli_query($conn,$sql))
         print($row[3]);
         print("</td>");
         print("<td>");
-        print($row[0]);
-        print("</td>");
-        print("<td>");
         print($row[4]);
         print("</td>");
         print("<td>");
-        print("<pre>      ".(string)$row[5]."</pre>");
+        print($row[0]);
+        print("</td>");
+        print("<td>");
+        print($row[5]);
+        print("</td>");
+        print("<td>");
+        print("<pre>      ".(string)$row[6]."</pre>");
         print("</td>");
         print("<td><a href=\"");
-        print($row[6]);
+        print($row[7]);
         print("\">View Details</a></td>");
         print("</tr>");
         $i++;

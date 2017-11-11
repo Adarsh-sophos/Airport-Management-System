@@ -214,7 +214,7 @@
 </table>
 </div>
 <div id="tableWrapper" style="overflow: auto; max-height: 631px;"><table id="theTable" class="footable table outerBorder footable-loaded isInnerColor" style="width: 100%; margin: 0px;">
-<thead><tr><th id="thCol0" data-type="numeric">Flight Number</th><th id="thCol0">Airlines</th><th id="thCol1" data-type="numeric">Arriving From</th><th id="thCol2" data-type="numeric">Scheduled</th><th id="thCol3" data-type="numeric">Status</th><th id="thCol4" data-type="numeric">Terminal</th><th id="thCol5" data-type="numeric">Details</th></tr></thead><tbody>
+<thead><tr><th id="thCol0" data-type="numeric">Flight Number</th><th id="thCol0">Airlines</th><th id="thCol1" data-type="numeric">Arriving From</th><th id="thCol2" data-type="numeric">Arrival Date</th><th id="thCol2" data-type="numeric">Scheduled</th><th id="thCol3" data-type="numeric">Status</th><th id="thCol4" data-type="numeric">Terminal</th><th id="thCol5" data-type="numeric">Details</th></tr></thead><tbody>
     <?php require("arrivals_table.php") ?>
 </tbody></table></div>
 <table id="pagerFilter" class="footable footer outerBorder" style="width: 100%; margin: 0px;">

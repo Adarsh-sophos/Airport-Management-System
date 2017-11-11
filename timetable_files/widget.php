@@ -214,7 +214,7 @@
 </table>
 </div>
 <div id="tableWrapper" style="overflow: auto; max-height: 563px;"><table id="theTable" class="footable table outerBorder footable-loaded isInnerColor" style="width: 100%; margin: 0px;">
-<thead><tr><th id="thCol0" data-type="numeric">Airline</th><th id="thCol1" data-type="numeric">Flight</th><th id="thCol2" data-type="numeric">Location</th><th id="thCol3" data-type="numeric">Time</th><th id="thCol4" data-type="numeric">Flight Type</th><th id="thCol0">Departure/Arrival</th></tr></thead><tbody>
+<thead><tr><th id="thCol0" data-type="numeric">Airline</th><th id="thCol1" data-type="numeric">Flight</th><th id="thCol2" data-type="numeric">Location</th><th id="thCol3" data-type="numeric">Time</th><th id="thCol4" data-type="numeric">Date</th><th id="thCol4" data-type="numeric">Flight Type</th><th id="thCol0">Departure/Arrival</th></tr></thead><tbody>
     
     <?php require("table.php") ?>
 </tbody></table></div>
