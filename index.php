@@ -7,8 +7,7 @@
 
 <title>adarsh</title>
 <meta name="fb_admins_meta_tag" content="">
-<link rel="shortcut icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
     var santaBase = 'https://static.parastorage.com/services/santa/1.2555.12';
                 var clientSideRender = true;
@@ -18,13 +17,8 @@
 <script defer="" src="files/main-r.min.js"></script>
 
 
-<link rel="preload" href="files/lodash.min.js" as="script">
-<link rel="preload" href="files/zepto.min.js" as="script">
-<link rel="preload" href="files/react-with-addons.min.js" as="script">
 
 
-<link rel="preconnect" href="https://static.wixstatic.com/" crossorigin="">
-<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
 
     <meta http-equiv="X-Wix-Renderer-Server" content="app-jvm-12-200.42.wixprod.net">
 <meta http-equiv="X-Wix-Meta-Site-Id" content="96805060-17cb-49d1-9235-cbf4217a53b5">

@@ -22,8 +22,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="shortcut icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
     var santaBase = 'https://static.parastorage.com/services/santa/1.2537.16';
                 var clientSideRender = true;
@@ -34,13 +33,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 <link href="arrivals_files/wix_cached_view_data_003/bootstrap.css" rel="stylesheet" type="text/css">
 
-<link rel="preload" href="departures_files/lodash.js" as="script">
-<link rel="preload" href="departures_files/zepto.js" as="script">
-<link rel="preload" href="departures_files/react-with-addons.js" as="script">
 
 
-<link rel="preconnect" href="https://static.wixstatic.com/" crossorigin="">
-<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
 
     <meta http-equiv="X-Wix-Renderer-Server" content="app-jvm-20-25.42.wixprod.net">
 <meta http-equiv="X-Wix-Meta-Site-Id" content="96805060-17cb-49d1-9235-cbf4217a53b5">

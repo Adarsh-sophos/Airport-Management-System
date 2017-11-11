@@ -7,8 +7,7 @@
     <meta charset="utf-8">
 <title>Car Rentals</title>
 <meta name="fb_admins_meta_tag" content="">
-<link rel="shortcut icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
     var santaBase = 'https://static.parastorage.com/services/santa/1.2537.16';
                 var clientSideRender = true;
@@ -18,16 +17,11 @@
 <script defer="defer" src="car_rentals_files/main-r.js"></script>
 
 
-<link rel="preload" href="car_rentals_files/lodash.js" as="script">
-<link rel="preload" href="car_rentals_files/zepto.js" as="script">
-<link rel="preload" href="car_rentals_files/react-with-addons.js" as="script">
 
 <link rel="stylesheet" href="car_rentals_files/wix_cached_view_data_002/shim.css">
 <link href="car_rentals_files/wix_cached_view_data_002/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="car_rentals_files/wix_cached_view_data_002/font-awesome.css" rel="stylesheet">
 
-<link rel="preconnect" href="https://static.wixstatic.com/" crossorigin="">
-<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
 
     <meta http-equiv="X-Wix-Renderer-Server" content="app-jvm-20-25.42.wixprod.net">
 <meta http-equiv="X-Wix-Meta-Site-Id" content="96805060-17cb-49d1-9235-cbf4217a53b5">
