@@ -677,7 +677,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
       </select>
     </div>
-    
+
     <div id="choice2" class="formElement form-group fadeMe select clearfix col-sm-12" style="">
         <label class="fitText" style="font-size: 12px;">Choose Location</label>
         <select aria-describedby="2_errors" value="" name="loc_domest" data-export-field="">
@@ -697,18 +697,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
           </option>
 
       </select>
-      
-      
+
+
     </div>
+
+    <div id="4" class="formElement form-group fadeMe text clearfix col-sm-12" style="">
+      <label class="fitText" style="font-size: 12px;">Flight Date(yyyy-mm-dd)</label>
+      <input aria-describedby="0_errors" class="form-control" name="date" placeholder="Flight Date (yyyy-mm-dd)" data-export-field="" title="date" type="text">
     </div>
 
+    </div>
 
-
-    
 </div>
-
-
-
 
     <div class="buttonAndSummaryWrapper">
 
