@@ -33,6 +33,8 @@ else
     if(isset($loc_domest) and $loc_domest!="")
     $sql=$sql." and location=\"".$domest[(int)$loc_domest-1]."\"";
 }
+if(isset($date) and $date!="")
+$sql=$sql." and date=\"".$date."\"";
 //print($sql);
 
 

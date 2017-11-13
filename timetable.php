@@ -6,6 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $_SESSION["To_or_From"]=$_POST["To_or_From"];
     $_SESSION["loc_inter"]=$_POST["loc_inter"];
     $_SESSION["loc_domest"]=$_POST["loc_domest"];
+    $_SESSION["date"]=$_POST["date"];
 }
 ?>
 

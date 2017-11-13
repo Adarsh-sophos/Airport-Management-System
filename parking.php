@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -802,9 +804,14 @@ online.</span></p>
     </div>
   </div>
 </form>
-
-
-
+<?php 
+extract($_SESSION);
+if($left==0)
+{
+    print("<br><h3 style=\"color:red;\">Sorry...No parking slots are available</h3>");
+    $_SESSION["left"]=1;
+}
+?>
 
       <div class="formResponses hid">
         <div class="loadingResponses hid">Loading form responses...</div>

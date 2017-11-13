@@ -1,3 +1,6 @@
+<?php session_start(); 
+extract($_SESSION);
+?>
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -808,6 +811,13 @@
     </div>
   </div>
 </form>
+<?php
+if($car_left==0)
+{
+    $_SESSION["car_left"]=1;
+    print("<h3 style=\"color:red;\">Sorry..No cars available for rent....</h3>");
+}
+?>
 
   </div>
   <div class="alternates usefulContentLink hid"></div>
