@@ -692,29 +692,25 @@
 
 <div class="elementWrapper">
 
-    <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Middle Name</label>
-      <input aria-describedby="3_errors" class="form-control user-success" name="mname" placeholder="" data-export-field="" title="Flight type" type="text">
-    </div>
 
 </div>
 
-    <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Last Name</label>
       <input aria-describedby="2_errors" class="form-control user-success" name="lname" placeholder="" data-export-field="" title="Flight Number" type="text">
     </div>
 
-    <div id="5" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Phone Number</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="pnumber" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="6" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="5" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Age</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="age" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="7" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+    <div id="6" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
         <label class="fitText" style="font-size: 12px;">Shift</label>
         <select aria-describedby="2_errors" value="" name="shift" data-export-field="" class="user-success">
 
@@ -737,7 +733,7 @@
       </select>
     </div>
 
-    <div id="8" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+    <div id="7" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
         <label class="fitText" style="font-size: 12px;">Job Type</label>
         <select aria-describedby="2_errors" value="" name="job_type" data-export-field="" class="user-success">
 
@@ -770,6 +766,11 @@
 
           </option>
       </select>
+    </div>
+
+    <div id="00" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+      <label class="fitText" style="font-size: 12px;">Salary</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="salary" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
     <div id="9" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">

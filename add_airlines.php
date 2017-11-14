@@ -13,8 +13,8 @@ if (!$conn) {
 
 extract($_POST);
 extract($_SESSION);
-print_r($_POST);
-/*
+//print_r($_POST);
+
 if($radio_1=="Add")
 {
 $status=$status_text." ".$status_time;
@@ -28,7 +28,7 @@ header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_airlines.php');
 }
 else if($radio_1=="Remove")
 {
-    $sql="Delete from timetable where flight_number=\"$flight_number\"";
+    $sql="Delete from airline where airline_id=\"$airline_id\"";
     $result=mysqli_query($conn,$sql);
     if($result==FALSE)
     {
@@ -40,24 +40,14 @@ else if($radio_1=="Remove")
 }
 else if($radio_1=="Change")
 {
-    $sql2="Update timetable set flight_number=\"$flight_number\"";
-    if($airline!="")
-    $sql2=$sql2.",airline=\"$airline\"";
-    if($time!="")
-    $sql2=$sql2.",time=\"$time\"";
-    if($date!="")
-    $sql2=$sql2.",date=\"$date\"";
+    $sql2="Update airline set airline_id=\"$airline_id\"";
     
-     if($location!="")
-    $sql2=$sql2.",status=\"$location\"";
+    if($airline_name!="")
+    $sql2=$sql2.",airline_name=\"$airline_name\"";
+    if($code!="")
+    $sql2=$sql2.",3_digit_code=\"$code\"";
     
-    
-    if($flight_type!="")
-    $sql2=$sql2.",flight_type=\"$flight_type\"";
-    if($to_from!="")
-    $sql2=$sql2.",to_from=\"$to_from\"";
-    
-    $sql2=$sql2." where flight_number=\"$flight_number\"";
+    $sql2=$sql2." where airline_id=\"$airline_id\"";
     $result=mysqli_query($conn,$sql);
     if($result==FALSE)
     {
@@ -65,7 +55,7 @@ else if($radio_1=="Change")
     }
     $_SESSION["change"]=2;
     header('Location:https://ide50-sakshamagarwal51d3.cs50.io/admin_airlines.php');  
-}*/
+}
 print($sql);
 print("<br>");
 print($sql2);
