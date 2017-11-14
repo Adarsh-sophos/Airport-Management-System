@@ -669,19 +669,19 @@
 <div class="elementWrapper">
 
     <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;" id="l3">Scheduled Time</label>
+      <label class="fitText" style="font-size: 12px;" id="l3">Scheduled Time(hh:mm:ss)</label>
       <input aria-describedby="3_errors" class="form-control user-success" name="schedule_time" id="schedule_time" placeholder="" data-export-field="" title="Flight type" type="text">
     </div>
 
 </div>
 
     <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;" id="l4">Scheduled Date</label>
+      <label class="fitText" style="font-size: 12px;" id="l4">Scheduled Date(yyyy-mm-dd)</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="schedule_date" placeholder="" id="schedule_date" data-export-field="" title="To_From" type="text">
     </div>
 
     <div id="5" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;" id="l5">Status Time</label>
+      <label class="fitText" style="font-size: 12px;" id="l5">Status Time(hh:mm:ss)</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="status_time" id="status_time" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
