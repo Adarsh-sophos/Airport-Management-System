@@ -17,7 +17,9 @@
 
 <script defer="defer" src="admin_files/require.js"></script>
 <script defer="defer" src="admin_files/main-r.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="admin_files/wix_cached_view_data/shim.css">
 <link href="admin_files/wix_cached_view_data/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="admin_files/wix_cached_view_data/font-awesome.css" rel="stylesheet">
@@ -65,7 +67,30 @@
     // BEAT MESSAGE END
 </script>
 
-    
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('input[name="radio_1"]').change(function () {
+            if ($('input[name="radio_1"]:checked').val() == 'Add') {
+                $('#2').show();
+                $('#3').show();
+                $('#4').show();
+                $('#5').show();
+            }
+            if ($('input[name="radio_1"]:checked').val() == 'Remove') {
+                $('#2').hide();
+                $('#3').hide();
+                $('#4').hide();
+                $('#5').hide();
+            }
+            if ($('input[name="radio_1"]:checked').val() == 'Change') {
+               $('#2').show();
+                $('#3').show();
+                $('#4').show();
+                $('#5').show();
+            }
+        });
+    });
+</script>
 
     <!-- META DATA -->
 <script type="text/javascript">
@@ -587,7 +612,7 @@
     <div class="header clearfix">
       <h2 class="fitText formTitle" style="font-size: 28px;">Shops</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm">
+      <form class="realForm" method="POST" action="add_shops.php">
   <input class="honeypot hid" placeholder="" type="text">
   <div class="dynamicElements visible" style="display: block;">
   
@@ -600,7 +625,7 @@
           
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
               
-                <input name="(Radio 1)" value="Add" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_1" value="Add" checked="checked" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
               
               Add
               
@@ -608,7 +633,7 @@
           
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
               
-                <input name="(Radio 1)" value="Remove" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_1" value="Remove" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
               
               Remove
               
@@ -616,7 +641,7 @@
           
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
               
-                <input name="(Radio 1)" value="Change" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_1" value="Change" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
               
               Modify
               
@@ -630,35 +655,35 @@
   
     <div id="1" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Shop Number</label>
-      <input aria-describedby="1_errors" class="form-control user-success" name="Airline" placeholder="" data-export-field="" title="Airline" type="text">
+      <input aria-describedby="1_errors" class="form-control user-success" name="shop_number" placeholder="" data-export-field="" title="Airline" type="text">
     </div>
   
 
   
     <div id="2" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Category</label>
-      <input aria-describedby="2_errors" class="form-control user-success" name="Flight Number" placeholder="" data-export-field="" title="Flight Number" type="text">
+      <input aria-describedby="2_errors" class="form-control user-success" name="category" placeholder="" data-export-field="" title="Flight Number" type="text">
     </div>
   
 <div class="elementWrapper">
   
     <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Location</label>
-      <input aria-describedby="3_errors" class="form-control user-success" name="Flight type" placeholder="" data-export-field="" title="Flight type" type="text">
+      <input aria-describedby="3_errors" class="form-control user-success" name="location" placeholder="" data-export-field="" title="Flight type" type="text">
     </div>
   
 </div>
   
     <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Image</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="To_From" placeholder="" data-export-field="" title="To_From" type="text">
+      <input aria-describedby="4_errors" class="form-control user-success" name="image" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
   
 
   
     <div id="5" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
       <label class="fitText" style="font-size: 12px;">Details</label>
-      <textarea aria-describedby="5_errors" class="form-control user-success" name="Description" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="Description" aria-label="Enter Text"></textarea>
+      <textarea aria-describedby="5_errors" class="form-control user-success" name="details" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="Description" aria-label="Enter Text"></textarea>
       <div class="lengthSummary fitText hid" style="font-size: 12px;">
         <span class="lengthErrors lengthErrors hid" style="font-size: 12px;">
           <i class="fa fa-warning"></i>

@@ -72,61 +72,34 @@
     $(document).ready(function () {
         $('input[name="radio_1"]').change(function () {
             if ($('input[name="radio_1"]:checked').val() == 'Add') {
-                $('#l1').show();
-                $('#l2').show();
-                $('#l3').show();
-                $('#l4').show();
-                $('#l5').show();
-                $('#l6').show();
-                $('#l7').show();
-                $('#l8').show();
-                $('#l9').show();
-                $('#airline').show();
-                $('#flight_number').show();
-                $('#schedule_time').show();
-                $('#schedule_date').show();
-                $('#status_time').show();
-                $('#status_text').show();
-                $('#terminal').show();
-                $('#arriving_from').show();
-                $('#details').show();
+                $('#2').show();
+                $('#3').show();
+                $('#4').show();
+                $('#5').show();
+                $('#6').show();
+                $('#7').show();
+                $('#8').show();
+                $('#9').show();
             }
             if ($('input[name="radio_1"]:checked').val() == 'Remove') {
-                $('#l1').hide();
-                $('#l3').hide();
-                $('#l4').hide();
-                $('#l5').hide();
-                $('#l6').hide();
-                $('#l7').hide();
-                $('#l8').hide();
-                $('#l9').hide();
-                $('#airline').hide();
-                $('#schedule_time').hide();
-                $('#schedule_date').hide();
-                $('#status_time').hide();
-                $('#status_text').hide();
-                $('#terminal').hide();
-                $('#arriving_from').hide();
-                $('#details').hide();
+                $('#2').hide();
+                $('#3').hide();
+                $('#4').hide();
+                $('#5').hide();
+                $('#6').hide();
+                $('#7').hide();
+                $('#8').hide();
+                $('#9').hide();
             }
             if ($('input[name="radio_1"]:checked').val() == 'Change') {
-               $('#l1').show();
-                $('#l2').show();
-                $('#l3').show();
-                $('#l4').show();
-                $('#l5').show();
-                $('#l6').show();
-                $('#l7').show();
-                $('#l8').show();
-                $('#l9').show();
-                $('#airline').show();
-                $('#schedule_time').show();
-                $('#schedule_date').show();
-                $('#status_time').show();
-                $('#status_text').show();
-                $('#arriving_from').show();
-                $('#terminal').show();
-                $('#details').show();
+                $('#2').show();
+                $('#3').show();
+                $('#4').show();
+                $('#5').show();
+                $('#6').show();
+                $('#7').show();
+                $('#8').show();
+                $('#8').show();
             }
         });
     });
@@ -697,12 +670,12 @@
     
 
 
-    <div id="2" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="1" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;" id="l2">Flight Number</label>
       <input aria-describedby="2_errors" class="form-control user-success" name="flight_number" id="flight_number" placeholder="" data-export-field="" title="Flight Number" type="text">
     </div>
 
-<div id="1" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+<div id="2" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;" id="l1">Airline</label>
       <input aria-describedby="1_errors" class="form-control user-success" name="airline" id="airline" placeholder="" data-export-field="" title="Airline" type="text">
     </div>
@@ -722,29 +695,29 @@
       <input aria-describedby="4_errors" class="form-control user-success" name="schedule_date" placeholder="" id="schedule_date" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="5" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;" id="l5">Status Time</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="status_time" id="status_time" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="6" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;" id="l6">Status Text</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="status_text" id="status_text" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="7" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;" id="l7">Arriving From</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="arriving_from" id="arriving_from" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="8" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;" id="l8">Terminal</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="terminal" id="terminal" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
 
 
-    <div id="5" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
+    <div id="9" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
       <label class="fitText" style="font-size: 12px;" id="l9">Flight Details</label>
       <textarea aria-describedby="5_errors" class="form-control user-success" name="details" id="details" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="Description" aria-label="Enter Text"></textarea>
       <div class="lengthSummary fitText hid" style="font-size: 12px;">
