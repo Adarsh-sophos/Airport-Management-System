@@ -394,7 +394,7 @@
 <?php require("header.php"); ?>
 <div class="pc1" data-state="" id="PAGES_CONTAINER" style="width: 980px; position: absolute; top: 209px; height: 713px; left: 0px;"><div id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground" style="width: 1519px; left: -270px;"></div><div id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent"><div id="PAGES_CONTAINERbg" class="pc1bg"></div><div id="PAGES_CONTAINERinlineContent" class="pc1inlineContent"><div class="s_VOwPageGroupSkin" id="SITE_PAGES" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 713px;"><div class="p2" id="lvvdu" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 1260px; display: none;"><div id="lvvdubg" class="p2bg"></div><div id="lvvduinlineContent" class="p2inlineContent"></div></div><div class="p2" id="e4uto" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 713px;"><div id="e4utobg" class="p2bg"></div><div id="e4utoinlineContent" class="p2inlineContent">
 
-    <div class="tpaw0" id="comp-j9slsik5" style="min-height: 535px; min-width: 478px; left: 502px; width: 478px; position: absolute; top: 80px; height: 535px;">
+    <div class="tpaw0" id="comp-j9slsik5" style="min-height: 535px; min-width: 478px; left: 502px; width: 478px; position: absolute; top: 80px; height: 545px;">
 
     <script src="admin_files/wix_cached_view_data/wix.js"></script>
 <script src="admin_files/wix_cached_view_data/application-043764861557ce7455b3f3fe7f3d915aecdac581135b05d85.js"></script>
@@ -643,11 +643,9 @@
       <input aria-describedby="1_errors" class="form-control user-success" name="shop_number" placeholder="" data-export-field="" title="Airline" type="text">
     </div>
 
-
-
     <div id="2" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Category</label>
-      <input aria-describedby="2_errors" class="form-control user-success" name="category" placeholder="" data-export-field="" title="Flight Number" type="text">
+      <label class="fitText" style="font-size: 12px;">Shop Name</label>
+      <input aria-describedby="1_errors" class="form-control user-success" name="shop_name" placeholder="" data-export-field="" title="Airline" type="text">
     </div>
 
 <div class="elementWrapper">
@@ -664,7 +662,64 @@
       <input aria-describedby="4_errors" class="form-control user-success" name="image" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
+    <div id="2" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+        <label class="fitText" style="font-size: 12px;">Category</label>
+        <select aria-describedby="2_errors" value="" name="shift" data-export-field="" class="user-success">
 
+          <option value="" selected="selected"> - Select - </option>
+
+
+
+            <option value="1" data-price="0">
+
+            Electronics
+
+          </option>
+
+
+            <option value="2" data-price="0">
+
+            Duty Free
+
+          </option>
+
+          <option value="2" data-price="0">
+
+            Fashion
+
+          </option>
+
+          <option value="2" data-price="0">
+
+            Jewelery
+
+          </option>
+
+          <option value="2" data-price="0">
+
+            Soveniers and Gifts
+
+          </option>
+
+          <option value="2" data-price="0">
+
+            Perfume and Cosmetics
+
+          </option>
+
+          <option value="2" data-price="0">
+
+            Travel Accessories
+
+          </option>
+
+          <option value="2" data-price="0">
+
+            Convenience, Travel and News
+
+          </option>
+      </select>
+    </div>
 
     <div id="5" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
       <label class="fitText" style="font-size: 12px;">Details</label>

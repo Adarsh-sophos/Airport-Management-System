@@ -705,12 +705,17 @@
       <input aria-describedby="4_errors" class="form-control user-success" name="pnumber" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="5" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+    <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Age</label>
       <input aria-describedby="4_errors" class="form-control user-success" name="age" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="6" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+    <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+      <label class="fitText" style="font-size: 12px;">Salary</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="salary" placeholder="" data-export-field="" title="To_From" type="text">
+    </div>
+
+    <div id="3" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
         <label class="fitText" style="font-size: 12px;">Shift</label>
         <select aria-describedby="2_errors" value="" name="shift" data-export-field="" class="user-success">
 
@@ -733,7 +738,7 @@
       </select>
     </div>
 
-    <div id="7" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+    <div id="4" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
         <label class="fitText" style="font-size: 12px;">Job Type</label>
         <select aria-describedby="2_errors" value="" name="job_type" data-export-field="" class="user-success">
 
@@ -768,12 +773,9 @@
       </select>
     </div>
 
-    <div id="00" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Salary</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="salary" placeholder="" data-export-field="" title="To_From" type="text">
-    </div>
 
-    <div id="9" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
+
+    <div id="5" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
       <label class="fitText" style="font-size: 12px;">Addess</label>
       <textarea aria-describedby="5_errors" class="form-control user-success" name="Description" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="address" aria-label="Enter Text"></textarea>
       <div class="lengthSummary fitText hid" style="font-size: 12px;">
