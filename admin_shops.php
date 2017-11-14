@@ -69,18 +69,21 @@
                 $('#3').show();
                 $('#4').show();
                 $('#5').show();
+                $('#6').show();
             }
             if ($('input[name="radio_1"]:checked').val() == 'Remove') {
                 $('#2').hide();
                 $('#3').hide();
                 $('#4').hide();
                 $('#5').hide();
+                $('#6').hide();
             }
             if ($('input[name="radio_1"]:checked').val() == 'Change') {
                $('#2').show();
                 $('#3').show();
                 $('#4').show();
                 $('#5').show();
+                $('#6').show();
             }
         });
     });
@@ -597,7 +600,7 @@
     <div class="header clearfix">
       <h2 class="fitText formTitle" style="font-size: 28px;">Shops</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm" method="POST" action="add_shops.php">
+      <form class="realForm" method="POST" action="add_shops.php" enctype="multipart/form-data">
   <input class="honeypot hid" placeholder="" type="text">
   <div class="dynamicElements visible" style="display: block;">
 
@@ -662,9 +665,9 @@
       <input aria-describedby="4_errors" class="form-control user-success" name="image" placeholder="" data-export-field="" title="To_From" type="file">
     </div>
 
-    <div id="2" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+    <div id="5" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
         <label class="fitText" style="font-size: 12px;">Category</label>
-        <select aria-describedby="2_errors" value="" name="shift" data-export-field="" class="user-success">
+        <select aria-describedby="2_errors" value="" name="category" data-export-field="" class="user-success">
 
           <option value="" selected="selected"> - Select - </option>
 
@@ -683,37 +686,37 @@
 
           </option>
 
-          <option value="2" data-price="0">
+          <option value="3" data-price="0">
 
             Fashion
 
           </option>
 
-          <option value="2" data-price="0">
+          <option value="4" data-price="0">
 
             Jewelery
 
           </option>
 
-          <option value="2" data-price="0">
+          <option value="5" data-price="0">
 
             Soveniers and Gifts
 
           </option>
 
-          <option value="2" data-price="0">
+          <option value="6" data-price="0">
 
             Perfume and Cosmetics
 
           </option>
 
-          <option value="2" data-price="0">
+          <option value="7" data-price="0">
 
             Travel Accessories
 
           </option>
 
-          <option value="2" data-price="0">
+          <option value="8" data-price="0">
 
             Convenience, Travel and News
 
@@ -721,7 +724,7 @@
       </select>
     </div>
 
-    <div id="5" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
+    <div id="6" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
       <label class="fitText" style="font-size: 12px;">Details</label>
       <textarea aria-describedby="5_errors" class="form-control user-success" name="details" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="Description" aria-label="Enter Text"></textarea>
       <div class="lengthSummary fitText hid" style="font-size: 12px;">

@@ -13,24 +13,24 @@ if (!$conn) {
 
 extract($_POST);
 extract($_SESSION);
-print_r($_POST);
-/*
+//print_r($_POST);
+
 if($radio_1=="Add")
 {
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
 move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-$sql = "Insert into employee (SSN,FNAME,LNAME,ADDRESS,PHONE,AGE,SALARY,SEX,JOBTYPE,SHIFT) values ($ssn,\"$fname\",\"$lname\",$pnumber,$age,$salary,\"$radio_2\",\"$job_type\",\"$shift\")";
-//print($sql);
+$sql = "Insert into shops (shop_number,category,image,details,location,shop_name) values ($shop_number,$category,\"$target_file\",\"$details\",\"$location\",\"$shop_name\")";
+print($sql);
 $result=mysqli_query($conn,$sql);
 
 
 $_SEESION["change"]=0;
-header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_employee.php');  
+header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_shops.php');  
 }
 else if($radio_1=="Remove")
 {
-    $sql="Delete from employee where SSN=$ssn";
+    $sql="Delete from shops where shop_number=$shop_number";
     $result=mysqli_query($conn,$sql);
     if($result==FALSE)
     {
@@ -38,40 +38,35 @@ else if($radio_1=="Remove")
     }
     $_SESSION["change"]=1;
     
-    header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_employee.php');  
+    header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_shops.php');  
 }
 else if($radio_1=="Change")
 {
-    $sql2="Update employee set SSN=$ssn";
-    if($fname!="")
-    $sql2=$sql2.",FNAME=\"$fname\"";
-    if($lname!="")
-    $sql2=$sql2.",LNAME=\"$lname\"";
-    if($address!="")
-    $sql2=$sql2.",ADDRESS=\"$address\"";
-    if($pnumber!="")
-    $sql2=$sql2.",PHONE=$pnumber";
-    if($age!="")
-    $sql2=$sql2.",AGE=$age";
-    if($salary!="")
-    $sql2=$sql2.",SALARY=$salary";
-    if($radio_2!="")
-    $sql2=$sql2.",SEX=\"$radio_2\"";
-    if($jobtype!="")
-    $sql2=$sql2.",JOBTYPE=\"$jobtype\"";
-    if($shift!="")
-    $sql2=$sql2.",SHIFT=\"$shift\"";
+    $sql2="Update shops set shop_number=$shop_number";
+    if($shop_name!="")
+    $sql2=$sql2.",shop_name=\"$shop_name\"";
+    if($location!="")
+    $sql2=$sql2.",location=\"$location\"";
+    if($category!="")
+    $sql2=$sql2.",category=$category";
+    if($details!="")
+    $sql2=$sql2.",details=\"$details\"";
+    if($image!="")
+    {
+        $target_dir = "uploads/";
+        $target_file = $target_dir . basename($_FILES["image"]["name"]);
+        move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+        $sql2=$sql2.",image=\"$target_file\"";
+    }
     
-    $sql2=$sql2." where ssn=$ssn";
+    $sql2=$sql2." where shop_number=$shop_number";
     $result=mysqli_query($conn,$sql);
     if($result==FALSE)
     {
         $_SESSION["updation"]=0;
     }
     $_SESSION["change"]=2;
-    header('Location:https://ide50-sakshamagarwal51d3.cs50.io/admin_employee.php');  
+    header('Location:https://ide50-sakshamagarwal51d3.cs50.io/admin_shops.php');  
 }
-print($sql);
-print("<br>");
-print($sql2);*/
+
 ?>
