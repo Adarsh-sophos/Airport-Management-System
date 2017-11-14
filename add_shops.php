@@ -20,7 +20,7 @@ if($radio_1=="Add")
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
 move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-$sql = "Insert into shops (shop_number,category,image,details,location,shop_name) values ($shop_number,$category,\"$target_file\",\"$details\",\"$location\",\"$shop_name\")";
+$sql = "Insert into shops (service_id,shop_number,category,image,details,location,shop_name) values (1,$shop_number,$category,\"$target_file\",\"$details\",\"$location\",\"$shop_name\")";
 print($sql);
 $result=mysqli_query($conn,$sql);
 

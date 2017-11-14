@@ -20,7 +20,7 @@ if($radio_1=="Add")
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
 move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-$sql = "Insert into restaurants (rest_number,category,image,details,location,restaurant_name) values ($r_num,$category,\"$target_file\",\"$details\",\"$location\",\"$name\")";
+$sql = "Insert into restaurants (service_id,rest_number,category,image,details,location,restaurant_name) values (2,$r_num,$category,\"$target_file\",\"$details\",\"$location\",\"$name\")";
 print($sql);
 $result=mysqli_query($conn,$sql);
 

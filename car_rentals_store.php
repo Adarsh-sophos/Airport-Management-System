@@ -17,7 +17,7 @@ extract($_SESSION);
 //print_r($_SESSION);
 $pickup_time=$pickup_time_hour.":".$pickup_time_minute.":00";
 $return_time=$return_time_hour.":".$return_time_minute.":00";
-$sql = "Insert into rentals (name, email, contact, license_number, pickup_date, pickup_time, return_date, return_time,amount,car_name,car_number) values (\"$name\",\"$email\",$contact,\"$license\",\"$pickup_date\",\"$pickup_time\",\"$return_date\",\"$return_time\",$rent,\"$car\",\"$car_number\")";
+$sql = "Insert into rentals (service_id,name, email, contact, license_number, pickup_date, pickup_time, return_date, return_time,amount,car_name,car_number) values (3,\"$name\",\"$email\",$contact,\"$license\",\"$pickup_date\",\"$pickup_time\",\"$return_date\",\"$return_time\",$rent,\"$car\",\"$car_number\")";
 //print($sql);
 if(!mysqli_query($conn,$sql))
 echo("Error description: " . mysqli_error($conn));

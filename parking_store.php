@@ -16,7 +16,7 @@ extract($_SESSION);
 print_r($_POST);
 $entry_time=$entry_hour.":".$entry_minute.":00";
 $exit_time=$exit_hour.":".$exit_minute.":00";
-$sql = "Insert into parking (name, email, contact, car_number, entry_date, entry_time, exit_date, exit_time,amount) values (\"$name\",\"$email\",$mobile,$car,\"$entry_date\",\"$entry_time\",\"$exit_date\",\"$exit_time\",$amount)";
+$sql = "Insert into parking (service_id,name, email, contact, car_number, entry_date, entry_time, exit_date, exit_time,amount) values (4,\"$name\",\"$email\",$mobile,$car,\"$entry_date\",\"$entry_time\",\"$exit_date\",\"$exit_time\",$amount)";
 print($sql);
 $result=mysqli_query($conn,$sql);
 

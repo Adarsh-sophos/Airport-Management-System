@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -290,7 +291,7 @@
 <div class="pc1" data-state="" id="PAGES_CONTAINER" style="width: 980px; position: absolute; top: 209px; height: 698px; left: 0px;"><div id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground" style="width: 1519px; left: -270px;"></div><div id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent"><div id="PAGES_CONTAINERbg" class="pc1bg"></div><div id="PAGES_CONTAINERinlineContent" class="pc1inlineContent"><div class="s_VOwPageGroupSkin" id="SITE_PAGES" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 698px;"><div class="p2" id="xcpi7" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 698px;"><div id="xcpi7bg" class="p2bg"></div><div id="xcpi7inlineContent" class="p2inlineContent"><div class="txtNew" id="comp-j9zlxvca" style="left: 197px; width: 831px; position: absolute; top: 53px;"><h2 class="font_2" style="font-size:40px;"><span style="color:#FFFFFF;"><span style="font-size:40px;"><span style="font-family:georgia,palatino,book antiqua,palatino linotype,serif;">Information about other Airports</span></span></span></h2></div><div class="style-j9zmgxu3" id="comp-j9zm0yv1" style="min-height: 482px; min-width: 934px; left: 41px; width: 934px; position: absolute; top: 145px; height: 482px;">
 
 
-    <iframe scrolling="no" allowtransparency="true" allowfullscreen="" name="comp-j9zm0yv1" title="Table Master" aria-label="Table Master" id="comp-j9zm0yv1iframe" class="style-j9zmgxu3iframe" style="display: block; width: 100%; height: 100%; overflow: hidden; position: absolute;" src="airport_list_files/widget.html" frameborder="0"></iframe>
+    <iframe scrolling="no" allowtransparency="true" allowfullscreen="" name="comp-j9zm0yv1" title="Table Master" aria-label="Table Master" id="comp-j9zm0yv1iframe" class="style-j9zmgxu3iframe" style="display: block; width: 100%; height: 100%; overflow: hidden; position: absolute;" src="airport_list_files/widget.php" frameborder="0"></iframe>
 
 
 

@@ -1,6 +1,130 @@
 <?php session_start(); 
 if(!isset($_SESSION["id"]) or $_SESSION["id"]==0)
 header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_login.php');
+
+$username="sakshamagarwal51";
+$password="3vXt73bGW7mEcGnI";
+$db="DBMS";
+#opening connection
+$conn = mysqli_connect("localhost", $username, $password, $db);
+//if connection failed
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql="Select count(*) from employee";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$total1=$row[0];
+
+
+$sql="Select count(*) from employee where SEX=\"F\" or SEX=\"Female\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$female=$row[0];
+
+
+$sql="Select count(*) from employee where SEX=\"M\" or SEX=\"Male\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$male=$row[0];
+
+
+$sql="Select count(*) from employee where JOBTYPE=\"ADMINISTRATIVE SUPPORT\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$as=$row[0];
+
+
+$sql="Select count(*) from employee where JOBTYPE=\"TRAFFIC MONITOR\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$tm=$row[0];
+
+
+$sql="Select count(*) from employee where JOBTYPE=\"AIRPORT AUTHORITY\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$aa=$row[0];
+
+
+$sql="Select count(*) from employee where JOBTYPE=\"ENGINEER\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$en=$row[0];
+
+
+$sql="Select count(*) from employee where SHIFT=\"DAY\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$day=$row[0];
+
+
+$sql="Select count(*) from employee where SHIFT=\"NIGHT\"";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$night=$row[0];
+
+
+$sql="Select count(*) from airline";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$total2=$row[0];
+
+
+
+$total3=15;
+
+
+$sql="Select count(*) from rentals";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$used=$row[0];
+
+
+
+$rem=$total3-$used;
+
+
+
+$total4=10;
+
+
+$sql="Select count(*) from parking";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$parked=$row[0];
+
+
+
+$slots=$total4-$parked;
+
+
+$sql="Select sum(amount) from parking";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$car_am=$row[0];
+
+
+$sql="Select sum(amount) from rentals";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$parking_am=$row[0];
+
+
+$sql="Select count(*) from shops";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$total5=$row[0];
+
+
+$sql="Select count(*) from restaurants";
+$result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_row($result);
+$total6=$row[0];
+
+
+
 ?>
 <!DOCTYPE html>
 <html class=""><head>
@@ -453,45 +577,45 @@ header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_login.php');
 
 
 
-    <div class="style-j9zg3pk7" id="comp-j9zg3pn8" style="left: 350px; width: 670px; position: absolute; top: 83px; height: 193px;"><div id="comp-j9zg3pn8bg" class="style-j9zg3pk7bg"></div><div id="comp-j9zg3pn8inlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zg4f8z" style="left: 53px; width: 286px; position: absolute; top: 69px;"><p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">Total Number of Employee : 234</span></span></p>
+    <div class="style-j9zg3pk7" id="comp-j9zg3pn8" style="left: 350px; width: 670px; position: absolute; top: 83px; height: 193px;"><div id="comp-j9zg3pn8bg" class="style-j9zg3pk7bg"></div><div id="comp-j9zg3pn8inlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zg4f8z" style="left: 53px; width: 286px; position: absolute; top: 69px;"><p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">Total Number of Employee : <?php print($total1); ?></span></span></p>
 
 <p class="font_8" style="font-size:14px;">&nbsp;</p>
 
-<p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; Male : 34&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Day Shift : 23 </span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; Male : <?php print($male); ?>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Day Shift : <?php print($day); ?> </span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; Female : 12&nbsp; &nbsp; &nbsp; Night Shift : 12</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; Female : <?php print($female); ?>&nbsp; &nbsp; &nbsp; Night Shift : <?php print($night); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span class="wixGuard">​</span></p></div><div class="txtNew" id="comp-j9zg6rc9" style="left: 356px; width: 247px; position: absolute; top: 69px;"><p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">Administrative Support&nbsp;: 23</span></span></p>
+<p class="font_8" style="font-size:14px;"><span class="wixGuard">​</span></p></div><div class="txtNew" id="comp-j9zg6rc9" style="left: 356px; width: 247px; position: absolute; top: 69px;"><p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">Administrative Support&nbsp;: <?php print($as); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Airport&nbsp;Authority&nbsp;: 12</span></span></p>
+<p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Airport&nbsp;Authority&nbsp;: <?php print($aa); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Traffic&nbsp;Monitor&nbsp;: 45</span></span></p>
+<p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Traffic&nbsp;Monitor&nbsp;: <?php print($tm); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Engineer&nbsp;: 13</span></span></p>
+<p class="font_8" style="font-size:14px;"><span class="color_31"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Engineer&nbsp;: <?php print($en); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span class="wixGuard">​</span></p></div><div class="txtNew" id="comp-j9zge421" style="left: 218px; width: 220px; position: absolute; top: 13px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Employee Summary</span></span></h2></div></div></div><div class="style-j9zg3pk7" id="comp-j9zgh0ic" style="left: 350px; width: 670px; position: absolute; top: 325px; height: 125px;"><div id="comp-j9zgh0icbg" class="style-j9zg3pk7bg"></div><div id="comp-j9zgh0icinlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zghbwh" style="left: 251px; width: 220px; position: absolute; top: 16px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Airline Summary</span></span></h2></div><div class="txtNew" id="comp-j9zghrd6" style="left: 237px; width: 234px; position: absolute; top: 67px;"><p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">Total Number of&nbsp; Airlines&nbsp;: 14</span></span></p></div></div></div><div class="style-j9zg3pk7" id="comp-j9zgkdv3" style="left: 350px; width: 670px; position: absolute; top: 515px; height: 230px;"><div id="comp-j9zgkdv3bg" class="style-j9zg3pk7bg"></div><div id="comp-j9zgkdv3inlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zgm1fs" style="left: 178px; width: 366px; position: absolute; top: 21px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Car Rental &amp; Parking Summary</span></span></h2></div><div class="txtNew" id="comp-j9zgmsnx" style="left: 70px; width: 263px; position: absolute; top: 79px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">&nbsp; Total Number of&nbsp; Cars&nbsp;: 234</span></span></p>
+<p class="font_8" style="font-size:14px;"><span class="wixGuard">​</span></p></div><div class="txtNew" id="comp-j9zge421" style="left: 218px; width: 220px; position: absolute; top: 13px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Employee Summary</span></span></h2></div></div></div><div class="style-j9zg3pk7" id="comp-j9zgh0ic" style="left: 350px; width: 670px; position: absolute; top: 325px; height: 125px;"><div id="comp-j9zgh0icbg" class="style-j9zg3pk7bg"></div><div id="comp-j9zgh0icinlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zghbwh" style="left: 251px; width: 220px; position: absolute; top: 16px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Airline Summary</span></span></h2></div><div class="txtNew" id="comp-j9zghrd6" style="left: 237px; width: 234px; position: absolute; top: 67px;"><p class="font_8" style="font-size:14px;"><span style="color:#FFFFFF;"><span style="font-family:open sans,sans-serif;">Total Number of&nbsp; Airlines&nbsp;: <?php print($total2); ?></span></span></p></div></div></div><div class="style-j9zg3pk7" id="comp-j9zgkdv3" style="left: 350px; width: 670px; position: absolute; top: 515px; height: 230px;"><div id="comp-j9zgkdv3bg" class="style-j9zg3pk7bg"></div><div id="comp-j9zgkdv3inlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zgm1fs" style="left: 178px; width: 366px; position: absolute; top: 21px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Car Rental &amp; Parking Summary</span></span></h2></div><div class="txtNew" id="comp-j9zgmsnx" style="left: 70px; width: 263px; position: absolute; top: 79px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">&nbsp; Total Number of&nbsp; Cars&nbsp;: <?php print($total3); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">Cars currently available : 23</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">Cars currently available : <?php print($rem); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp;Cars currently in used : 45</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp;Cars currently in use : <?php print($used); ?></span></span></p>
 
 <p class="font_8" style="font-size:14px;">&nbsp;</p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">Total amount received : Rs. 12000</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">Total amount received : Rs. <?php print($car_am); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="wixGuard">​</span></span></p></div><div class="txtNew" id="comp-j9zgsorc" style="left: 374px; width: 271px; position: absolute; top: 79px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Parking capacity : 123</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="wixGuard">​</span></span></p></div><div class="txtNew" id="comp-j9zgsorc" style="left: 374px; width: 271px; position: absolute; top: 79px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Parking capacity : <?php print($total4); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">Cars currently in parking&nbsp;: 23</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">Cars currently in parking&nbsp;: <?php print($parked); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp; Slots available for cars : 45</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp; Slots available for cars : <?php print($slots); ?></span></span></p>
 
 <p class="font_8" style="font-size:14px;"><span class="wixGuard">​</span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp; Total amount received : Rs. 12000</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp; Total amount received : Rs. <?php print($parking_am); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="wixGuard">​</span></span></p></div></div></div><div class="style-j9zg3pk7" id="comp-j9zgxuxk" style="left: 350px; width: 670px; position: absolute; top: 807px; height: 127px;"><div id="comp-j9zgxuxkbg" class="style-j9zg3pk7bg"></div><div id="comp-j9zgxuxkinlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zgyclb" style="left: 193px; width: 352px; position: absolute; top: 12px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Shops &amp; Restaurants&nbsp;Summary</span></span></h2></div><div class="txtNew" id="comp-j9zgzdac" style="left: 63px; width: 245px; position: absolute; top: 58px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">Total Number of&nbsp; Shops&nbsp;: 234</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="wixGuard">​</span></span></p></div></div></div><div class="style-j9zg3pk7" id="comp-j9zgxuxk" style="left: 350px; width: 670px; position: absolute; top: 807px; height: 127px;"><div id="comp-j9zgxuxkbg" class="style-j9zg3pk7bg"></div><div id="comp-j9zgxuxkinlineContent" class="style-j9zg3pk7inlineContent"><div class="txtNew" id="comp-j9zgyclb" style="left: 193px; width: 352px; position: absolute; top: 12px;"><h2 class="font_2" style="font-size:25px;"><span style="font-weight:bold;"><span style="font-size:25px;">Shops &amp; Restaurants&nbsp;Summary</span></span></h2></div><div class="txtNew" id="comp-j9zgzdac" style="left: 63px; width: 245px; position: absolute; top: 58px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">Total Number of&nbsp; Shops&nbsp;: <?php print($total5); ?></span></span></p>
 
-<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Categories&nbsp;: 8</span></span></p></div><div class="txtNew" id="comp-j9zh10lg" style="left: 374px; width: 256px; position: absolute; top: 58px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">Total Number of&nbsp; Restaurants&nbsp;: 13</span></span></p>
+<p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Categories&nbsp;: 8</span></span></p></div><div class="txtNew" id="comp-j9zh10lg" style="left: 374px; width: 256px; position: absolute; top: 58px;"><p class="font_8" style="font-size:14px;"><span class="color_26"><span style="font-family:open sans,sans-serif;">Total Number of&nbsp; Restaurants&nbsp;: <?php print($total6); ?></span></span></p>
 
 <p class="font_8" style="font-size:14px;"><span style="font-family:open sans,sans-serif;"><span class="color_26">&nbsp;
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;

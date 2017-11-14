@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -209,12 +210,7 @@
 </thead>
 
 <tbody>
-    <tr class="footableOdd">
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
+     <?php require("table.php") ?>
 </tbody>
 </table>
 </div>
