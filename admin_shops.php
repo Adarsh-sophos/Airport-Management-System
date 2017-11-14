@@ -661,7 +661,7 @@
 
     <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Image</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="image" placeholder="" data-export-field="" title="To_From" type="text">
+      <input aria-describedby="4_errors" class="form-control user-success" name="image" placeholder="" data-export-field="" title="To_From" type="file">
     </div>
 
 

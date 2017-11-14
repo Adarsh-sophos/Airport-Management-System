@@ -660,7 +660,7 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="radio_2" value="M" checked="checked" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_2" value="Male" checked="checked" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
 
               Male
 
@@ -668,7 +668,7 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="radio_2" value="F" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_2" value="Female" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
 
               Female
 
@@ -710,7 +710,12 @@
       <input aria-describedby="4_errors" class="form-control user-success" name="age" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
-    <div id="6" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+    <div id="6" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+      <label class="fitText" style="font-size: 12px;">Salary</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="salary" placeholder="" data-export-field="" title="To_From" type="text">
+    </div>
+
+    <div id="7" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
         <label class="fitText" style="font-size: 12px;">Shift</label>
         <select aria-describedby="2_errors" value="" name="shift" data-export-field="" class="user-success">
 
@@ -718,14 +723,14 @@
 
 
 
-            <option value="1" data-price="0">
+            <option value="Day" data-price="0">
 
             Day
 
           </option>
 
 
-            <option value="2" data-price="0">
+            <option value="Night" data-price="0">
 
             Night
 
@@ -733,7 +738,7 @@
       </select>
     </div>
 
-    <div id="7" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
+    <div id="8" class="formElement form-group fadeMe select clearfix col-xs-6 half" style="">
         <label class="fitText" style="font-size: 12px;">Job Type</label>
         <select aria-describedby="2_errors" value="" name="job_type" data-export-field="" class="user-success">
 
@@ -741,26 +746,26 @@
 
 
 
-            <option value="1" data-price="0">
+            <option value="ADMINISTRATIVE SUPPORT" data-price="0">
 
             ADMINISTRATIVE SUPPORT
 
           </option>
 
 
-            <option value="2" data-price="0">
+            <option value="AIRPORT AUTHORITY" data-price="0">
 
             AIRPORT AUTHORITY
 
           </option>
 
-          <option value="3" data-price="0">
+          <option value="ENGINEER" data-price="0">
 
             ENGINEER
 
           </option>
 
-          <option value="4" data-price="0">
+          <option value="TRAFFIC MONITOR" data-price="0">
 
             TRAFFIC MONITOR
 
@@ -768,14 +773,11 @@
       </select>
     </div>
 
-    <div id="00" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Salary</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="salary" placeholder="" data-export-field="" title="To_From" type="text">
-    </div>
+
 
     <div id="9" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
       <label class="fitText" style="font-size: 12px;">Addess</label>
-      <textarea aria-describedby="5_errors" class="form-control user-success" name="Description" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="address" aria-label="Enter Text"></textarea>
+      <textarea aria-describedby="5_errors" class="form-control user-success" name="address" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="address" aria-label="Enter Text"></textarea>
       <div class="lengthSummary fitText hid" style="font-size: 12px;">
         <span class="lengthErrors lengthErrors hid" style="font-size: 12px;">
           <i class="fa fa-warning"></i>
