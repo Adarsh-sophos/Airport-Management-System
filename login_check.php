@@ -17,7 +17,7 @@ for($i=0;$i<3;$i++)
 if($b==1)
 {
     $_SESSION["id"]=1;
-    header('Location:https://ide50-sakshamagarwal51d3.cs50.io/admin_arrivals.php');
+    header('Location:https://ide50-sakshamagarwal51d3.cs50.io/admin_home.php');
 }
 else if($b==0)
 {
