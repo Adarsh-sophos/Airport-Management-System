@@ -677,7 +677,7 @@
 
     <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
       <label class="fitText" style="font-size: 12px;">Scheduled Time</label>
-      <input aria-describedby="3_errors" class="form-control user-success" name="flight_type" id="flight_type" placeholder="" data-export-field="" title="Flight type" type="text">
+      <input aria-describedby="3_errors" class="form-control user-success" name="schedule_time" id="flight_type" placeholder="" data-export-field="" title="Flight type" type="text">
     </div>
 
 </div>

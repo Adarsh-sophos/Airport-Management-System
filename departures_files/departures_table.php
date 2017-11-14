@@ -9,14 +9,14 @@ $conn = mysqli_connect("localhost", $username, $password, $db);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql="SELECT * from departures where airline is not null";
+$sql="SELECT * from departures inner join flight on departures.flight_number=flight.flight_number where airline is not null";
 
 $places=["Paris","Chicago","Manchester","Madrid"];
 $terminals=[1,2,3,4,5];
 extract($_SESSION);
 $flight=trim($flight);
 if($flight!="" and preg_match("/.*\d.*/",$flight))
-$sql=$sql." and flight_number=\"".$flight."\"";
+$sql=$sql." and flight.flight_number=\"".$flight."\"";
 else if($flight!="")
 $sql=$sql." and airline=\"".$flight."\"";
 if(isset($To) and $To!="")
@@ -43,28 +43,28 @@ if ($result=mysqli_query($conn,$sql))
         else
         print("<tr class=\"footableOdd\">");
         print("<td>");
-        print($row[2]);
-        print("</td>");
-        print("<td>");
-        print($row[1]);
-        print("</td>");
-        print("<td>");
-        print($row[3]);
+        print($row[0]);
         print("</td>");
         print("<td>");
         print($row[4]);
         print("</td>");
         print("<td>");
-        print($row[0]);
+        print($row[1]);
         print("</td>");
         print("<td>");
-        print($row[5]);
+        print($row[2]);
         print("</td>");
         print("<td>");
-        print("<pre>      ".(string)$row[6]."</pre>");
+        print($row[3]);
+        print("</td>");
+        print("<td>");
+        print($row[6]);
+        print("</td>");
+        print("<td>");
+        print((string)$row[7]);
         print("</td>");
         print("<td><a href=\"");
-        print($row[7]);
+        print($row[8]);
         print("\">View Details</a></td>");
         print("</tr>");
         $i++;
