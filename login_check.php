@@ -1,6 +1,6 @@
 <?php
 session_start();
-print_r($_POST);
+//print_r($_POST);
 $username=["adarsh","mohit","saksham"];
 $passwords=["adarsh","mohit","saksham"];
 extract($_POST);

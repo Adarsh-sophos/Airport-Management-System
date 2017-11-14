@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -16,6 +18,8 @@
 
 <script defer="defer" src="admin_files/require.js"></script>
 <script defer="defer" src="admin_files/main-r.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="admin_files/wix_cached_view_data/shim.css">
 <link href="admin_files/wix_cached_view_data/bootstrap.css" rel="stylesheet" type="text/css">
@@ -64,7 +68,70 @@
     // BEAT MESSAGE END
 </script>
 
-    
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('input[name="radio_1"]').change(function () {
+            if ($('input[name="radio_1"]:checked').val() == 'Add') {
+                $('#l1').show();
+                $('#l2').show();
+                $('#l3').show();
+                $('#l4').show();
+                $('#l5').show();
+                $('#l6').show();
+                $('#l7').show();
+                $('#l8').show();
+                $('#l9').show();
+                $('#airline').show();
+                $('#flight_number').show();
+                $('#schedule_time').show();
+                $('#schedule_date').show();
+                $('#status_time').show();
+                $('#status_text').show();
+                $('#terminal').show();
+                $('#arriving_from').show();
+                $('#details').show();
+            }
+            if ($('input[name="radio_1"]:checked').val() == 'Remove') {
+                $('#l1').hide();
+                $('#l3').hide();
+                $('#l4').hide();
+                $('#l5').hide();
+                $('#l6').hide();
+                $('#l7').hide();
+                $('#l8').hide();
+                $('#l9').hide();
+                $('#airline').hide();
+                $('#schedule_time').hide();
+                $('#schedule_date').hide();
+                $('#status_time').hide();
+                $('#status_text').hide();
+                $('#terminal').hide();
+                $('#arriving_from').hide();
+                $('#details').hide();
+            }
+            if ($('input[name="radio_1"]:checked').val() == 'Change') {
+               $('#l1').show();
+                $('#l2').show();
+                $('#l3').show();
+                $('#l4').show();
+                $('#l5').show();
+                $('#l6').show();
+                $('#l7').show();
+                $('#l8').show();
+                $('#l9').show();
+                $('#airline').show();
+                $('#schedule_time').show();
+                $('#schedule_date').show();
+                $('#status_time').show();
+                $('#status_text').show();
+                $('#arriving_from').show();
+                $('#terminal').show();
+                $('#details').show();
+            }
+        });
+    });
+</script>
+
 
     <!-- META DATA -->
 <script type="text/javascript">
@@ -379,7 +446,9 @@
 .loginDialogpasswordInput:not([data-state~="invalid"]) .loginDialogpasswordInputerrorMessage {visibility:hidden;}
 .loginDialogpasswordInput[data-state~="invalid"] .loginDialogpasswordInputerrorMessage {visibility:visible;}
 .loginDialogpasswordInput[data-state~="invalid"] input {border-color:#d74401;}
-.loginDialogpasswordInput[data-state~="invalid"] .loginDialogpasswordInputinput {border-color:#ff0000;}</style><style type="text/css">.testStyles {position:absolute; display: none; z-index: 3}</style><div class="testStyles"></div><style type="text/css" data-styleid="uploadedFonts"></style><div style="overflow: hidden; visibility: hidden; max-height: 0px; max-width: 0px; position: absolute;"><style>.font-ruler-content::after {content:"@#$%%^&*~IAO"}</style></div></div><div id="SITE_BACKGROUND" class="siteBackground" style="position: absolute; top: 0px; height: 1129px; width: 1519px;"><div id="SITE_BACKGROUND_previous_noPrev" class="siteBackgroundprevious" style="width: 100%; height: 100%;"><div id="SITE_BACKGROUNDpreviousImage" class="siteBackgroundpreviousImage"></div><div id="SITE_BACKGROUNDpreviousVideo" class="siteBackgroundpreviousVideo"></div><div id="SITE_BACKGROUND_previousOverlay_noPrev" class="siteBackgroundpreviousOverlay"></div></div><div id="SITE_BACKGROUND_current_e4uto_desktop_bg" data-position="absolute" class="siteBackgroundcurrent" style="top: 0px; background-color: rgb(186, 218, 85); position: absolute; visibility: inherit; opacity: 1; width: 100%; height: 100%;"><div id="SITE_BACKGROUND_currentImage_e4uto_desktop_bg" data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage" style="position: absolute; top: 0px; width: 100%; opacity: 0.2; background-size: contain; background-position: center center; background-repeat: no-repeat; height: 100%; background-image: url(&quot;https://static.wixstatic.com/media/2862c4fe37404ff3b16fda70b010df31.jpg/v1/fill/w_1920,h_1280,al_c,q_85,usm_0.66_1.00_0.01/2862c4fe37404ff3b16fda70b010df31.jpg&quot;);" data-image-css="{&quot;backgroundSize&quot;:&quot;contain&quot;,&quot;backgroundPosition&quot;:&quot;center center&quot;,&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;height&quot;:&quot;100%&quot;}"></div><div id="SITE_BACKGROUNDcurrentVideo" class="siteBackgroundcurrentVideo"></div><div id="SITE_BACKGROUND_currentOverlay_e4uto_desktop_bg" class="siteBackgroundcurrentOverlay" style="position: absolute; top: 0px; width: 100%; height: 100%;"></div></div></div><div class="SITE_ROOT" id="SITE_ROOT" style="width: 980px; padding-bottom: 40px;"><div id="masterPage" style="width: 980px; position: static; top: 0px; height: 1129px;"><footer class="fc1_footer fc1" data-state=" " id="SITE_FOOTER" style="width: 980px; position: absolute; left: 0px; height: 206px; bottom: auto; top: 955px;"><div id="SITE_FOOTERscreenWidthBackground" class="fc1screenWidthBackground" style="width: 1519px; left: -270px;"><div class="fc1_bg"></div></div><div id="SITE_FOOTERcenteredContent" class="fc1centeredContent"><div id="SITE_FOOTERbg" class="fc1bg"></div><div id="SITE_FOOTERinlineContent" class="fc1inlineContent"><div class="txtNew" id="comp-j9b0443n" style="left: 335px; width: 347px; position: absolute; top: 37px;"><p class="font_8" style="line-height:1.5em; text-align:center;"><span class="color_15"><object height="0"><a class="auto-generated-link" data-auto-recognition="true" data-content="malaviyairport@gmail.com" href="mailto:malaviyairport@gmail.com" data-type="mail">malaviyairport@gmail.com</a></object></span></p></div><div class="txtNew" id="comp-j9b0443n1" style="left: 360px; width: 298px; position: absolute; top: 74px;"><p class="font_8" style="text-align:center; line-height:1.5em;"><span class="color_15">Jaipur, Rajasthan, India</span></p></div><div class="txtNew" id="comp-j9b0443o" style="left: 234px; width: 550px; position: absolute; top: 150px;"><p class="font_10" style="line-height:1.43em; text-align:center;"><span class="color_15"><span>©2017 BY MALAVIYA INTERNATIONAL AIRPORT</span></span></p></div><div class="lb1" id="comp-j9hjlv4l" style="width: 100px; left: 459px; position: absolute; top: 117px; height: 24px;"><ul aria-label="Social bar" id="comp-j9hjlv4litemsContainer" class="lb1itemsContainer"><li class="lb1imageItem" id="comp-j9hjlv4l0image" style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 14px; display: inline-block;"><a href="https://www.facebook.com/NITJaipur/" target="_blank" data-content="https://www.facebook.com/NITJaipur/" data-type="external" id="comp-j9hjlv4l0imagelink" class="lb1imageItemlink"><div data-style="position:absolute" class="lb1imageItemimage" id="comp-j9hjlv4l0imageimage" style="position: absolute; width: 24px; height: 24px;"><div class="lb1imageItemimagepreloader" id="comp-j9hjlv4l0imageimagepreloader"></div><img id="comp-j9hjlv4l0imageimageimage" alt="Facebook - Black Circle" data-type="image" style="width: 24px; height: 24px; object-fit: cover;" src="admin_files/4057345bcf57474b96976284050c00df.png"></div></a></li><li class="lb1imageItem" id="comp-j9hjlv4l1image" style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 14px; display: inline-block;"><a href="https://www.facebook.com/NITJaipur/" target="_blank" data-content="https://www.facebook.com/NITJaipur/" data-type="external" id="comp-j9hjlv4l1imagelink" class="lb1imageItemlink"><div data-style="position:absolute" class="lb1imageItemimage" id="comp-j9hjlv4l1imageimage" style="position: absolute; width: 24px; height: 24px;"><div class="lb1imageItemimagepreloader" id="comp-j9hjlv4l1imageimagepreloader"></div><img id="comp-j9hjlv4l1imageimageimage" alt="Twitter - Black Circle" data-type="image" style="width: 24px; height: 24px; object-fit: cover;" src="admin_files/870f97661ed14a5bb2d96ecbddec0aed.png"></div></a></li><li class="lb1imageItem" id="comp-j9hjlv4l2image" style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 14px; display: inline-block;"><a href="https://www.facebook.com/NITJaipur/" target="_blank" data-content="https://www.facebook.com/NITJaipur/" data-type="external" id="comp-j9hjlv4l2imagelink" class="lb1imageItemlink"><div data-style="position:absolute" class="lb1imageItemimage" id="comp-j9hjlv4l2imageimage" style="position: absolute; width: 24px; height: 24px;"><div class="lb1imageItemimagepreloader" id="comp-j9hjlv4l2imageimagepreloader"></div><img id="comp-j9hjlv4l2imageimageimage" alt="Instagram - Black Circle" data-type="image" style="width: 24px; height: 24px; object-fit: cover;" src="admin_files/e1aa082f7c0747168d9cf43e77046142.png"></div></a></li></ul></div></div></div></footer><header class="hc1" data-state=" " id="SITE_HEADER" style="width: 980px; position: absolute; top: 0px; height: 209px; left: 0px;"><div id="SITE_HEADERscreenWidthBackground" class="hc1screenWidthBackground" style="width: 1519px; left: -270px;"><div class="hc1_bg"></div></div><div id="SITE_HEADERcenteredContent" class="hc1centeredContent"><div id="SITE_HEADERbg" class="hc1bg"></div><div id="SITE_HEADERinlineContent" class="hc1inlineContent"><div data-exact-height="80" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp1" id="comp-j9b0afp8" style="left: 20px; position: absolute; top: 39px; width: 159px; height: 80px;"><a href="https://adarshjain583.wixsite.com/adarsh" target="_self" id="comp-j9b0afp8link" class="wp1link" style="cursor: pointer; width: 159px; height: 80px;"><div data-style="" class="wp1img" id="comp-j9b0afp8img" style="position: relative; width: 159px; height: 80px;"><div class="wp1imgpreloader" id="comp-j9b0afp8imgpreloader"></div><img id="comp-j9b0afp8imgimage" alt="Untitled" data-type="image" style="width: 159px; height: 80px; object-fit: cover;" src="admin_files/9fb5ca_2e6cafceba2146f082b20184c86d223bmv2.jpg"></div></a></div><div class="txtNew" id="comp-j9b0443m" style="left: 194px; width: 613px; position: absolute; top: 50px;"><p class="font_7" style="text-align:left; line-height:1.46em;"><span class="color_15"><span style="text-transform:uppercase;">MALAVIYA INTERNATIONAL AIRPORT</span></span></p></div><div class="txtNew" id="comp-j9b0a3bh" style="left: 194px; width: 417px; position: absolute; top: 83px;"><p class="font_9" style="text-align:left; line-height:1.55em;"><span class="color_15">Reliable. Prompt. Professional.</span></p></div><nav id="comp-j9b0cgpg" data-menuborder-y="0" data-menubtn-border="0" data-ribbon-els="0" data-label-pad="0" data-ribbon-extra="0" data-drophposition="" data-dropalign="left" dir="ltr" class="style-j9b0cgbd" data-state="left notMobile" style="left: 5px; width: 850px; position: absolute; top: 153px; height: 30px;" data-dropmode="dropDown"><ul aria-label="Site navigation" role="navigation" id="comp-j9b0cgpgitemsContainer" class="style-j9b0cgbditemsContainer" style="text-align: left;"><li data-direction="ltr" data-listposition="left" data-data-id="dataItem-j9b035ky" class="style-j9b0cgbdrepeaterButton" data-state="menu  idle link notMobile" id="comp-j9b0cgpg0" data-original-gap-between-text-and-btn="10" style="width: 69px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false"><a role="button" tabindex="0" aria-haspopup="true" data-listposition="left" href="https://adarshjain583.wixsite.com/adarsh" target="_self" id="comp-j9b0cgpg0linkElement" class="style-j9b0cgbdrepeaterButtonlinkElement"><div class="style-j9b0cgbdrepeaterButton_gapper"><div id="comp-j9b0cgpg0bg" class="style-j9b0cgbdrepeaterButtonbg" style="text-align: left;"><p id="comp-j9b0cgpg0label" class="style-j9b0cgbdrepeaterButtonlabel" style="text-align: left; line-height: 30px;">Home</p></div></div></a></li><li data-direction="ltr" data-listposition="center" data-data-id="dataItem-j9e3hs8u" class="style-j9b0cgbdrepeaterButton" data-state="menu  idle link notMobile" id="comp-j9b0cgpg1" data-original-gap-between-text-and-btn="10" style="width: 165px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false"><a role="button" tabindex="0" aria-haspopup="true" data-listposition="center" href="https://adarshjain583.wixsite.com/adarsh/copy-of-flight-information-1" target="_self" id="comp-j9b0cgpg1linkElement" class="style-j9b0cgbdrepeaterButtonlinkElement"><div class="style-j9b0cgbdrepeaterButton_gapper"><div id="comp-j9b0cgpg1bg" class="style-j9b0cgbdrepeaterButtonbg" style="text-align: left;"><p id="comp-j9b0cgpg1label" class="style-j9b0cgbdrepeaterButtonlabel" style="text-align: left; line-height: 30px;">Shops &amp; Restaurants</p></div></div></a></li><li data-direction="ltr" data-listposition="center" data-data-id="dataItem-j9b0giaz" class="style-j9b0cgbdrepeaterButton" data-state="menu  idle link notMobile" id="comp-j9b0cgpg2" data-original-gap-between-text-and-btn="10" style="width: 146px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false"><a role="button" tabindex="0" aria-haspopup="true" data-listposition="center" href="https://adarshjain583.wixsite.com/adarsh/flight-information" target="_self" id="comp-j9b0cgpg2linkElement" class="style-j9b0cgbdrepeaterButtonlinkElement"><div class="style-j9b0cgbdrepeaterButton_gapper"><div id="comp-j9b0cgpg2bg" class="style-j9b0cgbdrepeaterButtonbg" style="text-align: left;"><p id="comp-j9b0cgpg2label" class="style-j9b0cgbdrepeaterButtonlabel" style="text-align: left; line-height: 30px;">Flight Information</p></div></div></a></li><li data-direction="ltr" data-listposition="center" data-data-id="dataItem-j9e139f1" class="style-j9b0cgbdrepeaterButton" data-state="menu  idle link notMobile" id="comp-j9b0cgpg3" data-original-gap-between-text-and-btn="11" style="width: 192px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;" aria-hidden="false"><a role="button" tabindex="0" aria-haspopup="true" data-listposition="center" href="https://adarshjain583.wixsite.com/adarsh/copy-of-flight-information" target="_self" id="comp-j9b0cgpg3linkElement" class="style-j9b0cgbdrepeaterButtonlinkElement"><div class="style-j9b0cgbdrepeaterButton_gapper"><div id="comp-j9b0cgpg3bg" class="style-j9b0cgbdrepeaterButtonbg" style="text-align: left;"><p id="comp-j9b0cgpg3label" class="style-j9b0cgbdrepeaterButtonlabel" style="text-align: left; line-height: 30px;">Transport and Directions</p></div></div></a></li><li data-listposition="center" class="style-j9b0cgbdrepeaterButton" data-state="menu  idle header notMobile" id="comp-j9b0cgpg__more__" data-original-gap-between-text-and-btn="11" style="height: 0px; overflow: hidden; position: absolute;" aria-hidden="true"><a role="button" tabindex="-1" aria-haspopup="true" data-listposition="center" id="comp-j9b0cgpg__more__linkElement" class="style-j9b0cgbdrepeaterButtonlinkElement"><div class="style-j9b0cgbdrepeaterButton_gapper"><div id="comp-j9b0cgpg__more__bg" class="style-j9b0cgbdrepeaterButtonbg" style="text-align: left;"><p id="comp-j9b0cgpg__more__label" class="style-j9b0cgbdrepeaterButtonlabel" style="text-align: left;">More</p></div></div></a></li></ul><div id="comp-j9b0cgpgmoreButton" class="style-j9b0cgbdmoreButton"></div><nav data-drophposition="" data-dropalign="left" id="comp-j9b0cgpgdropWrapper" class="style-j9b0cgbddropWrapper" style="visibility: hidden; left: 69px; right: auto; bottom: auto;"><ul id="comp-j9b0cgpgmoreContainer" class="style-j9b0cgbdmoreContainer" style="visibility: hidden; left: 69px; right: auto;"></ul></nav></nav><div class="txtNew" id="comp-j9ctqbfh" style="left: 847px; width: 375px; position: absolute; top: 157px;"><p class="font_9"><a>For flight related information - 011-61234567</a></p></div><div id="comp-j9tuyms9" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" class="style-j9tuyl5u" data-state="desktop shouldUseFlex center" style="left: 921px; position: absolute; top: 68px; height: 40px; min-height: 20px; width: 142px;" data-prev-text="Admin Login" data-prev-min-width="82" data-prev-width="142"><a href="https://adarshjain583.wixsite.com/adarsh" target="_self" role="button" id="comp-j9tuyms9link" class="g-transparent-a style-j9tuyl5ulink"><span id="comp-j9tuyms9label" class="style-j9tuyl5ulabel" style="">Admin Login</span></a></div></div></div></header><div class="pc1" data-state="" id="PAGES_CONTAINER" style="width: 980px; position: absolute; top: 209px; height: 713px; left: 0px;"><div id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground" style="width: 1519px; left: -270px;"></div><div id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent"><div id="PAGES_CONTAINERbg" class="pc1bg"></div><div id="PAGES_CONTAINERinlineContent" class="pc1inlineContent"><div class="s_VOwPageGroupSkin" id="SITE_PAGES" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 713px;"><div class="p2" id="lvvdu" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 1260px; display: none;"><div id="lvvdubg" class="p2bg"></div><div id="lvvduinlineContent" class="p2inlineContent"></div></div><div class="p2" id="e4uto" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 713px;"><div id="e4utobg" class="p2bg"></div><div id="e4utoinlineContent" class="p2inlineContent">
+.loginDialogpasswordInput[data-state~="invalid"] .loginDialogpasswordInputinput {border-color:#ff0000;}</style><style type="text/css">.testStyles {position:absolute; display: none; z-index: 3}</style><div class="testStyles"></div><style type="text/css" data-styleid="uploadedFonts"></style><div style="overflow: hidden; visibility: hidden; max-height: 0px; max-width: 0px; position: absolute;"><style>.font-ruler-content::after {content:"@#$%%^&*~IAO"}</style></div></div><div id="SITE_BACKGROUND" class="siteBackground" style="position: absolute; top: 0px; height: 1129px; width: 1519px;"><div id="SITE_BACKGROUND_previous_noPrev" class="siteBackgroundprevious" style="width: 100%; height: 100%;"><div id="SITE_BACKGROUNDpreviousImage" class="siteBackgroundpreviousImage"></div><div id="SITE_BACKGROUNDpreviousVideo" class="siteBackgroundpreviousVideo"></div><div id="SITE_BACKGROUND_previousOverlay_noPrev" class="siteBackgroundpreviousOverlay"></div></div><div id="SITE_BACKGROUND_current_e4uto_desktop_bg" data-position="absolute" class="siteBackgroundcurrent" style="top: 0px; background-color: rgb(186, 218, 85); position: absolute; visibility: inherit; opacity: 1; width: 100%; height: 100%;"><div id="SITE_BACKGROUND_currentImage_e4uto_desktop_bg" data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage" style="position: absolute; top: 0px; width: 100%; opacity: 0.2; background-size: contain; background-position: center center; background-repeat: no-repeat; height: 100%; background-image: url(&quot;https://static.wixstatic.com/media/2862c4fe37404ff3b16fda70b010df31.jpg/v1/fill/w_1920,h_1280,al_c,q_85,usm_0.66_1.00_0.01/2862c4fe37404ff3b16fda70b010df31.jpg&quot;);" data-image-css="{&quot;backgroundSize&quot;:&quot;contain&quot;,&quot;backgroundPosition&quot;:&quot;center center&quot;,&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;height&quot;:&quot;100%&quot;}"></div><div id="SITE_BACKGROUNDcurrentVideo" class="siteBackgroundcurrentVideo"></div><div id="SITE_BACKGROUND_currentOverlay_e4uto_desktop_bg" class="siteBackgroundcurrentOverlay" style="position: absolute; top: 0px; width: 100%; height: 100%;"></div></div></div><div class="SITE_ROOT" id="SITE_ROOT" style="width: 980px; padding-bottom: 40px;"><div id="masterPage" style="width: 980px; position: static; top: 0px; height: 1129px;"><footer class="fc1_footer fc1" data-state=" " id="SITE_FOOTER" style="width: 980px; position: absolute; left: 0px; height: 206px; bottom: auto; top: 955px;"><div id="SITE_FOOTERscreenWidthBackground" class="fc1screenWidthBackground" style="width: 1519px; left: -270px;"><div class="fc1_bg"></div></div><div id="SITE_FOOTERcenteredContent" class="fc1centeredContent"><div id="SITE_FOOTERbg" class="fc1bg"></div><div id="SITE_FOOTERinlineContent" class="fc1inlineContent"><div class="txtNew" id="comp-j9b0443n" style="left: 335px; width: 347px; position: absolute; top: 37px;"><p class="font_8" style="line-height:1.5em; text-align:center;"><span class="color_15"><object height="0"><a class="auto-generated-link" data-auto-recognition="true" data-content="malaviyairport@gmail.com" href="mailto:malaviyairport@gmail.com" data-type="mail">malaviyairport@gmail.com</a></object></span></p></div><div class="txtNew" id="comp-j9b0443n1" style="left: 360px; width: 298px; position: absolute; top: 74px;"><p class="font_8" style="text-align:center; line-height:1.5em;"><span class="color_15">Jaipur, Rajasthan, India</span></p></div><div class="txtNew" id="comp-j9b0443o" style="left: 234px; width: 550px; position: absolute; top: 150px;"><p class="font_10" style="line-height:1.43em; text-align:center;"><span class="color_15"><span>©2017 BY MALAVIYA INTERNATIONAL AIRPORT</span></span></p></div><div class="lb1" id="comp-j9hjlv4l" style="width: 100px; left: 459px; position: absolute; top: 117px; height: 24px;"><ul aria-label="Social bar" id="comp-j9hjlv4litemsContainer" class="lb1itemsContainer"><li class="lb1imageItem" id="comp-j9hjlv4l0image" style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 14px; display: inline-block;"><a href="https://www.facebook.com/NITJaipur/" target="_blank" data-content="https://www.facebook.com/NITJaipur/" data-type="external" id="comp-j9hjlv4l0imagelink" class="lb1imageItemlink"><div data-style="position:absolute" class="lb1imageItemimage" id="comp-j9hjlv4l0imageimage" style="position: absolute; width: 24px; height: 24px;"><div class="lb1imageItemimagepreloader" id="comp-j9hjlv4l0imageimagepreloader"></div><img id="comp-j9hjlv4l0imageimageimage" alt="Facebook - Black Circle" data-type="image" style="width: 24px; height: 24px; object-fit: cover;" src="admin_files/4057345bcf57474b96976284050c00df.png"></div></a></li><li class="lb1imageItem" id="comp-j9hjlv4l1image" style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 14px; display: inline-block;"><a href="https://www.facebook.com/NITJaipur/" target="_blank" data-content="https://www.facebook.com/NITJaipur/" data-type="external" id="comp-j9hjlv4l1imagelink" class="lb1imageItemlink"><div data-style="position:absolute" class="lb1imageItemimage" id="comp-j9hjlv4l1imageimage" style="position: absolute; width: 24px; height: 24px;"><div class="lb1imageItemimagepreloader" id="comp-j9hjlv4l1imageimagepreloader"></div><img id="comp-j9hjlv4l1imageimageimage" alt="Twitter - Black Circle" data-type="image" style="width: 24px; height: 24px; object-fit: cover;" src="admin_files/870f97661ed14a5bb2d96ecbddec0aed.png"></div></a></li><li class="lb1imageItem" id="comp-j9hjlv4l2image" style="width: 24px; height: 24px; margin-bottom: 0px; margin-right: 14px; display: inline-block;"><a href="https://www.facebook.com/NITJaipur/" target="_blank" data-content="https://www.facebook.com/NITJaipur/" data-type="external" id="comp-j9hjlv4l2imagelink" class="lb1imageItemlink"><div data-style="position:absolute" class="lb1imageItemimage" id="comp-j9hjlv4l2imageimage" style="position: absolute; width: 24px; height: 24px;"><div class="lb1imageItemimagepreloader" id="comp-j9hjlv4l2imageimagepreloader"></div><img id="comp-j9hjlv4l2imageimageimage" alt="Instagram - Black Circle" data-type="image" style="width: 24px; height: 24px; object-fit: cover;" src="admin_files/e1aa082f7c0747168d9cf43e77046142.png"></div></a></li></ul></div></div></div></footer>
+<?php require("header.php"); ?>
+<div class="pc1" data-state="" id="PAGES_CONTAINER" style="width: 980px; position: absolute; top: 209px; height: 713px; left: 0px;"><div id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground" style="width: 1519px; left: -270px;"></div><div id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent"><div id="PAGES_CONTAINERbg" class="pc1bg"></div><div id="PAGES_CONTAINERinlineContent" class="pc1inlineContent"><div class="s_VOwPageGroupSkin" id="SITE_PAGES" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 713px;"><div class="p2" id="lvvdu" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 1260px; display: none;"><div id="lvvdubg" class="p2bg"></div><div id="lvvduinlineContent" class="p2inlineContent"></div></div><div class="p2" id="e4uto" style="left: 0px; width: 980px; position: absolute; top: 0px; height: 713px;"><div id="e4utobg" class="p2bg"></div><div id="e4utoinlineContent" class="p2inlineContent">
 
     <div class="tpaw0" id="comp-j9slsik5" style="min-height: 535px; min-width: 478px; left: 502px; width: 478px; position: absolute; top: 67px; height: 625px;">
 
@@ -584,7 +653,7 @@
     <div class="header clearfix">
       <h2 class="fitText formTitle" style="font-size: 28px;">Flight Arrivals</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm"   method="POST" action="add_arrivals.php">
+      <form class="realForm"  name="form1" method="POST" action="add_arrivals.php">
   <input class="honeypot hid" placeholder="" type="text">
   <div class="dynamicElements visible" style="display: block;">
 
@@ -597,7 +666,7 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="(Radio 1)" value="Add" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_1" id="r1" checked="checked" value="Add" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
 
               Add
 
@@ -605,7 +674,7 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="(Radio 1)" value="Remove" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_1" id="r1" value="Remove" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
 
               Remove
 
@@ -613,7 +682,7 @@
 
             <label class="radioOption fitText horizontal" style="font-size: 12px;">
 
-                <input name="(Radio 1)" value="Change" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
+                <input name="radio_1" id="r1" value="Change" data-price="0" data-export-field="" placeholder="" style="font-size: 12px;" type="radio">
 
               Modify
 
@@ -625,57 +694,59 @@
 
 
 
-    <div id="1" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Airline</label>
-      <input aria-describedby="1_errors" class="form-control user-success" name="Airline" placeholder="" data-export-field="" title="Airline" type="text">
-    </div>
-
+    
 
 
     <div id="2" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Flight Number</label>
-      <input aria-describedby="2_errors" class="form-control user-success" name="Flight Number" placeholder="" data-export-field="" title="Flight Number" type="text">
+      <label class="fitText" style="font-size: 12px;" id="l2">Flight Number</label>
+      <input aria-describedby="2_errors" class="form-control user-success" name="flight_number" id="flight_number" placeholder="" data-export-field="" title="Flight Number" type="text">
     </div>
+
+<div id="1" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
+      <label class="fitText" style="font-size: 12px;" id="l1">Airline</label>
+      <input aria-describedby="1_errors" class="form-control user-success" name="airline" id="airline" placeholder="" data-export-field="" title="Airline" type="text">
+    </div>
+
 
 <div class="elementWrapper">
 
     <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Scheduled Time</label>
-      <input aria-describedby="3_errors" class="form-control user-success" name="Flight type" placeholder="" data-export-field="" title="Flight type" type="text">
+      <label class="fitText" style="font-size: 12px;" id="l3">Scheduled Time</label>
+      <input aria-describedby="3_errors" class="form-control user-success" name="schedule_time" id="schedule_time" placeholder="" data-export-field="" title="Flight type" type="text">
     </div>
 
 </div>
 
     <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Scheduled Date</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="date" placeholder="" data-export-field="" title="To_From" type="text">
+      <label class="fitText" style="font-size: 12px;" id="l4">Scheduled Date</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="schedule_date" placeholder="" id="schedule_date" data-export-field="" title="To_From" type="text">
     </div>
 
     <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Status Time</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="To_From" placeholder="" data-export-field="" title="To_From" type="text">
+      <label class="fitText" style="font-size: 12px;" id="l5">Status Time</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="status_time" id="status_time" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
     <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Status Text</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="To_From" placeholder="" data-export-field="" title="To_From" type="text">
+      <label class="fitText" style="font-size: 12px;" id="l6">Status Text</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="status_text" id="status_text" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
     <div id="3" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Arriving From</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="To_From" placeholder="" data-export-field="" title="To_From" type="text">
+      <label class="fitText" style="font-size: 12px;" id="l7">Arriving From</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="arriving_from" id="arriving_from" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
     <div id="4" class="formElement form-group fadeMe text clearfix col-xs-6 half" style="">
-      <label class="fitText" style="font-size: 12px;">Terminal</label>
-      <input aria-describedby="4_errors" class="form-control user-success" name="To_From" placeholder="" data-export-field="" title="To_From" type="text">
+      <label class="fitText" style="font-size: 12px;" id="l8">Terminal</label>
+      <input aria-describedby="4_errors" class="form-control user-success" name="terminal" id="terminal" placeholder="" data-export-field="" title="To_From" type="text">
     </div>
 
 
 
     <div id="5" class="formElement form-group fadeMe textarea clearfix col-sm-12" style="">
-      <label class="fitText" style="font-size: 12px;">Flight Details</label>
-      <textarea aria-describedby="5_errors" class="form-control user-success" name="Description" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="Description" aria-label="Enter Text"></textarea>
+      <label class="fitText" style="font-size: 12px;" id="l9">Flight Details</label>
+      <textarea aria-describedby="5_errors" class="form-control user-success" name="details" id="details" placeholder="" data-max="250" data-limiting="false" style="height: 50px" data-export-field="" value="" title="Description" aria-label="Enter Text"></textarea>
       <div class="lengthSummary fitText hid" style="font-size: 12px;">
         <span class="lengthErrors lengthErrors hid" style="font-size: 12px;">
           <i class="fa fa-warning"></i>
