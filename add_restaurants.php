@@ -13,7 +13,7 @@
     
     extract($_POST);
     extract($_SESSION);
-    print_r($_POST);
+   // print_r($_POST);
     
     if($radio_1=="Add")
     {
@@ -26,10 +26,11 @@
         if(!mysqli_query($conn,$sql))
                 {
                     $_SESSION["addition"]=0;
+                    print(mysqli_error($conn));
                 }
         
-        $_SEESION["change"]=0;
-        header('Location:admin_restaurants.php');  
+        $_SESSION["change"]=0;
+       header('Location:admin_restaurants.php');  
     }
     
     else if($radio_1=="Remove")

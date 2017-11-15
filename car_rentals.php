@@ -812,7 +812,7 @@ extract($_SESSION);
   </div>
 </form>
 <?php
-if($car_left==0)
+if(isset($car_left) and $car_left==0)
 {
     $_SESSION["car_left"]=1;
     print("<h3 style=\"color:red;\">Sorry..No cars available for rent....</h3>");

@@ -599,6 +599,7 @@
   <div class="formBuilder formElementsModule blockLabels enter_ani_none none">
     <div class="header clearfix">
         <?php
+        
          if($_SESSION["change"]==0)
          {  
              if($_SESSION["addition"]==0)
@@ -624,10 +625,13 @@
              $_SESSION["addition"]=-5;
          }
           $_SESSION["change"]=-5;  
+          $_SESSION["addition"]=-5;
+          $_SESSION["removal"]=-5;
+          $_SESSION["updation"]=-5;
         ?>
       <h2 class="fitText formTitle" style="font-size: 28px;">Restaurants</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
-      <form class="realForm" method="POST" action="add_restaurants.php">
+      <form class="realForm" method="POST" action="add_restaurants.php" enctype="multipart/form-data">
   <input class="honeypot hid" placeholder="" type="text">
   <div class="dynamicElements visible" style="display: block;">
 

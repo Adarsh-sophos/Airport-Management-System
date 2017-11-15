@@ -629,7 +629,10 @@
              print("<h3 style=\"color:green;\">Updation Successful...</h3>");
              $_SESSION["addition"]=-5;
          }
-          $_SESSION["change"]=-5;  
+          $_SESSION["change"]=-5;
+          $_SESSION["addition"]=-5;
+          $_SESSION["removal"]=-5;
+          $_SESSION["updation"]=-5;
         ?>
       <h2 class="fitText formTitle" style="font-size: 28px;">Flight Departures</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>

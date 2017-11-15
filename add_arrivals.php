@@ -13,7 +13,7 @@
 
     extract($_POST);
     extract($_SESSION);
-    print_r($_POST);
+   // print_r($_POST);
 
     $r_time = '@([01][0-9]|[2][0-3]):[0-5][0-9]:[0-5][0-9]@';
     $r_date = '@\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])@';
@@ -24,6 +24,7 @@
         header('Location:message.php');
     }
 
+/*
     else if(!preg_match($r_time, $schedule_time, $temp))
     {
         $_SESSION['error_message'] = " Time not in incorrect format. ";
@@ -34,7 +35,7 @@
     {
         $_SESSION['error_message'] = " Date not in incorrect format. ";
         header('Location:message.php');
-    }
+    }*/
     
 
     else if($radio_1=="Add")
@@ -110,6 +111,7 @@
         if(!mysqli_query($conn,$sql2) or !mysqli_query($conn,$sql))
         {
             $_SESSION["updation"]=0;
+            print(mysqli_error($conn));
         }
         $_SESSION["change"]=2;
 

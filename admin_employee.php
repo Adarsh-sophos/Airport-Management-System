@@ -634,6 +634,9 @@
              else
              print("<h3 style=\"color:green;\">Updation Successful...</h3>");
              $_SESSION["addition"]=-5;
+             $_SESSION["addition"]=-5;
+          $_SESSION["removal"]=-5;
+          $_SESSION["updation"]=-5;
          }
           $_SESSION["change"]=-5;  
         ?>

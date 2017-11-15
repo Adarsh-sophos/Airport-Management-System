@@ -806,7 +806,7 @@ online.</span></p>
 </form>
 <?php 
 extract($_SESSION);
-if($left==0)
+if(isset($left) and $left==0)
 {
     print("<br><h3 style=\"color:red;\">Sorry...No parking slots are available</h3>");
     $_SESSION["left"]=1;
