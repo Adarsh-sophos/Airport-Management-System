@@ -1,4 +1,20 @@
-<?php session_start(); ?>
+<?php session_start();
+$x=129;
+$y=280;
+$username="sakshamagarwal51";
+$password="3vXt73bGW7mEcGnI";
+$db="DBMS";
+#opening connection
+$conn = mysqli_connect("localhost", $username, $password, $db);
+//if connection failed
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$sql="select * from restaurants where category=3";
+$result=mysqli_query($conn,$sql);
+if(!mysqli_query($conn,$sql))
+print(mysqli_error($conn));
+?>
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -392,19 +408,42 @@ LOCATION&nbsp;: T3 International Departures</span></p></div><div style="left: 45
 
 
 
-<div style="left: 86px; width: 246px; position: absolute; top: 51px;" class="txtNew" id="comp-j9ct27px" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27px"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Food Court</span></span></span></span></h2></div><div style="left: 86px; width: 662px; position: absolute; top: 396px; height: 210px;" class="style-j9ct27pz1" id="comp-j9ct27pz" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz"><div id="comp-j9ct27pzbg" class="style-j9ct27pz1bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$bg"></div><div id="comp-j9ct27pzinlineContent" class="style-j9ct27pz1inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$inlineContent"><div style="left: 41px; width: 402px; position: absolute; top: 28px;" class="txtNew" id="comp-j9ct27q1" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$inlineContent.$comp-j9ct27q1"><p class="font_8"><span style="color:#FFFFFF;">AU BON PAIN</span></p>
+<div style="left: 86px; width: 246px; position: absolute; top: 51px;" class="txtNew" id="comp-j9ct27px" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27px"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Food Court</span></span></span></span></h2></div>
 
-<p class="font_8"><span style="color:#FFFFFF;">Au Bon Pain is an American fast-casual bakery and café chain&nbsp;<br>
-<br>
-LOCATION&nbsp;: T3 International Departures</span></p></div><div style="left: 452px; position: absolute; top: 44px; width: 190px; height: 122px;" data-exact-height="122" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9ct27q2" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$inlineContent.$comp-j9ct27q2"><div style="width: 190px; height: 122px;" id="comp-j9ct27q2link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$inlineContent.$comp-j9ct27q2.$link"><div id="comp-j9ct27q2img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$inlineContent.$comp-j9ct27q2.$link.0" style="position: relative; width: 190px; height: 122px;"><div class="wp2imgpreloader" id="comp-j9ct27q2imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$inlineContent.$comp-j9ct27q2.$link.0.$preloader"></div><img id="comp-j9ct27q2imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27pz.$inlineContent.$comp-j9ct27q2.$link.0.$image" style="width: 190px; height: 122px; object-fit: cover;" src="files/9fb5ca_a0ac1b97ddcf471094aace29e7e71fe2mv2.jpg"></div></div></div></div></div><div style="left: 86px; width: 662px; position: absolute; top: 657px; height: 210px;" class="style-j9ct27q41" id="comp-j9ct27q4" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4"><div id="comp-j9ct27q4bg" class="style-j9ct27q41bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$bg"></div><div id="comp-j9ct27q4inlineContent" class="style-j9ct27q41inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$inlineContent"><div style="left: 41px; width: 402px; position: absolute; top: 28px;" class="txtNew" id="comp-j9ct27q6" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$inlineContent.$comp-j9ct27q6"><p class="font_8"><span style="color:#FFFFFF;">AU BON PAIN</span></p>
+<?php
+    while($row=mysqli_fetch_row($result))
+    {
+        print("<div style=\"left: 86px; width: 662px; position: absolute; top: ".$x."px; height: 210px;\" class=\"style-j9csezwr\" id=\"comp-j9csjzkr\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fu7s8_DESKTOP.$inlineContent.$comp-j9csjzkr\"><div id=\"comp-j9csjzkrbg\" class=\"style-j9csezwrbg\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fu7s8_DESKTOP.$inlineContent.$comp-j9csjzkr.$bg\"></div><div id=\"comp-j9csjzkrinlineContent\" class=\"style-j9csezwrinlineContent\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fu7s8_DESKTOP.$inlineContent.$comp-j9csjzkr.$inlineContent\"><div style=\"left: 41px; width: 402px; position: absolute; top: 28px;\" class=\"txtNew\" id=\"comp-j9csjzli\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fu7s8_DESKTOP.$inlineContent.$comp-j9csjzkr.$inlineContent.$comp-j9csjzli\"><p class=\"font_8\"><span style=\"color:#FFFFFF;\">".$row[6]."</span></p>
 
-<p class="font_8"><span style="color:#FFFFFF;">Au Bon Pain is an American fast-casual bakery and café chain&nbsp;<br>
-<br>
-LOCATION&nbsp;: T3 International Departures</span></p></div><div style="left: 452px; position: absolute; top: 44px; width: 190px; height: 122px;" data-exact-height="122" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9ct27q8" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$inlineContent.$comp-j9ct27q8"><div style="width: 190px; height: 122px;" id="comp-j9ct27q8link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$inlineContent.$comp-j9ct27q8.$link"><div id="comp-j9ct27q8img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$inlineContent.$comp-j9ct27q8.$link.0" style="position: relative; width: 190px; height: 122px;"><div class="wp2imgpreloader" id="comp-j9ct27q8imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$inlineContent.$comp-j9ct27q8.$link.0.$preloader"></div><img id="comp-j9ct27q8imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q4.$inlineContent.$comp-j9ct27q8.$link.0.$image" style="width: 190px; height: 122px; object-fit: cover;" src="files/9fb5ca_a0ac1b97ddcf471094aace29e7e71fe2mv2.jpg"></div></div></div></div></div><div style="left: 86px; width: 662px; position: absolute; top: 919px; height: 210px;" class="style-j9ct27qa" id="comp-j9ct27q9" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9"><div id="comp-j9ct27q9bg" class="style-j9ct27qabg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$bg"></div><div id="comp-j9ct27q9inlineContent" class="style-j9ct27qainlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$inlineContent"><div style="left: 41px; width: 402px; position: absolute; top: 28px;" class="txtNew" id="comp-j9ct27qb" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$inlineContent.$comp-j9ct27qb"><p class="font_8"><span style="color:#FFFFFF;">AU BON PAIN</span></p>
+<p class=\"font_8\"><span style=\"color:#FFFFFF;\">".$row[3]."<br> <br>
+LOCATION&nbsp;: ".$row[2]."</span></p></div><div style=\"left: 452px;
+position: absolute; top: 42px; width: 190px; height: 122px;\" data-exact-
+height=\"122\" data-content-padding-horizontal=\"0\" data-content-padding-
+vertical=\"0\" title=\"\" class=\"wp2\" id=\"comp-j9csxp0z\" data-reactid=\".0.$SITE_RO
+OT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PA
+GES.$fu7s8_DESKTOP.$inlineContent.$comp-j9csjzkr.$inlineContent.$comp-
+j9csxp0z\"><div style=\"width: 190px; height: 122px;\" id=\"comp-j9csxp0zlink\"
+class=\"wp2link\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER
+.$centeredContent.$inlineContent.$SITE_PAGES.$fu7s8_DESKTOP.$inlineContent
+.$comp-j9csjzkr.$inlineContent.$comp-j9csxp0z.$link\"><div id=\"comp-
+j9csxp0zimg\" data-style=\"\" class=\"wp2img\" data-reactid=\".0.$SITE_ROOT.$desktop
+_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$fu7s8_
+DESKTOP.$inlineContent.$comp-j9csjzkr.$inlineContent.$comp-j9csxp0z.$link.0\"
+style=\"position: relative; width: 190px; height: 122px;\"><div
+class=\"wp2imgpreloader\" id=\"comp-j9csxp0zimgpreloader\" data-reactid=\".0.$SITE_
+ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_
+PAGES.$fu7s8_DESKTOP.$inlineContent.$comp-j9csjzkr.$inlineContent.$comp-
+j9csxp0z.$link.0.$preloader\"></div><img id=\"comp-j9csxp0zimgimage\" alt=\"No Image Found\"
+data-type=\"image\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAIN
+ER.$centeredContent.$inlineContent.$SITE_PAGES.$fu7s8_DESKTOP.$inlineContent
+.$comp-j9csjzkr.$inlineContent.$comp-j9csxp0z.$link.0.$image\" style=\"width:
+190px; height: 122px; object-fit: cover;\" src=\"".$row[4]."\"></div></div></div></div></div>");
 
-<p class="font_8"><span style="color:#FFFFFF;">Au Bon Pain is an American fast-casual bakery and café chain&nbsp;<br>
-<br>
-LOCATION&nbsp;: T3 International Departures</span></p></div><div style="left: 452px; position: absolute; top: 44px; width: 190px; height: 122px;" data-exact-height="122" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9ct27qd" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$inlineContent.$comp-j9ct27qd"><div style="width: 190px; height: 122px;" id="comp-j9ct27qdlink" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$inlineContent.$comp-j9ct27qd.$link"><div id="comp-j9ct27qdimg" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$inlineContent.$comp-j9ct27qd.$link.0" style="position: relative; width: 190px; height: 122px;"><div class="wp2imgpreloader" id="comp-j9ct27qdimgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$inlineContent.$comp-j9ct27qd.$link.0.$preloader"></div><img id="comp-j9ct27qdimgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$b32fp_DESKTOP.$inlineContent.$comp-j9ct27q9.$inlineContent.$comp-j9ct27qd.$link.0.$image" style="width: 190px; height: 122px; object-fit: cover;" src="files/9fb5ca_a0ac1b97ddcf471094aace29e7e71fe2mv2.jpg"></div></div></div></div></div></div></div></div></div></div></div></div></div><noscript data-reactid=".0.$popupRoot"></noscript><div class="siteAspectsContainer" data-reactid=".0.$siteAspectsContainer"><div data-reactid=".0.$siteAspectsContainer.$aspectPortal"></div><div data-reactid=".0.$siteAspectsContainer.$externalScriptContainer"></div><noscript data-reactid=".0.$siteAspectsContainer.$ecomCheckoutAspectContrainer"></noscript></div><noscript data-reactid=".0.6"></noscript><noscript data-reactid=".0.7"></noscript><noscript data-reactid=".0.8"></noscript></div></div>
+    $x=$x+$y;
+    }
+    ?>
+
+</div></div></div></div></div></div></div></div><noscript data-reactid=".0.$popupRoot"></noscript><div class="siteAspectsContainer" data-reactid=".0.$siteAspectsContainer"><div data-reactid=".0.$siteAspectsContainer.$aspectPortal"></div><div data-reactid=".0.$siteAspectsContainer.$externalScriptContainer"></div><noscript data-reactid=".0.$siteAspectsContainer.$ecomCheckoutAspectContrainer"></noscript></div><noscript data-reactid=".0.6"></noscript><noscript data-reactid=".0.7"></noscript><noscript data-reactid=".0.8"></noscript></div></div>
 
 
 

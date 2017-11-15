@@ -16,17 +16,26 @@
     print_r($_POST);
 
     $r_time = '@([01][0-9]|[2][0-3]):[0-5][0-9]:[0-5][0-9]@';
-    if(!preg_match($r_time, $schedule_time, $temp))
-    {
-        print(" Time not in incorrect format. ");
-        $year[1] = "-";
-    }
+    $r_date = '@\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])@';
 
     if($flight_number == "")
     {
         $_SESSION['error_message'] = "Primary key Flight Number is misssing.";
         header('Location:message.php');
     }
+
+    else if(!preg_match($r_time, $schedule_time, $temp))
+    {
+        $_SESSION['error_message'] = " Time not in incorrect format. ";
+        header('Location:message.php');
+    }
+    
+    else if(!preg_match($r_date, $schedule_time, $temp))
+    {
+        $_SESSION['error_message'] = " Date not in incorrect format. ";
+        header('Location:message.php');
+    }
+    
 
     else if($radio_1=="Add")
     {

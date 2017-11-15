@@ -10,7 +10,7 @@ $conn = mysqli_connect("localhost", $username, $password, $db);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql="select * from shops where category=1";
+$sql="select * from shops where category=3";
 $result=mysqli_query($conn,$sql);
 if(!mysqli_query($conn,$sql))
 print(mysqli_error($conn));
@@ -479,7 +479,7 @@ print(mysqli_error($conn));
                     <div id=\"comp-j9ctllq9img\" data-style=\"\" class=\"wp2img\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0\" style=\"position: relative; width: 190px; height: 122px;\">
                         <div class=\"wp2imgpreloader\" id=\"comp-j9ctllq9imgpreloader\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0.$preloader\">
                         </div>
-                        <img id=\"comp-j9ctllq9imgimage\" alt=\"No Image Found\" data-type=\"image\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0.$image\" style=\"width: 190px; height: 122px; object-fit: cover;\" src=\"".$row[5]."\">
+                        <img id=\"comp-j9ctllq9imgimage\" alt=\"No Image Found\" data-type=\"image\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0.$image\" style=\"width: 190px; height: 122px; object-fit: cover;\" src=\"".$row[3]."\">
                     </div>
                 </div>
             </div>

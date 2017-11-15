@@ -1,4 +1,20 @@
-<?php session_start(); ?>
+<?php session_start();
+$x=129;
+$y=280;
+$username="sakshamagarwal51";
+$password="3vXt73bGW7mEcGnI";
+$db="DBMS";
+#opening connection
+$conn = mysqli_connect("localhost", $username, $password, $db);
+//if connection failed
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$sql="select * from shops where category=8";
+$result=mysqli_query($conn,$sql);
+if(!mysqli_query($conn,$sql))
+print(mysqli_error($conn));
+?>
 <!DOCTYPE html>
 <html class=""><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -443,37 +459,38 @@
 
     <div style="left: 86px; width: 246px; position: absolute; top: 53px;" class="txtNew" id="comp-j9ctllq4" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq4"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Convenience, Travel and News</span></span></span></span></h2></div>
 
-    <div style="left: 86px; width: 662px; position: absolute; top: 129px; height: 210px;" class="style-j9ctllq61" id="comp-j9ctllq6" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6">
+   <?php
+    while($row=mysqli_fetch_row($result))
+    {
+        print("<div style=\"left: 86px; width: 662px; position: absolute; top: ".$x."px; height: 210px;\" class=\"style-j9ctllq61\" id=\"comp-j9ctllq6\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6\">
 
-        <div id="comp-j9ctllq6bg" class="style-j9ctllq61bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$bg">
+        <div id=\"comp-j9ctllq6bg\" class=\"style-j9ctllq61bg\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$bg\">
         </div>
 
-        <div id="comp-j9ctllq6inlineContent" class="style-j9ctllq61inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent">
-            <div style="left: 41px; width: 402px; position: absolute; top: 28px;" class="txtNew" id="comp-j9ctllq8" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq8"><p class="font_8"><span style="color:#FFFFFF;">AU BON PAIN</span></p>
-                <p class="font_8"><span style="color:#FFFFFF;">Au Bon Pain is an American fast-casual bakery and café chain&nbsp;<br>
+        <div id=\"comp-j9ctllq6inlineContent\" class=\"style-j9ctllq61inlineContent\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent\">
+            <div style=\"left: 41px; width: 402px; position: absolute; top: 28px;\" class=\"txtNew\" id=\"comp-j9ctllq8\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq8\"><p class=\"font_8\"><span style=\"color:#FFFFFF;\">".$row[6]."</span></p>
+                <p class=\"font_8\"><span style=\"color:#FFFFFF;\">".$row[4]."&nbsp;<br>
                 <br>
-                LOCATION&nbsp;: T3 International Departures</span></p>
+                LOCATION&nbsp;: ".$row[5]."</span></p>
             </div>
 
-            <div style="left: 452px; position: absolute; top: 44px; width: 190px; height: 122px;" data-exact-height="122" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9ctllq9" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9">
-                <div style="width: 190px; height: 122px;" id="comp-j9ctllq9link" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link">
-                    <div id="comp-j9ctllq9img" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0" style="position: relative; width: 190px; height: 122px;">
-                        <div class="wp2imgpreloader" id="comp-j9ctllq9imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0.$preloader">
+            <div style=\"left: 452px; position: absolute; top: 44px; width: 190px; height: 122px;\" data-exact-height=\"122\" data-content-padding-horizontal=\"0\" data-content-padding-vertical=\"0\" title=\"\" class=\"wp2\" id=\"comp-j9ctllq9\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9\">
+                <div style=\"width: 190px; height: 122px;\" id=\"comp-j9ctllq9link\" class=\"wp2link\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link\">
+                    <div id=\"comp-j9ctllq9img\" data-style=\"\" class=\"wp2img\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0\" style=\"position: relative; width: 190px; height: 122px;\">
+                        <div class=\"wp2imgpreloader\" id=\"comp-j9ctllq9imgpreloader\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0.$preloader\">
                         </div>
-                        <img id="comp-j9ctllq9imgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0.$image" style="width: 190px; height: 122px; object-fit: cover;" src="files/9fb5ca_a0ac1b97ddcf471094aace29e7e71fe2mv2.jpg">
+                        <img id=\"comp-j9ctllq9imgimage\" alt=\"No Image Found\" data-type=\"image\" data-reactid=\".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6.$inlineContent.$comp-j9ctllq9.$link.0.$image\" style=\"width: 190px; height: 122px; object-fit: cover;\" src=\"".$row[3]."\">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>");
+    $x=$x+$y;
+    }
+    ?>
 
 
-    <div style="left: 86px; width: 662px; position: absolute; top: 385px; height: 210px;" class="style-j9ctllqc" id="comp-j9ctllqb" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb"><div id="comp-j9ctllqbbg" class="style-j9ctllqcbg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$bg"></div><div id="comp-j9ctllqbinlineContent" class="style-j9ctllqcinlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$inlineContent"><div style="left: 41px; width: 402px; position: absolute; top: 28px;" class="txtNew" id="comp-j9ctllqd" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$inlineContent.$comp-j9ctllqd"><p class="font_8"><span style="color:#FFFFFF;">CONNEXIONS</span></p>
-
-<p class="font_8"><span style="color:#FFFFFF;">Mull over your favourite
-drink, grab a quick bite, relish a complete continental or Indian meal,
-or indulge your sweet tooth, all at one versatile café.<br>
-LOCATION&nbsp;: T3 International Departures</span></p></div><div style="left: 452px; position: absolute; top: 40px; width: 190px; height: 126px;" data-exact-height="126" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="comp-j9ctllqf" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$inlineContent.$comp-j9ctllqf"><div style="width: 190px; height: 126px;" id="comp-j9ctllqflink" class="wp2link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$inlineContent.$comp-j9ctllqf.$link"><div id="comp-j9ctllqfimg" data-style="" class="wp2img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$inlineContent.$comp-j9ctllqf.$link.0" style="position: relative; width: 190px; height: 126px;"><div class="wp2imgpreloader" id="comp-j9ctllqfimgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$inlineContent.$comp-j9ctllqf.$link.0.$preloader"></div><img id="comp-j9ctllqfimgimage" alt="" data-type="image" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllqb.$inlineContent.$comp-j9ctllqf.$link.0.$image" style="width: 190px; height: 126px; object-fit: cover;" src="files/9fb5ca_8c5d36910a354fac8978835db947d074mv2.jpg"></div></div></div></div></div>
+    
 
 </div></div></div></div></div></div></div></div><noscript data-reactid=".0.$popupRoot"></noscript><div class="siteAspectsContainer" data-reactid=".0.$siteAspectsContainer"><div data-reactid=".0.$siteAspectsContainer.$aspectPortal"></div><div data-reactid=".0.$siteAspectsContainer.$externalScriptContainer"></div><noscript data-reactid=".0.$siteAspectsContainer.$ecomCheckoutAspectContrainer"></noscript></div><noscript data-reactid=".0.6"></noscript><noscript data-reactid=".0.7"></noscript><noscript data-reactid=".0.8"></noscript></div></div>
 
