@@ -22,7 +22,10 @@ $sql = "Insert into airline (airline_id,airline_name,3_digit_code) values (\"$ai
 //print($sql);
 $result=mysqli_query($conn,$sql);
 
-
+if(!mysqli_query($conn,$sql))
+        {
+            $_SESSION["addition"]=0;
+        }
 $_SEESION["change"]=0;
 header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_airlines.php');  
 }
@@ -30,10 +33,10 @@ else if($radio_1=="Remove")
 {
     $sql="Delete from airline where airline_id=\"$airline_id\"";
     $result=mysqli_query($conn,$sql);
-    if($result==FALSE)
-    {
-        $_SESSION["removal"]=0;
-    }
+    if(!mysqli_query($conn,$sql))
+        {
+            $_SESSION["removal"]=0;
+        }
     $_SESSION["change"]=1;
     
     header('Location: https://ide50-sakshamagarwal51d3.cs50.io/admin_airlines.php');  
@@ -49,10 +52,10 @@ else if($radio_1=="Change")
     
     $sql2=$sql2." where airline_id=\"$airline_id\"";
     $result=mysqli_query($conn,$sql);
-    if($result==FALSE)
-    {
-        $_SESSION["updation"]=0;
-    }
+    if(!mysqli_query($conn,$sql))
+        {
+            $_SESSION["updation"]=0;
+        }
     $_SESSION["change"]=2;
     header('Location:https://ide50-sakshamagarwal51d3.cs50.io/admin_airlines.php');  
 }

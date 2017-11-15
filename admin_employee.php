@@ -610,6 +610,33 @@
 <div id="appView" class="">
   <div class="formBuilder formElementsModule blockLabels enter_ani_none none">
     <div class="header clearfix">
+        <?php
+         if($_SESSION["change"]==0)
+         {  
+             if($_SESSION["addition"]==0)
+             print("<h3 style=\"color:red;\">Insertion Unsuccessful due to some problems...</h3>");
+             else
+             print("<h3 style=\"color:green;\">Insertion Successful...</h3>");
+             $_SESSION["addition"]=-5;
+         }
+         else if($_SESSION["change"]==1)
+         {
+             if($_SESSION["removal"]==0)
+             print("<h3 style=\"color:red;\">Deletion Unsuccessful due to some problems...</h3>");
+             else
+             print("<h3 style=\"color:green;\">Deletion Successful...</h3>");
+             $_SESSION["removal"]=-5;
+         }
+         else if($_SESSION["change"]==2)
+         {
+             if($_SESSION["updation"]==0)
+             print("<h3 style=\"color:red;\">Updation Unsuccessful due to some problems...</h3>");
+             else
+             print("<h3 style=\"color:green;\">Updation Successful...</h3>");
+             $_SESSION["addition"]=-5;
+         }
+          $_SESSION["change"]=-5;  
+        ?>
       <h2 class="fitText formTitle" style="font-size: 28px;">Employee Details</h2>
       <h3 class="description fitText" tabindex="0" style="font-size: 12px;"></h3>
       <form class="realForm" method="POST" action="add_employee.php">
