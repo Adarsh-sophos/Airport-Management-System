@@ -26,7 +26,7 @@
 
         $sql2="Insert into departures(flight_number,departing_to,departure_date) values (\"$flight_number\",\"$departing_to\",\"$schedule_date\")";
         $result2=mysqli_query($conn,$sql2);
-        if($result==FALSE or $result2==FALSE)
+         if(!mysqli_query($conn,$sql2) or !mysqli_query($conn,$sql))
         {
             $_SESSION["addition"]=0;
         }
@@ -42,7 +42,7 @@
         $result=mysqli_query($conn,$sql);
         $result2=mysqli_query($conn,$sql2);
         
-        if($result==FALSE or $result2==FALSE)
+         if(!mysqli_query($conn,$sql2) or !mysqli_query($conn,$sql))
         {
             $_SESSION["removal"]=0;
         }
@@ -77,7 +77,7 @@
         $sql2=$sql2." where flight_number=\"$flight_number\"";
         $result=mysqli_query($conn,$sql);
         $result2=mysqli_query($conn,$sql2);
-        if($result==FALSE or $result2==FALSE)
+         if(!mysqli_query($conn,$sql2) or !mysqli_query($conn,$sql))
         {
             $_SESSION["updation"]=0;
         }

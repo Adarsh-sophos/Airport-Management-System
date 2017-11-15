@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+session_unset();
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0040)https://adarshjain583.wixsite.com/adarsh -->
 <html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

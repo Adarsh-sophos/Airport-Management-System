@@ -13,9 +13,15 @@
     
     extract($_POST);
     extract($_SESSION);
-    //print_r($_POST);
+    print_r($_POST);
     
-    if($radio_1=="Add")
+    if($flight_number == "")
+    {
+        $_SESSION['error_message'] = "Primary key Flight Number is misssing.";
+        header('Location:message.php');
+    }
+    
+    else if($radio_1=="Add")
     {
         $status=$status_text." ".$status_time;
         $sql = "Insert into flight (scheduled, airline, flight_number, status, terminal, flight_details) values (\"$schedule_time\",\"$airline\",\"$flight_number\",\"$status\",$terminal,\"$details\")";
@@ -30,11 +36,7 @@
             $_SESSION["addition"]=0;
         }
         
-        if($result==FALSE or $result2==FALSE)
-        {
-            $_SESSION["addition"]=0;
-        }
-        
+       
         $_SESSION["change"]=0;
         header('Location:admin_arrivals.php');  
     }

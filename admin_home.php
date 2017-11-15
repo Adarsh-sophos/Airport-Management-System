@@ -133,7 +133,7 @@ $total6=$row[0];
 
 
     <meta charset="utf-8">
-<title>adarsh | admin_home</title>
+<title>Admin Home</title>
 <meta name="fb_admins_meta_tag" content="">
 <link rel="shortcut icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">

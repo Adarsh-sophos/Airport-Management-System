@@ -610,7 +610,8 @@
   <div class="formBuilder formElementsModule blockLabels enter_ani_none none">
     <div class="header clearfix">
         <?php
-         if($_SESSION["change"]==0)
+        
+         if( isset($_SESSION["change"]) and $_SESSION["change"]==0)
          {  
              if($_SESSION["addition"]==0)
              print("<h3 style=\"color:red;\">Insertion Unsuccessful due to some problems...</h3>");

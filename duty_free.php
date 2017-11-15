@@ -6,7 +6,7 @@
 
 
     <meta charset="utf-8">
-<title>Electronics</title>
+<title>Duty Free</title>
 <meta name="fb_admins_meta_tag" content="">
 <link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
@@ -441,7 +441,7 @@
 
 
 
-    <div style="left: 86px; width: 246px; position: absolute; top: 53px;" class="txtNew" id="comp-j9ctllq4" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq4"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Electronics</span></span></span></span></h2></div>
+    <div style="left: 86px; width: 246px; position: absolute; top: 53px;" class="txtNew" id="comp-j9ctllq4" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq4"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Duty Free</span></span></span></span></h2></div>
 
     <div style="left: 86px; width: 662px; position: absolute; top: 129px; height: 210px;" class="style-j9ctllq61" id="comp-j9ctllq6" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$o7cvb_DESKTOP.$inlineContent.$comp-j9ctllq6">
 

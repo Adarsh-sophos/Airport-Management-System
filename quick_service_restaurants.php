@@ -6,7 +6,7 @@
 
 
     <meta charset="utf-8">
-<title>Quick Service Restaurants </title>
+<title>Quick Service Restaurants</title>
 <meta name="fb_admins_meta_tag" content="">
 <link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
