@@ -25,7 +25,7 @@ if ($result=mysqli_query($conn,$sql))
     if($car_left<=0)
     {
         $_SESSION["car_left"]=0;
-        header('Location:https://ide50-sakshamagarwal51d3.cs50.io/car_rentals.php');
+        header('Location:car_rentals.php');
     }
     $car_left=(string)$car_left;
 }
