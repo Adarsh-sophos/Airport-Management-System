@@ -7,8 +7,6 @@
 > ***Adarsh Kumar Jain***
 >
 > ***Mohit Sharma***
->
-> (Under the mentorship of **Mr. Vimal Daga, Technical Head**)
 
 </br>
 
