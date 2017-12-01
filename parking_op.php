@@ -94,7 +94,7 @@ if ($result=mysqli_query($conn,$sql))
   <script>
 $(document).ready(function(){
     $("#park_form").submit(function(){
-        alert("Parking booked successfully.Details have been send to your provided email address.");
+        alert("Parking booked successfully.");
     });
 });
 </script>

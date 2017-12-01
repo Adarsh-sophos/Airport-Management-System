@@ -31,7 +31,6 @@
 					<input type="text" name="name" placeholder="Username" required/>
 					<label>Password</label>
 					<input type="password" name="password" placeholder="Password" required />
-					<a href="#" class="pass">Forgot Password ?</a>
 					<?php
 					if($_SESSION["error"]==1)
 					{
@@ -43,11 +42,7 @@
 				</form>
 			</div>
 			
-			<div class="agile-icons">
-				<a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-				<a href="#"><span class="fa fa-facebook"></span></a>
-				<a href="#"><span class="fa fa-pinterest-p"></span></a>
-			</div>
+			
 		</div>
 		<br>
 		<div class="copyright">

@@ -53,10 +53,11 @@
         $sql2=$sql2.",3_digit_code=\"$code\"";
         
         $sql2=$sql2." where airline_id=\"$airline_id\"";
-        $result=mysqli_query($conn,$sql);
-        if(!mysqli_query($conn,$sql))
+        $result=mysqli_query($conn,$sql2);
+        if(!mysqli_query($conn,$sql2))
             {
                 $_SESSION["updation"]=0;
+                //mysqli_error($comm);
             }
         $_SESSION["change"]=2;
         header('Location:admin_airlines.php');  

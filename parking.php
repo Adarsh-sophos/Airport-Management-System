@@ -425,11 +425,11 @@
 <div style="left: 141px; width: 463px; position: absolute; top: 111px;" class="txtNew" id="comp-j9cooabg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$dy11g_DESKTOP.$inlineContent.$comp-j9cooabg"><p class="font_8" style="text-align:justify;"><span style="font-weight:bold;">If
  you're after great value airport parking or the nearest car park to the
  terminal, we have something to suit – and it could be cheaper than
-taking a taxi. We're the official Heathrow parking provider, so no one
-offers our airport parking cheaper than us. Save money* by booking
+taking a taxi. We're the official parking provider, so no one
+offers our airport parking cheaper than us. Save money by booking
 online.</span></p>
 
-<p class="font_8" style="text-align:justify;"><span style="font-weight:bold;">* Compared to the normal drive-up rate; minimum stay normally required.</span></p></div><div style="left: 141px; width: 339px; position: absolute; top: 48px;" class="txtNew" id="comp-j9cooabk" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$dy11g_DESKTOP.$inlineContent.$comp-j9cooabk"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Malaviya Official Parking</span></span></span></span></h2></div>
+</div><div style="left: 141px; width: 339px; position: absolute; top: 48px;" class="txtNew" id="comp-j9cooabk" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$dy11g_DESKTOP.$inlineContent.$comp-j9cooabk"><h2 class="font_2" style="font-size:26px;"><span style="font-size:26px;"><span style="letter-spacing:0.1em;"><span style="font-weight:bold;"><span style="font-family:open sans condensed,sans-serif;">Malaviya Official Parking</span></span></span></span></h2></div>
 
 <div style="min-height: 522px; min-width: 433px; left: 702px; width: 433px; position: absolute; top: 48px; height: 522px;" class="tpaw0" id="comp-j9cot75w" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$dy11g_DESKTOP.$inlineContent.$comp-j9cot75w">
 

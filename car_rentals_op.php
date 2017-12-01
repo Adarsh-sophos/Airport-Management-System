@@ -96,7 +96,7 @@ if ($result=mysqli_query($conn,$sql))
     <script>
 $(document).ready(function(){
     $("#rental_form").submit(function(){
-        alert("Car rented successfully.Details have been send to your provided email address.");
+        alert("Car rented successfully.");
     });
 });
 </script>
